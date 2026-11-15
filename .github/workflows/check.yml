@@ -1,0 +1,51 @@
+name: check
+
+# Checks the plugin entries a pull request adds or changes: the fields, the package (checksum, id
+# and version) and that DeckHost loads it (DeckHost --check-plugin, from DeckHost's latest release).
+on:
+  pull_request:
+    paths: ["plugins/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Changed entries
+        id: changed
+        run: |
+          files="$(git diff --name-only --diff-filter=AM "origin/${{ github.base_ref }}"...HEAD -- 'plugins/*.json' | tr '\n' ' ')"
+          echo "files=$files" >> "$GITHUB_OUTPUT"
+          echo "Changed: ${files:-none}"
+
+      - name: Fields
+        run: python3 tools/catalog.py check ${{ steps.changed.outputs.files }}
+
+      - name: Packages
+        if: steps.changed.outputs.files != ''
+        run: |
+          for file in ${{ steps.changed.outputs.files }}; do
+            python3 tools/catalog.py download "$file" packages
+          done
+
+      - name: DeckHost loads them
+        if: steps.changed.outputs.files != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release download --repo vman26/DeckHost --pattern '*linux-x64.tar.gz' --dir deckhost; then
+            echo "::warning::No DeckHost release to check with yet; skipping the load check."
+            exit 0
+          fi
+          tar -xzf deckhost/*.tar.gz -C deckhost
+          app="$(find deckhost -name DeckHost.App -type f | head -1)"
+          for package in packages/*.zip; do
+            [ -e "$package" ] || continue
+            "$app" --check-plugin "$package"
+          done

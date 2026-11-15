@@ -1,0 +1,13 @@
+{
+  "id": "deckhost.plugin.obs",
+  "name": "OBS Studio",
+  "author": "DeckHost",
+  "description": "Switch scenes, mute sources and control streaming and recording in OBS Studio through obs-websocket (OBS 28 or newer).",
+  "version": "1.0.0",
+  "category": "Streaming",
+  "repository": "https://github.com/vman26/DeckHost/tree/main/plugins/DeckHost.Plugin.Obs",
+  "download_url": "https://github.com/vman26/DeckHost/releases/download/v0.1.0/deckhost.plugin.obs.zip",
+  "sha256": "REPLACE-WITH-THE-RELEASED-PACKAGE-SHA256",
+  "permissions": ["network"],
+  "license": "MIT"
+}

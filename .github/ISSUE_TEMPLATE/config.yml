@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: A problem with DeckHost itself
+    url: https://github.com/vman26/DeckHost/issues/new/choose
+    about: Report problems with DeckHost (not with a listed plugin) in DeckHost's repository.
