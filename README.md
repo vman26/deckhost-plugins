@@ -8,11 +8,29 @@ repository's GitHub Pages (`catalog.json`), which DeckHost reads.
 DeckHost also lists OpenAction and Stream Deck plugins from their own catalogs; this one is for
 **DeckHost plugins** (`plugin.json` packages).
 
+## How listing works
+
+| | What you do | Review |
+|---|---|---|
+| **New plugin** | Open an **Add a plugin** issue with your repository (or a pull request) | Once, by a maintainer |
+| **New version** | Publish a GitHub release with the plugin file | None: listed within about six hours |
+| **New name, description, author** | Change them in your `plugin.json` (or `manifest.json`) and release | None: taken from the package |
+| **New permissions** | Declare them in `plugin.json` and release | A maintainer approves the update |
+| **Other changes** (category, icon, repository) | A pull request to your entry | A maintainer merges it |
+
+A plugin runs on people's computers, so a maintainer looks at it once before it's listed. After
+that, the repository it was reviewed with is trusted: the **update** workflow checks every listed
+plugin's newest release every six hours and updates the entry by itself when the release is the
+same plugin with a higher version, asks for no new permissions and passes the same checks as a
+pull request (checksum, id, version, DeckHost loads it). Anything else becomes an issue labelled
+`review-update` for a maintainer.
+
 ## Add your plugin
 
 **The quick way:** open an issue with **Add a plugin** and give your plugin's GitHub repository. A
 workflow reads the package of its newest release (id, name, version, author, description), computes
-its SHA-256 and opens a pull request with the entry; a maintainer reviews it. The plugin template
+its SHA-256 and opens a pull request with the entry; a maintainer reviews it once. Later releases
+are picked up by themselves. The plugin template
 (`dotnet new deckhost-plugin`) makes such releases for you. Maintainers can do the same with
 `python3 tools/catalog.py from-release https://github.com/you/your-plugin` or **Actions → submit**.
 
@@ -40,6 +58,8 @@ its SHA-256 and opens a pull request with the entry; a maintainer reviews it. Th
 }
 ```
 
+Optional: `"auto_update": false` to update by pull request only (see Updating).
+
 `sha256`: `sha256sum your.plugin.id.zip` (Linux), `shasum -a 256` (macOS) or
 `Get-FileHash -Algorithm SHA256` (Windows). DeckHost refuses a download that doesn't match.
 
@@ -56,7 +76,15 @@ these topics to be found. Nothing is listed until a maintainer merges it.
 
 ### Updating
 
-Change `version`, `download_url` and `sha256` in your file, in a new pull request.
+Publish a release; nothing else. The catalog follows your newest release (stable before
+pre-release; a file named after your plugin id is picked first when a release has several).
+Releases that need a look (a new permission, a lower version, a different plugin id, a package
+that fails the checks) wait for a maintainer, who approves them with **Actions → update → Run
+workflow** and the plugin id under *approve*.
+
+A plugin not on GitHub, or one whose maintainers want to check every version, sets
+`"auto_update": false` in its entry and updates through pull requests (change `version`,
+`download_url` and `sha256`).
 
 ### Paid plugins
 

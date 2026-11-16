@@ -1,0 +1,108 @@
+name: update
+
+# Keeps listed plugins up to date without a pull request per release. Every six hours it looks at
+# the newest release of each listed plugin's GitHub repository (the one reviewed when it was added)
+# and updates the entry in place (version, download, sha256, and name, author and description from
+# the package) when:
+#   - the release is the same plugin id with a higher version,
+#   - it asks for no permission the entry doesn't already list, and
+#   - the package passes the same checks as a pull request (checksum, id, version, DeckHost loads it).
+# Anything else opens an issue labelled "review-update" for a maintainer; approve it by running this
+# workflow by hand with the plugin id under "approve". Entries with "auto_update": false are skipped.
+on:
+  schedule:
+    - cron: "41 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      approve:
+        description: "Plugin ids to update even though they need a review (comma separated)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: New releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+          APPROVE: ${{ github.event.inputs.approve }}
+        run: python3 tools/catalog.py update --approve "${APPROVE:-}"
+
+      - name: Check the updated packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          files="$(git diff --name-only -- 'plugins/*.json' | tr '\n' ' ')"
+          echo "Updated: ${files:-none}"
+          : > failed.txt
+          if [[ -n "$files" ]] && ! tools/check-packages.sh $files; then
+            # A failed package keeps its listed version; a maintainer looks at it.
+            while read -r file; do
+              [[ -n "$file" ]] && git checkout -- "$file"
+            done < failed.txt
+          fi
+
+      - name: Issues for what needs a review
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create review-update --color FBCA04 --description "A plugin update waiting for a maintainer" 2>/dev/null || true
+          python3 - <<'PY'
+          import json, pathlib, subprocess
+          report = json.loads(pathlib.Path("update-report.json").read_text())
+          failed = [line.strip() for line in pathlib.Path("failed.txt").read_text().splitlines() if line.strip()]
+          items = list(report["review"])
+          for file in failed:
+              entry = json.loads(pathlib.Path(file).read_text()) if pathlib.Path(file).exists() else {}
+              update = next((u for u in report["updated"] if u["file"] == file), {})
+              items.append({"id": update.get("id", pathlib.Path(file).stem), "version": update.get("version", "?"),
+                            "repository": entry.get("repository", ""), "reasons": ["the package failed the checks (see the workflow run)"]})
+          for item in items:
+              title = f"Review update: {item['id']} {item['version']}"
+              existing = subprocess.run(["gh", "issue", "list", "--label", "review-update", "--state", "open", "--search", f'"{title}" in:title', "--json", "number", "--jq", "length"], capture_output=True, text=True).stdout.strip()
+              if existing not in ("", "0"):
+                  continue
+              body = (f"The newest release of {item['repository']} wasn't listed automatically:\n\n"
+                      + "".join(f"- {reason}\n" for reason in item["reasons"])
+                      + f"\nIf it's fine, run **Actions → update → Run workflow** with `{item['id']}` under *approve*. "
+                      + "If it isn't, set `\"auto_update\": false` in its entry or remove it.")
+              subprocess.run(["gh", "issue", "create", "--title", title, "--label", "review-update", "--body", body], check=True)
+          PY
+
+      - name: Commit
+        id: commit
+        run: |
+          if [[ -z "$(git status --porcelain plugins)" ]]; then
+            echo "Nothing to update."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 -c "import json; failed = open('failed.txt').read().split(); print('Update ' + ', '.join(f\"{u['id']} {u['version']}\" for u in json.load(open('update-report.json'))['updated'] if u['file'] not in failed))" > message.txt
+          git add plugins
+          git commit -F message.txt
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  publish:
+    needs: update
+    if: needs.update.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/publish.yml
