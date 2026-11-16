@@ -1,0 +1,23 @@
+name: Add a plugin
+description: Ask for a plugin to be listed in DeckHost's store. A pull request with its entry is made for you.
+title: "Add plugin: "
+labels: ["add-plugin"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Give the plugin's GitHub repository. Its newest release must have the plugin file
+        (`.dhplugin`, `.streamDeckPlugin` or `.zip`). A workflow reads the package (id, name,
+        version, author), computes its SHA-256 and opens a pull request; a maintainer reviews it.
+  - type: input
+    id: repository
+    attributes:
+      label: GitHub repository
+      placeholder: https://github.com/you/your-plugin
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: What it does, what it needs (an account, other software), who made it.

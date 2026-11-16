@@ -1,0 +1,74 @@
+name: submit
+
+# Makes a pull request with a plugin's catalog entry from its GitHub repository's newest release:
+# by hand (Actions → submit → Run workflow) or from an "Add a plugin" issue. The entry is read from
+# the package itself and its SHA-256 computed here; a maintainer reviews and merges the pull request.
+# Needs Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
+on:
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: "The plugin's GitHub repository (https://github.com/owner/repository)"
+        required: true
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  submit:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'add-plugin')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: The repository asked for
+        id: ask
+        env:
+          INPUT: ${{ github.event.inputs.repository }}
+          BODY: ${{ github.event.issue.body }}
+        run: |
+          # Untrusted text: only an exact https://github.com/owner/repository address gets through.
+          text="${INPUT:-$BODY}"
+          url="$(printf '%s' "$text" | grep -oE 'https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+' | head -1 || true)"
+          if [[ -z "$url" ]]; then
+            echo "::error::No GitHub repository address found."
+            exit 1
+          fi
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+      - name: The entry
+        id: entry
+        env:
+          GH_TOKEN: ${{ github.token }}
+          URL: ${{ steps.ask.outputs.url }}
+        run: |
+          python3 tools/catalog.py from-release "$URL" | tee entry.log
+          file="$(git status --porcelain plugins | awk '{print $2}' | head -1)"
+          if [[ -z "$file" ]]; then
+            echo "::error::Nothing changed: the plugin is listed with this version already."
+            exit 1
+          fi
+          echo "file=$file" >> "$GITHUB_OUTPUT"
+          echo "id=$(basename "$file" .json)" >> "$GITHUB_OUTPUT"
+      - name: The pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FILE: ${{ steps.entry.outputs.file }}
+          ID: ${{ steps.entry.outputs.id }}
+          URL: ${{ steps.ask.outputs.url }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          branch="add/$ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add "$FILE"
+          git commit -m "Add $ID" -m "From $URL"
+          git push --force origin "$branch"
+          body="Entry for $ID from $URL (its newest release; checksum computed by the submit workflow)."
+          if [[ -n "$ISSUE" ]]; then body="$body Closes #$ISSUE."; fi
+          pr="$(gh pr create --head "$branch" --title "Add $ID" --body "$body" 2>/dev/null || gh pr view "$branch" --json url --jq .url)"
+          echo "$pr"
+          if [[ -n "$ISSUE" ]]; then gh issue comment "$ISSUE" --body "Thanks! The entry is in $pr; a maintainer reviews it."; fi

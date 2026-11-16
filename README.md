@@ -10,6 +10,14 @@ DeckHost also lists OpenAction and Stream Deck plugins from their own catalogs; 
 
 ## Add your plugin
 
+**The quick way:** open an issue with **Add a plugin** and give your plugin's GitHub repository. A
+workflow reads the package of its newest release (id, name, version, author, description), computes
+its SHA-256 and opens a pull request with the entry; a maintainer reviews it. The plugin template
+(`dotnet new deckhost-plugin`) makes such releases for you. Maintainers can do the same with
+`python3 tools/catalog.py from-release https://github.com/you/your-plugin` or **Actions → submit**.
+
+**By hand:**
+
 1. Build your plugin and check it: `DeckHost --check-plugin your-plugin.zip`
    ([how to write one](https://vman26.github.io/DeckHost/maintainers/plugins/)).
 2. Publish the `.zip` somewhere it stays: a GitHub release of your plugin's repository is best.
@@ -36,7 +44,15 @@ DeckHost also lists OpenAction and Stream Deck plugins from their own catalogs; 
 `Get-FileHash -Algorithm SHA256` (Windows). DeckHost refuses a download that doesn't match.
 
 The check downloads your package, compares the checksum and the id and version with its
-`plugin.json`, and loads it with DeckHost's own `--check-plugin`. A maintainer then reviews it.
+`plugin.json` (or a Stream Deck package's `manifest.json`), and loads it with DeckHost's own
+`--check-plugin`. A maintainer then reviews it.
+
+### Found on GitHub
+
+Once a week the **discover** workflow looks for repositories with the topics `deckhost-plugin`,
+`streamdeck-plugin`, `stream-deck-plugin` or `openaction-plugin` that have a plugin file in a release
+and aren't listed yet, and opens one pull request with their entries. Give your repository one of
+these topics to be found. Nothing is listed until a maintainer merges it.
 
 ### Updating
 
