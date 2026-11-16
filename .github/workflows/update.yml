@@ -1,14 +1,17 @@
 name: update
 
-# Keeps listed plugins up to date without a pull request per release. Every six hours it looks at
-# the newest release of each listed plugin's GitHub repository (the one reviewed when it was added)
-# and updates the entry in place (version, download, sha256, and name, author and description from
-# the package) when:
+# Keeps listed plugins up to date without a pull request per release. main is protected (reviewed
+# pull requests only), so new versions go to the catalog-updates branch instead: one small file per
+# plugin (updates/<id>.json) that publish applies on top of the reviewed entry.
+#
+# Every six hours it looks at the newest release of each listed plugin's GitHub repository (the one
+# reviewed when it was added) and takes it when:
 #   - the release is the same plugin id with a higher version,
 #   - it asks for no permission the entry doesn't already list, and
 #   - the package passes the same checks as a pull request (checksum, id, version, DeckHost loads it).
-# Anything else opens an issue labelled "review-update" for a maintainer; approve it by running this
-# workflow by hand with the plugin id under "approve". Entries with "auto_update": false are skipped.
+# Anything else opens an issue labelled "review-update"; approve it by running this workflow by hand
+# with the plugin id under "approve". Entries with "auto_update": false are skipped. When main gets a
+# version as new as an override (a pull request), the override is dropped.
 on:
   schedule:
     - cron: "41 */6 * * *"
@@ -35,23 +38,41 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - name: The catalog-updates branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin catalog-updates >/dev/null; then
+            git fetch --depth 1 origin catalog-updates
+            git worktree add -B catalog-updates overrides FETCH_HEAD
+          else
+            git worktree add --orphan -b catalog-updates overrides
+          fi
+          mkdir -p overrides/updates
+
       - name: New releases
         env:
           GH_TOKEN: ${{ github.token }}
           APPROVE: ${{ github.event.inputs.approve }}
-        run: python3 tools/catalog.py update --approve "${APPROVE:-}"
+        run: python3 tools/catalog.py update --overrides overrides/updates --approve "${APPROVE:-}"
 
-      - name: Check the updated packages
+      - name: Check the new packages
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          files="$(git diff --name-only -- 'plugins/*.json' | tr '\n' ' ')"
-          echo "Updated: ${files:-none}"
+          files="$(git -C overrides status --porcelain --untracked-files=all -- updates | awk '$1 != "D" {print "overrides/" $2}' | tr '\n' ' ')"
+          echo "New versions: ${files:-none}"
           : > failed.txt
           if [[ -n "$files" ]] && ! tools/check-packages.sh $files; then
-            # A failed package keeps its listed version; a maintainer looks at it.
+            # A package that fails keeps the listed version; a maintainer looks at it.
             while read -r file; do
-              [[ -n "$file" ]] && git checkout -- "$file"
+              [[ -z "$file" ]] && continue
+              relative="${file#overrides/}"
+              if git -C overrides cat-file -e "HEAD:$relative" 2>/dev/null; then
+                git -C overrides checkout -- "$relative"
+              else
+                rm -f "$file"
+              fi
             done < failed.txt
           fi
 
@@ -66,10 +87,11 @@ jobs:
           failed = [line.strip() for line in pathlib.Path("failed.txt").read_text().splitlines() if line.strip()]
           items = list(report["review"])
           for file in failed:
-              entry = json.loads(pathlib.Path(file).read_text()) if pathlib.Path(file).exists() else {}
-              update = next((u for u in report["updated"] if u["file"] == file), {})
-              items.append({"id": update.get("id", pathlib.Path(file).stem), "version": update.get("version", "?"),
-                            "repository": entry.get("repository", ""), "reasons": ["the package failed the checks (see the workflow run)"]})
+              item = next((u for u in report["updated"] if u["file"].endswith(file.removeprefix("overrides/"))), {})
+              plugin_id = item.get("id", pathlib.Path(file).stem)
+              entry = json.loads(pathlib.Path(f"plugins/{plugin_id}.json").read_text())
+              items.append({"id": plugin_id, "version": item.get("version", "?"), "repository": entry.get("repository", ""),
+                            "reasons": ["the package failed the checks (see the workflow run)"]})
           for item in items:
               title = f"Review update: {item['id']} {item['version']}"
               existing = subprocess.run(["gh", "issue", "list", "--label", "review-update", "--state", "open", "--search", f'"{title}" in:title', "--json", "number", "--jq", "length"], capture_output=True, text=True).stdout.strip()
@@ -78,24 +100,23 @@ jobs:
               body = (f"The newest release of {item['repository']} wasn't listed automatically:\n\n"
                       + "".join(f"- {reason}\n" for reason in item["reasons"])
                       + f"\nIf it's fine, run **Actions → update → Run workflow** with `{item['id']}` under *approve*. "
-                      + "If it isn't, set `\"auto_update\": false` in its entry or remove it.")
+                      + "If it isn't, set `\"auto_update\": false` in its entry (a pull request) or remove it.")
               subprocess.run(["gh", "issue", "create", "--title", title, "--label", "review-update", "--body", body], check=True)
           PY
 
-      - name: Commit
+      - name: Commit to catalog-updates
         id: commit
         run: |
-          if [[ -z "$(git status --porcelain plugins)" ]]; then
+          cd overrides
+          if [[ -z "$(git status --porcelain --untracked-files=all)" ]]; then
             echo "Nothing to update."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          python3 -c "import json; failed = open('failed.txt').read().split(); print('Update ' + ', '.join(f\"{u['id']} {u['version']}\" for u in json.load(open('update-report.json'))['updated'] if u['file'] not in failed))" > message.txt
-          git add plugins
-          git commit -F message.txt
-          git push
+          git add -A
+          names="$(git diff --cached --name-only --diff-filter=AM -- updates | xargs -r -n1 basename | sed 's/\.json$//' | paste -sd, -)"
+          git commit -m "Update ${names:-catalog}" -m "By the update workflow from the plugins' GitHub releases."
+          git push origin catalog-updates
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
   publish:
