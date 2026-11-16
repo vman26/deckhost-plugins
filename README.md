@@ -20,10 +20,15 @@ DeckHost also lists OpenAction and Stream Deck plugins from their own catalogs; 
 
 A plugin runs on people's computers, so a maintainer looks at it once before it's listed. After
 that, the repository it was reviewed with is trusted: the **update** workflow checks every listed
-plugin's newest release every six hours and updates the entry by itself when the release is the
-same plugin with a higher version, asks for no new permissions and passes the same checks as a
-pull request (checksum, id, version, DeckHost loads it). Anything else becomes an issue labelled
+plugin's newest release every six hours and lists it by itself when the release is the same plugin
+with a higher version, asks for no new permissions and passes the same checks as a pull request
+(checksum, id, version, DeckHost loads it). Anything else becomes an issue labelled
 `review-update` for a maintainer.
+
+`main` only takes reviewed pull requests, so these new versions are kept on the `catalog-updates`
+branch (`updates/<id>.json`: version, download, checksum, name, author, description), and the
+**publish** workflow applies them on top of the reviewed entries. When an entry on `main` gets a
+version as new (a pull request), the update file for it is dropped.
 
 ## Add your plugin
 
@@ -109,4 +114,5 @@ DeckHost shows a **Buy** button that opens the page; buyers install the file the
 
 ## License
 
-The catalog files are CC0 (public domain). Each plugin has its own license.
+This repository (the catalog files and the tools) is licensed under the GPL-3.0, like DeckHost
+([LICENSE](LICENSE)). Each plugin has its own license.

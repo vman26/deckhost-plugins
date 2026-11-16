@@ -1,6 +1,7 @@
 name: publish
 
-# Builds catalog.json from plugins/*.json and publishes it on this repository's GitHub Pages
+# Builds catalog.json from plugins/*.json (with newer versions from the catalog-updates branch on
+# top) and publishes it on this repository's GitHub Pages
 # (Settings → Pages → Source: GitHub Actions). DeckHost reads
 # https://<owner>.github.io/deckhost-plugins/catalog.json.
 on:
@@ -27,7 +28,15 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
-      - run: python3 tools/catalog.py build site/catalog.json
+      # Newer versions from the update workflow (the catalog-updates branch), applied on top.
+      - name: Updates
+        run: |
+          if git ls-remote --exit-code --heads origin catalog-updates >/dev/null; then
+            git fetch --depth 1 origin catalog-updates
+            git worktree add overrides FETCH_HEAD
+          fi
+          mkdir -p overrides/updates
+      - run: python3 tools/catalog.py build site/catalog.json --overrides overrides/updates
       - run: cp README.md site/index.md
       - uses: actions/upload-pages-artifact@v3
         with:

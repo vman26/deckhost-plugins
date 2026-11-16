@@ -3,14 +3,17 @@
 
     python3 tools/catalog.py check [files…]       # the entries (all when none are given)
     python3 tools/catalog.py download <file> <dir> # download the package, check sha256, id and version
-    python3 tools/catalog.py build <output.json>    # merge every entry into the catalog DeckHost reads
+    python3 tools/catalog.py build <output.json> [--overrides DIR]
+                                                  # merge every entry (and newer versions from the
+                                                  # update workflow) into the catalog DeckHost reads
     python3 tools/catalog.py from-release <github repository URL>
                                                   # write plugins/<id>.json from its newest release
     python3 tools/catalog.py discover [topics…]    # entries for GitHub repositories with these topics
                                                   # that aren't listed yet (default: see TOPICS)
-    python3 tools/catalog.py update [ids…] [--approve id,id]
-                                                  # new releases of listed plugins: updated in place
-                                                  # when nothing needs a review (see update())
+    python3 tools/catalog.py update [ids…] [--approve id,id] [--overrides DIR]
+                                                  # new releases of listed plugins, written to DIR
+                                                  # (the catalog-updates branch) when nothing needs
+                                                  # a review (see update())
 
 GitHub requests use the GH_TOKEN (or GITHUB_TOKEN) environment variable when it's set.
 """
@@ -267,20 +270,46 @@ def compare_versions(left: str, right: str) -> int:
     return (len(left_label.split(".")) > len(right_label.split("."))) - (len(left_label.split(".")) < len(right_label.split(".")))
 
 
-def update(ids: list[str], approved: set[str] | None = None) -> int:
+UPDATE_FIELDS = ("version", "download_url", "sha256", "name", "author", "description", "permissions")
+DEFAULT_OVERRIDES = ROOT / "overrides" / "updates"
+
+
+def with_override(entry: dict, overrides: pathlib.Path | None) -> dict:
+    """The entry as listed: the reviewed file from main, with a newer version from the update
+    workflow (overrides/<id>.json) when there is one. A version on main that is as new or newer wins."""
+    if overrides is None:
+        return entry
+    path = overrides / f"{entry['id']}.json"
+    if not path.exists():
+        return entry
+    override = load(path)
+    if compare_versions(override.get("version", ""), entry.get("version", "")) <= 0:
+        return entry
+    return entry | {key: override[key] for key in UPDATE_FIELDS if key in override}
+
+
+def update(ids: list[str], approved: set[str] | None = None, overrides: pathlib.Path = DEFAULT_OVERRIDES) -> int:
     """New releases of listed plugins, from the repository the entry was reviewed with.
 
-    An entry is updated in place (version, download_url, sha256, and name, author and description
-    from the package's own manifest) when the newest release has the same plugin id, a higher
-    version and no permission the entry doesn't already list. Otherwise it is left alone and
-    reported as needing a review. Entries with "auto_update": false, paid plugins and plugins not
-    on GitHub are skipped. Ids in `approved` skip the version and permission rules (a maintainer
-    looked at them); a different plugin id is never taken. Writes update-report.json (updated /
-    review) for the workflow."""
+    main is protected (pull requests with a review), so a new version doesn't change the entry
+    there: it is written to `overrides/<id>.json` (the catalog-updates branch), which `build`
+    applies on top. That happens when the newest release has the same plugin id, a higher version
+    and no permission the entry doesn't already list; the version, download_url and sha256 come
+    with it, and name, author and description from the package's own manifest. Anything else is
+    reported as needing a review. Entries with "auto_update": false, paid plugins and plugins not on
+    GitHub are skipped. Ids in `approved` skip the version and permission rules (a maintainer looked
+    at them); a different plugin id is never taken. Overrides that main has caught up with are
+    removed. Writes update-report.json (updated / review) for the workflow."""
     approved = approved or set()
+    overrides.mkdir(parents=True, exist_ok=True)
     report = {"updated": [], "review": []}
     for path in sorted(PLUGINS.glob("*.json")):
-        entry = load(path)
+        reviewed = load(path)
+        stale = overrides / f"{reviewed['id']}.json"
+        if stale.exists() and compare_versions(load(stale).get("version", ""), reviewed.get("version", "")) <= 0:
+            stale.unlink()
+            print(f"main has {reviewed['id']} {reviewed['version']}: dropped the older override")
+        entry = with_override(reviewed, overrides)
         if ids and entry["id"] not in ids:
             continue
         repository = entry.get("repository", "")
@@ -308,26 +337,29 @@ def update(ids: list[str], approved: set[str] | None = None) -> int:
             print(f"review {entry['id']}: " + "; ".join(reasons))
             report["review"].append({"id": entry["id"], "version": fresh["version"], "repository": repository, "reasons": reasons})
             continue
+        override = {"id": entry["id"]}
         for key in ("version", "download_url", "sha256", "name", "author", "description"):
             if fresh.get(key):
-                entry[key] = fresh[key]
+                override[key] = fresh[key]
         if entry["id"] in approved and fresh.get("permissions"):
-            entry["permissions"] = fresh["permissions"]
-        path.write_text(json.dumps(entry, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        print(f"update {entry['id']} -> {entry['version']}")
-        report["updated"].append({"id": entry["id"], "version": entry["version"], "file": str(path.relative_to(ROOT))})
+            override["permissions"] = fresh["permissions"]
+        target = overrides / f"{entry['id']}.json"
+        target.write_text(json.dumps(override, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"update {entry['id']} -> {override['version']}")
+        report["updated"].append({"id": entry["id"], "version": override["version"], "file": str(target)})
     (ROOT / "update-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(f"{len(report['updated'])} updated, {len(report['review'])} need a review")
     return 0
 
 
-def build(output: pathlib.Path) -> int:
+def build(output: pathlib.Path, overrides: pathlib.Path | None = None) -> int:
     paths = sorted(PLUGINS.glob("*.json"))
     if check(paths):
         return 1
     catalog = {}
     for path in paths:
-        entry = load(path)
+        entry = with_override(load(path), overrides)
+        entry.pop("auto_update", None)
         catalog[entry.pop("id")] = entry
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -344,8 +376,14 @@ def main(arguments: list[str]) -> int:
         return check([pathlib.Path(item).resolve() for item in rest] or sorted(PLUGINS.glob("*.json")))
     if command == "download" and len(rest) == 2:
         return download(pathlib.Path(rest[0]).resolve(), pathlib.Path(rest[1]))
-    if command == "build" and len(rest) == 1:
-        return build(pathlib.Path(rest[0]))
+    if command == "build" and rest:
+        overrides = None
+        if "--overrides" in rest:
+            index = rest.index("--overrides")
+            overrides = pathlib.Path(rest[index + 1]).resolve()
+            rest = rest[:index] + rest[index + 2:]
+        if len(rest) == 1:
+            return build(pathlib.Path(rest[0]), overrides)
     if command == "from-release" and len(rest) == 1:
         try:
             return from_release(rest[0])
@@ -356,11 +394,16 @@ def main(arguments: list[str]) -> int:
         return discover(rest or TOPICS)
     if command == "update":
         approved = set()
+        overrides = DEFAULT_OVERRIDES
         if "--approve" in rest:
             index = rest.index("--approve")
             approved = {item.strip() for item in (rest[index + 1] if index + 1 < len(rest) else "").split(",") if item.strip()}
             rest = rest[:index] + rest[index + 2:]
-        return update(rest, approved)
+        if "--overrides" in rest:
+            index = rest.index("--overrides")
+            overrides = pathlib.Path(rest[index + 1]).resolve()
+            rest = rest[:index] + rest[index + 2:]
+        return update(rest, approved, overrides)
     print(__doc__)
     return 2
 
