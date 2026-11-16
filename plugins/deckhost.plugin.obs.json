@@ -6,8 +6,11 @@
   "version": "1.0.0",
   "category": "Streaming",
   "repository": "https://github.com/vman26/DeckHost/tree/main/plugins/DeckHost.Plugin.Obs",
-  "download_url": "https://github.com/vman26/DeckHost/releases/download/v0.1.0/deckhost.plugin.obs.zip",
-  "sha256": "REPLACE-WITH-THE-RELEASED-PACKAGE-SHA256",
-  "permissions": ["network"],
-  "license": "MIT"
+  "download_url": "https://github.com/vman26/DeckHost/releases/download/v0.1.0-rc.1/deckhost.plugin.obs.zip",
+  "sha256": "630d1e61ca94c6d03def8323051d9a2b7b5d42449c35fe04a3858dfafe8b7426",
+  "permissions": [
+    "network"
+  ],
+  "license": "MIT",
+  "auto_update": false
 }
