@@ -27,25 +27,8 @@ jobs:
       - name: Fields
         run: python3 tools/catalog.py check ${{ steps.changed.outputs.files }}
 
-      - name: Packages
-        if: steps.changed.outputs.files != ''
-        run: |
-          for file in ${{ steps.changed.outputs.files }}; do
-            python3 tools/catalog.py download "$file" packages
-          done
-
-      - name: DeckHost loads them
+      - name: Packages (download, checksum, DeckHost loads them)
         if: steps.changed.outputs.files != ''
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          if ! gh release download --repo vman26/DeckHost --pattern '*linux-x64.tar.gz' --dir deckhost; then
-            echo "::warning::No DeckHost release to check with yet; skipping the load check."
-            exit 0
-          fi
-          tar -xzf deckhost/*.tar.gz -C deckhost
-          app="$(find deckhost -name DeckHost.App -type f | head -1)"
-          for package in packages/*.zip; do
-            [ -e "$package" ] || continue
-            "$app" --check-plugin "$package"
-          done
+        run: tools/check-packages.sh ${{ steps.changed.outputs.files }}

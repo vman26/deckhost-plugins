@@ -8,6 +8,9 @@
                                                   # write plugins/<id>.json from its newest release
     python3 tools/catalog.py discover [topics…]    # entries for GitHub repositories with these topics
                                                   # that aren't listed yet (default: see TOPICS)
+    python3 tools/catalog.py update [ids…] [--approve id,id]
+                                                  # new releases of listed plugins: updated in place
+                                                  # when nothing needs a review (see update())
 
 GitHub requests use the GH_TOKEN (or GITHUB_TOKEN) environment variable when it's set.
 """
@@ -28,7 +31,7 @@ PLUGINS = ROOT / "plugins"
 ID = re.compile(r"^[a-z0-9][a-z0-9._-]{2,63}$")
 SHA = re.compile(r"^[0-9a-fA-F]{64}$")
 REQUIRED = ["id", "name", "author", "description", "version"]
-KNOWN = set(REQUIRED) | {"category", "repository", "download_url", "sha256", "icon", "page", "permissions", "license", "purchase_url", "price"}
+KNOWN = set(REQUIRED) | {"category", "repository", "download_url", "sha256", "icon", "page", "permissions", "license", "purchase_url", "price", "auto_update"}
 PERMISSIONS = {"network", "processes", "files", "input", "system", "clipboard"}
 TOPICS = ["deckhost-plugin", "streamdeck-plugin", "stream-deck-plugin", "openaction-plugin"]
 PACKAGE_SUFFIXES = (".streamdeckplugin", ".dhplugin", ".zip")
@@ -69,6 +72,8 @@ def problems(path: pathlib.Path) -> list[str]:
             found.append("'sha256' (64 hex characters) is required with 'download_url'")
     elif not paid:
         found.append("give 'download_url' and 'sha256', or 'purchase_url' for a paid plugin")
+    if "auto_update" in entry and not isinstance(entry["auto_update"], bool):
+        found.append("'auto_update' must be true or false")
     for permission in entry.get("permissions", []):
         if permission not in PERMISSIONS:
             found.append(f"unknown permission '{permission}' (known: {', '.join(sorted(PERMISSIONS))})")
@@ -149,27 +154,31 @@ def github(path: str):
         return json.load(response)
 
 
-def newest_package(owner: str, repository: str):
-    """(release, asset) of the newest non-draft release with a plugin file (stable first)."""
+def newest_package(owner: str, repository: str, plugin_id: str | None = None):
+    """(release, asset) of the newest non-draft release with a plugin file (stable first). A file
+    named after the plugin id comes first, then .streamDeckPlugin, .dhplugin, .zip."""
     releases = [release for release in github(f"repos/{owner}/{repository}/releases?per_page=20") if not release.get("draft")]
     for release in [r for r in releases if not r.get("prerelease")] + [r for r in releases if r.get("prerelease")]:
         assets = sorted(
             (asset for asset in release.get("assets", []) if asset["name"].lower().endswith(PACKAGE_SUFFIXES)),
-            key=lambda asset: [suffix for suffix in PACKAGE_SUFFIXES if asset["name"].lower().endswith(suffix)][0] != ".streamdeckplugin",
+            key=lambda asset: (
+                not (plugin_id and plugin_id.lower() in asset["name"].lower()),
+                PACKAGE_SUFFIXES.index([suffix for suffix in PACKAGE_SUFFIXES if asset["name"].lower().endswith(suffix)][0]),
+            ),
         )
         if assets:
             return release, assets[0]
     return None, None
 
 
-def entry_from_release(url: str) -> dict:
+def entry_from_release(url: str, plugin_id: str | None = None) -> dict:
     """A catalog entry for a GitHub repository's newest release: the package's own manifest gives
     the id, name, version, author and description; the download gives the sha256."""
     match = re.match(r"^https://github\.com/([^/]+)/([^/#?]+?)(?:\.git)?/?(?:[#?].*)?$", url.strip())
     if not match:
         raise ValueError(f"{url} isn't a GitHub repository address (https://github.com/owner/repository)")
     owner, repository = match.groups()
-    release, asset = newest_package(owner, repository)
+    release, asset = newest_package(owner, repository, plugin_id)
     if asset is None:
         raise ValueError(f"{owner}/{repository} has no release with a .streamDeckPlugin, .dhplugin or .zip file")
     request = urllib.request.Request(asset["browser_download_url"], headers={"User-Agent": "deckhost-plugins"})
@@ -231,6 +240,87 @@ def discover(topics: list[str]) -> int:
     return 0
 
 
+def compare_versions(left: str, right: str) -> int:
+    """Like DeckHost's PluginVersion.Compare: numbers part by part, a pre-release below its release,
+    build metadata ignored. Negative when left is older."""
+    def parse(version):
+        text = (version or "").strip().lstrip("vV").split("+", 1)[0]
+        core, _, label = text.partition("-")
+        numbers = [int(re.match(r"\d*", part).group() or 0) for part in core.split(".")]
+        return numbers, label or None
+
+    (left_numbers, left_label), (right_numbers, right_label) = parse(left), parse(right)
+    width = max(len(left_numbers), len(right_numbers))
+    left_numbers += [0] * (width - len(left_numbers))
+    right_numbers += [0] * (width - len(right_numbers))
+    if left_numbers != right_numbers:
+        return -1 if left_numbers < right_numbers else 1
+    if left_label == right_label:
+        return 0
+    if left_label is None or right_label is None:
+        return 1 if left_label is None else -1
+    for a, b in zip(left_label.split("."), right_label.split(".")):
+        if a != b:
+            if a.isdigit() and b.isdigit():
+                return -1 if int(a) < int(b) else 1
+            return -1 if a < b else 1
+    return (len(left_label.split(".")) > len(right_label.split("."))) - (len(left_label.split(".")) < len(right_label.split(".")))
+
+
+def update(ids: list[str], approved: set[str] | None = None) -> int:
+    """New releases of listed plugins, from the repository the entry was reviewed with.
+
+    An entry is updated in place (version, download_url, sha256, and name, author and description
+    from the package's own manifest) when the newest release has the same plugin id, a higher
+    version and no permission the entry doesn't already list. Otherwise it is left alone and
+    reported as needing a review. Entries with "auto_update": false, paid plugins and plugins not
+    on GitHub are skipped. Ids in `approved` skip the version and permission rules (a maintainer
+    looked at them); a different plugin id is never taken. Writes update-report.json (updated /
+    review) for the workflow."""
+    approved = approved or set()
+    report = {"updated": [], "review": []}
+    for path in sorted(PLUGINS.glob("*.json")):
+        entry = load(path)
+        if ids and entry["id"] not in ids:
+            continue
+        repository = entry.get("repository", "")
+        if entry.get("auto_update") is False or "download_url" not in entry or not repository.startswith("https://github.com/"):
+            continue
+        try:
+            fresh = entry_from_release(repository, entry["id"])
+        except (ValueError, OSError, json.JSONDecodeError, KeyError) as error:
+            print(f"skip {entry['id']}: {error}")
+            continue
+        if fresh["download_url"] == entry["download_url"] and fresh["sha256"].lower() == entry["sha256"].lower():
+            continue
+        reasons = []
+        if fresh["id"] != entry["id"]:
+            reasons.append(f"the new release is plugin '{fresh['id']}', not '{entry['id']}'")
+        if compare_versions(fresh["version"], entry["version"]) <= 0:
+            reasons.append(f"its version {fresh['version']} isn't higher than {entry['version']}")
+        added = sorted(set(fresh.get("permissions", [])) - set(entry.get("permissions", [])))
+        if added:
+            reasons.append(f"it asks for new permissions: {', '.join(added)}")
+        if reasons and entry["id"] in approved and fresh["id"] == entry["id"]:
+            print(f"approved {entry['id']}: " + "; ".join(reasons))
+            reasons = []
+        if reasons:
+            print(f"review {entry['id']}: " + "; ".join(reasons))
+            report["review"].append({"id": entry["id"], "version": fresh["version"], "repository": repository, "reasons": reasons})
+            continue
+        for key in ("version", "download_url", "sha256", "name", "author", "description"):
+            if fresh.get(key):
+                entry[key] = fresh[key]
+        if entry["id"] in approved and fresh.get("permissions"):
+            entry["permissions"] = fresh["permissions"]
+        path.write_text(json.dumps(entry, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"update {entry['id']} -> {entry['version']}")
+        report["updated"].append({"id": entry["id"], "version": entry["version"], "file": str(path.relative_to(ROOT))})
+    (ROOT / "update-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    print(f"{len(report['updated'])} updated, {len(report['review'])} need a review")
+    return 0
+
+
 def build(output: pathlib.Path) -> int:
     paths = sorted(PLUGINS.glob("*.json"))
     if check(paths):
@@ -264,6 +354,13 @@ def main(arguments: list[str]) -> int:
             return 1
     if command == "discover":
         return discover(rest or TOPICS)
+    if command == "update":
+        approved = set()
+        if "--approve" in rest:
+            index = rest.index("--approve")
+            approved = {item.strip() for item in (rest[index + 1] if index + 1 < len(rest) else "").split(",") if item.strip()}
+            rest = rest[:index] + rest[index + 2:]
+        return update(rest, approved)
     print(__doc__)
     return 2
 
