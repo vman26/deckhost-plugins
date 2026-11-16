@@ -1,0 +1,42 @@
+name: discover
+
+# Once a week, looks on GitHub for plugin repositories (topics in tools/catalog.py: deckhost-plugin,
+# streamdeck-plugin, stream-deck-plugin, openaction-plugin) with a plugin file in a release that
+# aren't listed yet, and opens one pull request with their entries. Nothing is listed until a
+# maintainer reviews and merges it.
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: New plugins
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/catalog.py discover
+      - name: The pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [[ -z "$(git status --porcelain plugins)" ]]; then
+            echo "Nothing new."
+            exit 0
+          fi
+          branch="discover/$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add plugins
+          git commit -m "Plugins found on GitHub"
+          git push --force origin "$branch"
+          list="$(git show --name-only --format= HEAD | sed 's/^/- /')"
+          gh pr create --head "$branch" --title "Plugins found on GitHub ($(date -u +%Y-%m-%d))" \
+            --body "$(printf 'Found by the discover workflow (repository topics and releases). Review each before merging: the code, the license, the description.\n\n%s' "$list")"
