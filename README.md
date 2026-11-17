@@ -119,9 +119,13 @@ download that doesn't match.
 - **Takedown:** open an issue, or a pull request adding the plugin id (or its repository) to
   [`mirror/blocklist.json`](mirror/blocklist.json). The next run deletes the package and lists the
   plugin without a download.
-- **Off by default.** The workflow runs only with the repository variable `ELGATO_MIRROR_ENABLED` set
-  to `true`, which waits until Elgato's terms for the Marketplace are confirmed. **Actions → mirror →
-  Run workflow** with *dry run* works either way and only reports what it would do.
+- **On.** The workflow runs weekly; set the repository variable `ELGATO_MIRROR_ENABLED` to `false` to pause
+  it. **Actions → mirror → Run workflow** with *dry run* only reports what it would do. The licence gate is
+  the condition for the copies: Elgato's terms were checked against it.
+- **Notice.** We are not the authors of these plugins and are not affiliated with Elgato. A package is the
+  community archive's copy ([nekename/ElgatoAppStoreArchive](https://github.com/nekename/ElgatoAppStoreArchive))
+  of what Elgato's servers served, unchanged, with its SHA-256; every plugin keeps its licence and author
+  (`mirror/NOTICE.md` lists them).
 
 ## Rules
 

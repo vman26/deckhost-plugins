@@ -43,6 +43,7 @@ from catalog import read_manifest  # noqa: E402  (the same package reader the ca
 ARCHIVE_CATALOGUE = "https://plugins.amankhanna.me/catalogue.json"
 ARCHIVE_PACKAGE = "https://plugins.amankhanna.me/rezipped/{id}.zip"
 ARCHIVE_ICON = "https://plugins.amankhanna.me/icons/{id}.png"
+COMMUNITY_ARCHIVE = "https://github.com/nekename/ElgatoAppStoreArchive"
 MARKETPLACE_SEARCH = "https://marketplace.elgato.com/search?q={name}"
 RELEASE_TAG = "elgato-mirror"
 DEFAULT_MAX_MB = 50
@@ -235,9 +236,14 @@ def notice(entries: list[dict], repository: str) -> str:
         "# Elgato plugin mirror",
         "",
         "Copies of Stream Deck plugins from the Elgato Marketplace, kept for DeckHost's plugin store.",
+        "",
+        "We are not the authors of these plugins and are not affiliated with Elgato. Each package is the",
+        f"copy kept by the community archive ({COMMUNITY_ARCHIVE}) of what Elgato's servers served,",
+        "passed on unchanged apart from the checks below, and stored with its SHA-256. Every plugin keeps",
+        "its own license and its author, named in the table.",
+        "",
         "A plugin is copied only when its source repository has an open-source license that allows",
-        "passing it on; every plugin keeps its own license and its author. The others are listed with a",
-        "link to the Elgato Marketplace and are not copied.",
+        "passing it on. The others are listed with a link to the Elgato Marketplace and are not copied.",
         "",
         f"Don't want a plugin here? Open an issue in https://github.com/{repository} (or send a pull request",
         "adding its id to `mirror/blocklist.json`). It is removed from the mirror, and its package deleted,",
