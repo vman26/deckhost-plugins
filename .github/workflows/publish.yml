@@ -37,6 +37,15 @@ jobs:
           fi
           mkdir -p overrides/updates
       - run: python3 tools/catalog.py build site/catalog.json --overrides overrides/updates
+      # The Elgato mirror (mirror workflow): its catalog and notice, when it has run.
+      - name: Mirror
+        run: |
+          if git ls-remote --exit-code --heads origin mirror-data >/dev/null; then
+            git fetch --depth 1 origin mirror-data
+            git worktree add mirror-data FETCH_HEAD
+            mkdir -p site/mirror
+            cp mirror-data/catalog.json mirror-data/NOTICE.md site/mirror/
+          fi
       - run: cp README.md site/index.md
       - uses: actions/upload-pages-artifact@v3
         with:
