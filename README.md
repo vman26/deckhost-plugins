@@ -103,6 +103,26 @@ Paid plugins are welcome. Leave out `download_url` and `sha256` and add where to
 DeckHost shows a **Buy** button that opens the page; buyers install the file they get with
 **Install plugin…**. Payment, licensing and delivery are up to you.
 
+## Elgato mirror
+
+DeckHost's store also lists the Elgato Marketplace through a community archive. The **mirror**
+workflow (`tools/mirror.py`, weekly) keeps a catalog of that archive here and **copies a plugin's
+package only when its source repository has an open-source license that allows it** (MIT, Apache-2.0,
+BSD, ISC, MPL-2.0, the GPL family, Unlicense, CC0; see `ALLOWED_LICENSES`). A plugin without a GitHub
+repository, without a license or with another one (non-commercial, "all rights reserved") is listed
+with its Marketplace link and never copied. A copy is checked (a valid zip with a plugin manifest of the
+same id, at most 50 MB, no paths outside the archive) and kept with its SHA-256; DeckHost refuses a
+download that doesn't match.
+
+- The files: `mirror/catalog.json` and `mirror/NOTICE.md` (authors, licenses, sources) on this
+  repository's GitHub Pages; the packages are assets of the `elgato-mirror` release.
+- **Takedown:** open an issue, or a pull request adding the plugin id (or its repository) to
+  [`mirror/blocklist.json`](mirror/blocklist.json). The next run deletes the package and lists the
+  plugin without a download.
+- **Off by default.** The workflow runs only with the repository variable `ELGATO_MIRROR_ENABLED` set
+  to `true`, which waits until Elgato's terms for the Marketplace are confirmed. **Actions → mirror →
+  Run workflow** with *dry run* works either way and only reports what it would do.
+
 ## Rules
 
 - The plugin works with the current DeckHost and does what its description says.

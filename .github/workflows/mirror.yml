@@ -1,0 +1,111 @@
+name: mirror
+
+# A mirror of the Elgato Marketplace archive for DeckHost's plugin store (tools/mirror.py): a catalog
+# of every plugin, and a copy of the package for each plugin whose source repository has an
+# open-source license (the allowlist is in the script; everything else is listed without a package).
+#
+# OFF until the repository variable ELGATO_MIRROR_ENABLED is "true" (Settings → Secrets and
+# variables → Actions → Variables): set it only after Elgato's terms for the Marketplace are
+# confirmed. A manual run with "dry run" always works and only reports what it would do.
+#
+# Packages are assets of one rolling release (elgato-mirror); catalog.json and NOTICE.md go to the
+# mirror-data branch (main is protected), which publish.yml puts on GitHub Pages under /mirror/.
+# mirror/blocklist.json (reviewed, on main) lists plugins that are never copied.
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only report what would be mirrored"
+        type: boolean
+        default: true
+      limit:
+        description: "At most this many new packages (a first run can be spread over several)"
+        required: false
+        default: "100"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    if: vars.ELGATO_MIRROR_ENABLED == 'true' || (github.event_name == 'workflow_dispatch' && inputs.dry_run)
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: The mirror-data branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin mirror-data >/dev/null; then
+            git fetch --depth 1 origin mirror-data
+            git worktree add -B mirror-data data FETCH_HEAD
+          else
+            git worktree add --orphan -b mirror-data data
+          fi
+
+      - name: Mirror
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+          LIMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.limit || '100' }}
+        run: |
+          flags=(--limit "${LIMIT:-100}")
+          if [[ "$DRY_RUN" == "true" ]]; then flags+=(--dry-run); fi
+          python3 tools/mirror.py run --out out --previous data "${flags[@]}" | tee mirror.log
+          {
+            echo '### Elgato mirror'
+            echo '```'
+            tail -n 40 mirror.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Packages (the rolling release)
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view elgato-mirror >/dev/null 2>&1; then
+            gh release create elgato-mirror --title "Elgato plugin mirror" --latest=false --prerelease \
+              --notes "Copies of open-source Stream Deck plugins for DeckHost's plugin store. See NOTICE.md on the project's GitHub Pages (/mirror/NOTICE.md). Made by the mirror workflow; do not edit by hand."
+          fi
+          if compgen -G "out/upload/*" >/dev/null; then
+            gh release upload elgato-mirror out/upload/* --clobber
+          fi
+          while read -r asset; do
+            [[ -z "$asset" ]] && continue
+            gh release delete-asset elgato-mirror "$asset" --yes || true
+          done < out/remove.txt
+
+      - name: Commit to mirror-data
+        id: commit
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        run: |
+          cp out/catalog.json out/NOTICE.md data/
+          cd data
+          if [[ -z "$(git status --porcelain --untracked-files=all)" ]]; then
+            echo "Nothing changed."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git add -A
+          git commit -m "Elgato mirror" -m "By the mirror workflow from the archive catalogue and the plugins' licenses."
+          git push origin mirror-data
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  publish:
+    needs: mirror
+    if: needs.mirror.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/publish.yml
