@@ -4,9 +4,11 @@ name: mirror
 # of every plugin, and a copy of the package for each plugin whose source repository has an
 # open-source license (the allowlist is in the script; everything else is listed without a package).
 #
-# OFF until the repository variable ELGATO_MIRROR_ENABLED is "true" (Settings → Secrets and
-# variables → Actions → Variables): set it only after Elgato's terms for the Marketplace are
-# confirmed. A manual run with "dry run" always works and only reports what it would do.
+# ON by default. Elgato's terms were checked against the licence gate (only plugins whose source
+# repository has an open-source licence are copied, the way the community archive credits and links
+# the original). To pause it, set the repository variable ELGATO_MIRROR_ENABLED to "false"
+# (Settings → Secrets and variables → Actions → Variables). A manual run with "dry run" always works
+# and only reports what it would do.
 #
 # Packages are assets of one rolling release (elgato-mirror); catalog.json and NOTICE.md go to the
 # mirror-data branch (main is protected), which publish.yml puts on GitHub Pages under /mirror/.
@@ -34,7 +36,7 @@ concurrency:
 
 jobs:
   mirror:
-    if: vars.ELGATO_MIRROR_ENABLED == 'true' || (github.event_name == 'workflow_dispatch' && inputs.dry_run)
+    if: vars.ELGATO_MIRROR_ENABLED != 'false' || (github.event_name == 'workflow_dispatch' && inputs.dry_run)
     runs-on: ubuntu-latest
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
