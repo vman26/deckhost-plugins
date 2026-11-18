@@ -46,7 +46,22 @@ jobs:
             mkdir -p site/mirror
             cp mirror-data/catalog.json mirror-data/NOTICE.md site/mirror/
           fi
-      - run: cp README.md site/index.md
+      # Pages deployed from Actions doesn't run Jekyll, so the README must be real HTML to be served at /.
+      - name: Index page
+        run: |
+          pip install --quiet markdown
+          python3 - <<'PY'
+          import html, markdown
+          body = markdown.markdown(open("README.md", encoding="utf-8").read(), extensions=["tables", "fenced_code"])
+          page = ("<!doctype html><html lang=en><meta charset=utf-8>"
+                  "<meta name=viewport content='width=device-width,initial-scale=1'>"
+                  "<title>DeckHost plugins</title>"
+                  "<style>body{font:16px/1.6 system-ui,sans-serif;max-width:48rem;margin:2rem auto;padding:0 1rem}"
+                  "pre,code{background:#8881;border-radius:4px}pre{padding:.75rem;overflow:auto}"
+                  "table{border-collapse:collapse}td,th{border:1px solid #8886;padding:.3rem .6rem}</style>"
+                  "<body>" + body)
+          open("site/index.html", "w", encoding="utf-8").write(page)
+          PY
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
