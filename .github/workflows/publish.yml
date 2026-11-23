@@ -37,7 +37,7 @@ jobs:
           fi
           mkdir -p overrides/updates
       - run: python3 tools/catalog.py build site/catalog.json --overrides overrides/updates
-      # The Elgato mirror (mirror workflow): its catalog and notice, when it has run.
+      # The Elgato mirror (mirror workflow): its catalog, notice and icons, when it has run.
       - name: Mirror
         run: |
           if git ls-remote --exit-code --heads origin mirror-data >/dev/null; then
@@ -45,6 +45,7 @@ jobs:
             git worktree add mirror-data FETCH_HEAD
             mkdir -p site/mirror
             cp mirror-data/catalog.json mirror-data/NOTICE.md site/mirror/
+            if [[ -d mirror-data/icons ]]; then cp -r mirror-data/icons site/mirror/; fi
           fi
       # Pages deployed from Actions doesn't run Jekyll, so the README must be real HTML to be served at /.
       - name: Index page

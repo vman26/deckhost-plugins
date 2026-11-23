@@ -1,18 +1,27 @@
 name: mirror
 
-# A mirror of the Elgato Marketplace archive for DeckHost's plugin store (tools/mirror.py): a catalog
-# of every plugin, and a copy of the package for each plugin whose source repository has an
-# open-source license (the allowlist is in the script; everything else is listed without a package).
+# The Elgato mirror for DeckHost's plugin store (tools/mirror.py):
 #
-# ON by default. Elgato's terms were checked against the licence gate (only plugins whose source
-# repository has an open-source licence are copied, the way the community archive credits and links
-# the original). To pause it, set the repository variable ELGATO_MIRROR_ENABLED to "false"
-# (Settings → Secrets and variables → Actions → Variables). A manual run with "dry run" always works
-# and only reports what it would do.
+#   - our own snapshot of the former Stream Deck Store (closed by Elgato in April 2024), in
+#     mirror/snapshot.json on main, with a copy of the package for each plugin whose source
+#     repository has an open-source license (the allowlist is in the script; everything else is
+#     listed without a package) and its icon;
+#   - the live Elgato Marketplace's public plugin list, each plugin with a link to its Marketplace
+#     page. Nothing is downloaded from the Marketplace or copied.
 #
-# Packages are assets of one rolling release (elgato-mirror); catalog.json and NOTICE.md go to the
-# mirror-data branch (main is protected), which publish.yml puts on GitHub Pages under /mirror/.
-# mirror/blocklist.json (reviewed, on main) lists plugins that are never copied.
+# The snapshot is made once: Run workflow with "import". That reads the community archive, commits the
+# icons to mirror-data and opens a pull request with mirror/snapshot.json. After that the archive is
+# only read for packages that haven't been copied yet.
+#
+# ON by default. To pause it, set the repository variable ELGATO_MIRROR_ENABLED to "false"; to stop
+# listing the Marketplace only, set ELGATO_MARKETPLACE_ENABLED to "false" (Settings → Secrets and
+# variables → Actions → Variables). A manual run with "dry run" always works and only reports what
+# it would do.
+#
+# Packages are assets of one rolling release (elgato-mirror); catalog.json, NOTICE.md,
+# marketplace.json and icons/ go to the mirror-data branch (main is protected), which publish.yml puts
+# on GitHub Pages under /mirror/. mirror/blocklist.json (reviewed, on main) lists plugins that are
+# never copied or listed.
 on:
   schedule:
     - cron: "17 4 * * 1"
@@ -22,6 +31,10 @@ on:
         description: "Only report what would be mirrored"
         type: boolean
         default: true
+      import:
+        description: "Make the snapshot from the community archive (once): icons, and a pull request with mirror/snapshot.json"
+        type: boolean
+        default: false
       limit:
         description: "At most this many new packages (a first run can be spread over several)"
         required: false
@@ -29,6 +42,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: mirror
@@ -40,6 +54,9 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
+    env:
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+      IMPORT: ${{ github.event_name == 'workflow_dispatch' && inputs.import }}
     steps:
       - uses: actions/checkout@v5
 
@@ -54,24 +71,55 @@ jobs:
             git worktree add --orphan -b mirror-data data
           fi
 
+      - name: Import the snapshot
+        if: env.IMPORT == 'true'
+        run: |
+          python3 tools/mirror.py import --out imported | tail -n 20
+          mkdir -p data/icons
+          if compgen -G "imported/icons/*" >/dev/null; then cp imported/icons/* data/icons/; fi
+
+      - name: The snapshot pull request
+        if: env.IMPORT == 'true' && env.DRY_RUN != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p mirror
+          cp imported/snapshot.json mirror/snapshot.json
+          if git ls-files --error-unmatch mirror/snapshot.json >/dev/null 2>&1 && git diff --quiet -- mirror/snapshot.json; then
+            echo "The snapshot on main is the same."
+            exit 0
+          fi
+          branch="mirror/snapshot-$(date -u +%Y-%m-%d)"
+          git switch -c "$branch"
+          git add mirror/snapshot.json
+          git commit -m "Elgato mirror: our own snapshot of the former Stream Deck Store" -m "From the community archive's catalogue, by the mirror workflow (import)."
+          git push --force origin "$branch"
+          gh pr create --head "$branch" --title "Elgato mirror: the snapshot" \
+            --body "Our own copy of the community archive's catalogue of the former Stream Deck Store (id, name, author, link, version), made by the mirror workflow's import. Once merged, the mirror reads it instead of the archive. The icons are already on mirror-data." \
+            || echo "A pull request for $branch is already open."
+
       - name: Mirror
         env:
           GH_TOKEN: ${{ github.token }}
-          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
           LIMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.limit || '100' }}
+          MARKETPLACE: ${{ vars.ELGATO_MARKETPLACE_ENABLED != 'false' }}
         run: |
           flags=(--limit "${LIMIT:-100}")
           if [[ "$DRY_RUN" == "true" ]]; then flags+=(--dry-run); fi
+          if [[ "$MARKETPLACE" == "true" ]]; then flags+=(--marketplace); fi
+          if [[ "$IMPORT" == "true" ]]; then flags+=(--catalogue imported/snapshot.json); fi
           python3 tools/mirror.py run --out out --previous data "${flags[@]}" | tee mirror.log
           {
             echo '### Elgato mirror'
             echo '```'
+            grep -E '^(snapshot|marketplace|[0-9]+ plugins)' mirror.log || true
+            echo '...'
             tail -n 40 mirror.log
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Packages (the rolling release)
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        if: env.DRY_RUN != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -89,9 +137,10 @@ jobs:
 
       - name: Commit to mirror-data
         id: commit
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        if: env.DRY_RUN != 'true'
         run: |
           cp out/catalog.json out/NOTICE.md data/
+          if [[ -f out/marketplace.json ]]; then cp out/marketplace.json data/; fi
           cd data
           if [[ -z "$(git status --porcelain --untracked-files=all)" ]]; then
             echo "Nothing changed."
@@ -99,7 +148,7 @@ jobs:
             exit 0
           fi
           git add -A
-          git commit -m "Elgato mirror" -m "By the mirror workflow from the archive catalogue and the plugins' licenses."
+          git commit -m "Elgato mirror" -m "By the mirror workflow from the snapshot, the plugins' licenses and the Elgato Marketplace's list."
           git push origin mirror-data
           echo "changed=true" >> "$GITHUB_OUTPUT"
 

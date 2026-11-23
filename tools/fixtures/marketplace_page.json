@@ -1,0 +1,53 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "additional_links": [
+        {"category": "Support", "display_text": "Support", "id": "link-1", "order": 0, "url": "https://github.com/o/r/issues"}
+      ],
+      "app_icon_cdn": "https://mp-cdn.elgato.com/media/11111111-1111-1111-1111-111111111111/One-app-icon.png",
+      "application": "stream-deck",
+      "default_variant_id": "variant-free",
+      "extension": "plugins",
+      "id": "11111111-1111-1111-1111-111111111111",
+      "last_published": "2026-11-20T10:00:00Z",
+      "name": "com.a.one",
+      "org_name": "Someone",
+      "org_slug": "someone",
+      "seo": "A free plugin with its source on GitHub.",
+      "slug": "one-11111111-1111-1111-1111-111111111111",
+      "tagsets": [
+        {"name": "Type", "tags": ["Music"]},
+        {"name": "OS", "tags": ["Windows", "macOS"]}
+      ],
+      "variants": [
+        {"id": "variant-free", "is_default": true, "is_free": true, "name": "default", "needs_license": false, "price": null, "prices": [], "slug": "default"}
+      ]
+    },
+    {
+      "additional_links": [
+        {"category": "Demo", "display_text": "Demo", "id": "link-2", "order": 0, "url": "https://example.com/paid"}
+      ],
+      "app_icon_cdn": "https://mp-cdn.elgato.com/media/22222222-2222-2222-2222-222222222222/Paid-app-icon.png",
+      "application": "stream-deck",
+      "default_variant_id": "variant-paid",
+      "extension": "plugins",
+      "id": "22222222-2222-2222-2222-222222222222",
+      "last_published": "2026-11-21T10:00:00Z",
+      "name": "Paid Plugin",
+      "org_name": "Seller",
+      "org_slug": "seller",
+      "seo": "A paid plugin.",
+      "slug": "paid-plugin-22222222-2222-2222-2222-222222222222",
+      "tagsets": [{"name": "OS", "tags": ["Windows"]}],
+      "variants": [
+        {"id": "variant-paid", "is_default": true, "is_free": false, "name": "default", "needs_license": false,
+         "price": {"currency": "EUR", "plan": "once", "savings_absolute": null, "savings_percentage": null, "unit_amount": 690, "unit_amount_discounted": null},
+         "prices": [{"currency": "EUR", "plan": "once", "savings_absolute": null, "savings_percentage": null, "unit_amount": 690, "unit_amount_discounted": null}],
+         "slug": "default"}
+      ]
+    }
+  ]
+}

@@ -105,27 +105,42 @@ DeckHost shows a **Buy** button that opens the page; buyers install the file the
 
 ## Elgato mirror
 
-DeckHost's store also lists the Elgato Marketplace through a community archive. The **mirror**
-workflow (`tools/mirror.py`, weekly) keeps a catalog of that archive here and **copies a plugin's
-package only when its source repository has an open-source license that allows it** (MIT, Apache-2.0,
-BSD, ISC, MPL-2.0, the GPL family, Unlicense, CC0; see `ALLOWED_LICENSES`). A plugin without a GitHub
-repository, without a license or with another one (non-commercial, "all rights reserved") is listed
-with its Marketplace link and never copied. A copy is checked (a valid zip with a plugin manifest of the
-same id, at most 50 MB, no paths outside the archive) and kept with its SHA-256; DeckHost refuses a
-download that doesn't match.
+DeckHost's store also lists Stream Deck plugins from Elgato, from two places. The **mirror** workflow
+(`tools/mirror.py`, weekly) builds both into one list, `mirror/catalog.json`:
 
-- The files: `mirror/catalog.json` and `mirror/NOTICE.md` (authors, licenses, sources) on this
-  repository's GitHub Pages; the packages are assets of the `elgato-mirror` release.
+- **The former Stream Deck Store** (closed by Elgato in April 2024). We keep our own snapshot of it in
+  [`mirror/snapshot.json`](mirror), made once from the community archive
+  ([nekename/ElgatoAppStoreArchive](https://github.com/nekename/ElgatoAppStoreArchive)), with each
+  plugin's icon. A plugin's package is **copied only when its source repository has an open-source license
+  that allows it** (MIT, Apache-2.0, BSD, ISC, MPL-2.0, the GPL family, Unlicense, CC0; see
+  `ALLOWED_LICENSES`). A plugin without a GitHub repository, without a license or with another one
+  (non-commercial, "all rights reserved") is listed with its Marketplace link and never copied. A copy is
+  checked (a valid zip with a plugin manifest of the same id, at most 50 MB, no paths outside the
+  archive) and kept with its SHA-256; DeckHost refuses a download that doesn't match.
+- **The Elgato Marketplace** (all current plugins). Its public plugin list (name, author, icon, price,
+  platforms) is read each week, and each plugin is listed with a link to its Marketplace page. **Nothing is
+  downloaded from the Marketplace or copied**: you get the plugin there (an Elgato account is needed) and
+  install the file with **Install plugin…**. A Marketplace plugin that is also in the snapshot (same name
+  and author) becomes one entry, with the snapshot's copy if it has one. When the Marketplace can't be
+  read, last week's list stays.
+
+A plugin that is also in [`plugins/`](plugins) (the reviewed catalog, with automatic updates) is left out
+of the mirror. New Stream Deck plugins on GitHub come in through the **discover** workflow (see
+*Found on GitHub*).
+
+- The files: `mirror/catalog.json`, `mirror/NOTICE.md` (authors, licenses, sources) and `mirror/icons/` on
+  this repository's GitHub Pages; the packages are assets of the `elgato-mirror` release.
 - **Takedown:** open an issue, or a pull request adding the plugin id (or its repository) to
-  [`mirror/blocklist.json`](mirror/blocklist.json). The next run deletes the package and lists the
-  plugin without a download.
+  [`mirror/blocklist.json`](mirror/blocklist.json); a Marketplace-only plugin's id is
+  `marketplace:<its Marketplace id>`. The next run deletes the package and leaves the plugin out (from the
+  Marketplace list) or lists it without a download (from the snapshot).
 - **On.** The workflow runs weekly; set the repository variable `ELGATO_MIRROR_ENABLED` to `false` to pause
-  it. **Actions → mirror → Run workflow** with *dry run* only reports what it would do. The licence gate is
-  the condition for the copies: Elgato's terms were checked against it.
-- **Notice.** We are not the authors of these plugins and are not affiliated with Elgato. A package is the
-  community archive's copy ([nekename/ElgatoAppStoreArchive](https://github.com/nekename/ElgatoAppStoreArchive))
-  of what Elgato's servers served, unchanged, with its SHA-256; every plugin keeps its licence and author
-  (`mirror/NOTICE.md` lists them).
+  it, or `ELGATO_MARKETPLACE_ENABLED` to `false` to stop listing the Marketplace only. **Actions → mirror →
+  Run workflow** with *dry run* only reports what it would do; with *import* it makes the snapshot (once:
+  the icons, and a pull request with `mirror/snapshot.json`). Until that pull request is merged the
+  mirror reads the archive's catalogue, as before.
+- **Notice.** We are not the authors of these plugins and are not affiliated with Elgato. Every plugin
+  keeps its licence and author (`mirror/NOTICE.md` lists the copied ones).
 
 ## Rules
 
