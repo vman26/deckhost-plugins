@@ -4,7 +4,7 @@ name: check
 # and version) and that DeckHost loads it (DeckHost --check-plugin, from DeckHost's latest release).
 on:
   pull_request:
-    paths: ["plugins/**", "tools/mirror.py", "tools/test_mirror.py", "mirror/**", ".github/workflows/mirror.yml"]
+    paths: ["plugins/**", "tools/**", "mirror/**", ".github/workflows/mirror.yml"]
 
 permissions:
   contents: read
@@ -17,10 +17,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Mirror tools
+      - name: Tools
         run: |
-          python3 -I -m unittest discover -s tools -p 'test_mirror.py'
+          python3 -I -m unittest discover -s tools -p 'test_*.py'
           python3 -c "import json; json.load(open('mirror/blocklist.json'))"
+          if [[ -f mirror/snapshot.json ]]; then python3 -c "import json; json.load(open('mirror/snapshot.json'))"; fi
 
       - name: Changed entries
         id: changed

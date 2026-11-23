@@ -216,13 +216,26 @@ def from_release(url: str) -> int:
     return check([path])
 
 
+SEARCH_PAGE_SIZE = 100
+SEARCH_MAX_PAGES = 10  # GitHub's search returns at most 1000 results
+
+
+def search_repositories(query: str):
+    """Every repository the search finds, page by page (newest updates first)."""
+    quoted = urllib.parse.quote(query)
+    for page in range(1, SEARCH_MAX_PAGES + 1):
+        items = github(f"search/repositories?q={quoted}&sort=updated&per_page={SEARCH_PAGE_SIZE}&page={page}").get("items", [])
+        yield from items
+        if len(items) < SEARCH_PAGE_SIZE:
+            return
+
+
 def discover(topics: list[str]) -> int:
     """Entries for repositories with plugin topics and a plugin file in a release, not listed yet."""
     listed = {load(path).get("repository", "").lower() for path in PLUGINS.glob("*.json")}
     written = 0
     for topic in topics:
-        query = urllib.parse.quote(f"topic:{topic} archived:false")
-        for repo in github(f"search/repositories?q={query}&sort=updated&per_page=50").get("items", []):
+        for repo in search_repositories(f"topic:{topic} archived:false"):
             url = repo["html_url"]
             if url.lower() in listed:
                 continue
