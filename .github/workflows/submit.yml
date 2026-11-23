@@ -69,6 +69,10 @@ jobs:
           git push --force origin "$branch"
           body="Entry for $ID from $URL (its newest release; checksum computed by the submit workflow)."
           if [[ -n "$ISSUE" ]]; then body="$body Closes #$ISSUE."; fi
-          pr="$(gh pr create --head "$branch" --title "Add $ID" --body "$body" 2>/dev/null || gh pr view "$branch" --json url --jq .url)"
+          if ! pr="$(gh pr create --head "$branch" --title "Add $ID" --body "$body" 2>/dev/null || gh pr view "$branch" --json url --jq .url 2>/dev/null)"; then
+            # Actions may not be allowed to open pull requests (Settings > Actions > General): link the branch instead.
+            pr="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/${{ github.event.repository.default_branch }}...$branch?expand=1"
+            echo "::warning::Could not open the pull request. Open it from $pr"
+          fi
           echo "$pr"
           if [[ -n "$ISSUE" ]]; then gh issue comment "$ISSUE" --body "Thanks! The entry is in $pr; a maintainer reviews it."; fi
