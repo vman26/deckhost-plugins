@@ -38,5 +38,16 @@ jobs:
           git commit -m "Plugins found on GitHub"
           git push --force origin "$branch"
           list="$(git show --name-only --format= HEAD | sed 's/^/- /')"
-          gh pr create --head "$branch" --title "Plugins found on GitHub ($(date -u +%Y-%m-%d))" \
-            --body "$(printf 'Found by the discover workflow (repository topics and releases). Review each before merging: the code, the license, the description.\n\n%s' "$list")"
+          title="Plugins found on GitHub ($(date -u +%Y-%m-%d))"
+          body="$(printf 'Found by the discover workflow (repository topics and releases). Review each before merging: the code, the license, the description.\n\n%s' "$list")"
+          if pr="$(gh pr create --head "$branch" --title "$title" --body "$body")" \
+             || pr="$(gh pr view "$branch" --json url --jq .url 2>/dev/null)"; then
+            echo "$pr"
+          else
+            # Without "Allow GitHub Actions to create and approve pull requests" (Settings > Actions >
+            # General) the token can push but not open the pull request: leave a link to open it by hand.
+            compare="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/$GITHUB_REF_NAME...$branch?expand=1"
+            echo "::warning::Could not open the pull request. Open it from $compare"
+            printf '### Plugins found on GitHub\n\nThe branch `%s` is pushed; [open the pull request](%s).\n\n%s\n' \
+              "$branch" "$compare" "$list" >> "$GITHUB_STEP_SUMMARY"
+          fi
