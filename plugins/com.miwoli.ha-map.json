@@ -2,7 +2,7 @@
   "id": "com.miwoli.ha-map",
   "name": "HA Map",
   "author": "Miwoli",
-  "description": "",
+  "description": "An OpenStreetMap of the people in Home Assistant across the deck, plus per-person keys",
   "version": "0.2.1.0",
   "repository": "https://github.com/Miwoli/opendeck-hub",
   "download_url": "https://github.com/Miwoli/opendeck-hub/releases/download/ha-map-v0.2.1/com.miwoli.ha-map.sdPlugin-0.2.1.streamDeckPlugin",
