@@ -1,0 +1,10 @@
+{
+  "id": "com.localmediacontrollers.vlc",
+  "name": "VLC Local Controller",
+  "author": "Cyb3r (cyber-suli.hu)",
+  "description": "Helyi VLC-vezérlés a loopback HTTP-felületen – by Cyb3r (cyber-suli.hu).",
+  "version": "1.1.0.0",
+  "repository": "https://github.com/Cyber-Suli/VLC-Local-Controller-for-Stream-Deck",
+  "download_url": "https://github.com/Cyber-Suli/VLC-Local-Controller-for-Stream-Deck/releases/download/v1.1.0/com.localmediacontrollers.vlc.streamDeckPlugin",
+  "sha256": "6eb14310808e2fa6b091ad866f1d9b4cd2f7ead0086b7b644c6e164e41666264"
+}

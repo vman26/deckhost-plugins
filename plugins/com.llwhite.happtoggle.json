@@ -1,0 +1,11 @@
+{
+  "id": "com.llwhite.happtoggle",
+  "name": "Happ Toggle",
+  "author": "Alexey Storozhilov",
+  "description": "Toggle Happ VPN and test connection speed. Select a test service by key or dial; display VPN status and measured speed on Stream Deck+ and Neo.",
+  "version": "1.12.4.0",
+  "repository": "https://github.com/llWHiTE/happ-toggle",
+  "download_url": "https://github.com/llWHiTE/happ-toggle/releases/download/v1.12.4/com.llwhite.happtoggle.streamDeckPlugin",
+  "sha256": "8a58d7ad613a8643ac1c89b19612b48649bb91e57a2e56414090d240601fc22d",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "digital.astronauta.sysmonitor",
+  "name": "Monitor de máquina",
+  "author": "Eduardo Campos",
+  "description": "CPU, RAM, GPU, VRAM, discos (espaço e velocidade) e rede do PC. Coleta sozinho, sem painel e sem admin.",
+  "version": "2.1.0.0",
+  "repository": "https://github.com/eueduardocampos/stream-deck-plugins",
+  "download_url": "https://github.com/eueduardocampos/stream-deck-plugins/releases/download/v2.2.0/digital.astronauta.sysmonitor.streamDeckPlugin",
+  "sha256": "288d1024666354b7a942d12f8df71a41c7f4833c72e3b4a1c8f98ba49cbebe2d",
+  "license": "MIT"
+}

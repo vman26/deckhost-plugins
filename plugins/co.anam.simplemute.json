@@ -1,0 +1,10 @@
+{
+  "id": "co.anam.simplemute",
+  "name": "SimpleMute",
+  "author": "Anam Ahmed",
+  "description": "One mute key for every browser-based meeting. SimpleMute detects the meeting running in your browser and mutes or unmutes it, with keys that show live on/off state. Requires the SimpleMute browser extension.",
+  "version": "0.2.0.0",
+  "repository": "https://github.com/theanam/streamdeck-simplemute",
+  "download_url": "https://github.com/theanam/streamdeck-simplemute/releases/download/v0.2.0/co.anam.simplemute.streamDeckPlugin",
+  "sha256": "bd96b96c47bcd14a2606910a4e9d4194f24372840a682fa832b6f2f872aa7ea6"
+}

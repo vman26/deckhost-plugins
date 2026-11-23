@@ -1,0 +1,10 @@
+{
+  "id": "com.mevo-companion",
+  "name": "Mevo Companion",
+  "author": "Mevo Companion",
+  "description": "Power off, reboot, update, and monitor Mevo cameras through the local Mevo Companion app.",
+  "version": "0.1.4.0",
+  "repository": "https://github.com/AKASGamingYT/mevo-companion",
+  "download_url": "https://github.com/AKASGamingYT/mevo-companion/releases/download/v0.1.0/MevoCompanion-StreamDeck.zip",
+  "sha256": "7245662890c042788e0b52a88b41d8e0ed0f3a1b6056bf00436757161d2fdc8d"
+}

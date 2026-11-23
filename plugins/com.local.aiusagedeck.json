@@ -1,0 +1,11 @@
+{
+  "id": "com.local.aiusagedeck",
+  "name": "AI Usage Deck",
+  "author": "Local Personal Tools",
+  "description": "Local subscription quota monitor for Claude, Codex and Antigravity. No telemetry.",
+  "version": "0.1.0.0",
+  "repository": "https://github.com/hyperxnez/stream-deck-ai-usage-monitor",
+  "download_url": "https://github.com/hyperxnez/stream-deck-ai-usage-monitor/releases/download/v0.1.0/com.local.aiusagedeck.streamDeckPlugin",
+  "sha256": "c89ae659f80363f2a87f84ac67a99952ef5eafeea653ab5a0dc2d9fe6e9bde3b",
+  "license": "MIT"
+}

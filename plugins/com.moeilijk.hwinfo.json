@@ -1,0 +1,11 @@
+{
+  "id": "com.moeilijk.hwinfo",
+  "name": "HWiNFO",
+  "author": "moeilijk",
+  "description": "Display hardware sensor readings from HWiNFO64 (shared memory). Not affiliated with HWiNFO64; see https://www.hwinfo.com",
+  "version": "3.1.4.0",
+  "repository": "https://github.com/moeilijk/hwinfo-streamdeck",
+  "download_url": "https://github.com/moeilijk/hwinfo-streamdeck/releases/download/v3.1.4/com.moeilijk.hwinfo-3.1.4.streamDeckPlugin",
+  "sha256": "0d2ff5d2036d7afef97cdaafcacc0eb0752899b1597abdd260a52aa76ca45e60",
+  "license": "GPL-3.0"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "com.salikov.claude-sessions",
+  "name": "Claude Sessions",
+  "author": "Alexander Salikov",
+  "description": "Shows Claude Code and Codex CLI sessions plus loaded Codex desktop tasks with live status. Press to open the matching iTerm2 tab or Codex task. macOS only; CLI navigation requires iTerm2.",
+  "version": "0.2.6.0",
+  "repository": "https://github.com/SalikovAlex/streamdeck-claude-sessions",
+  "download_url": "https://github.com/SalikovAlex/streamdeck-claude-sessions/releases/download/v0.2.6/com.salikov.claude-sessions.streamDeckPlugin",
+  "sha256": "6881714e0322e96d9f54f24a41848dee84e428e4a814abb49e9daf10c9d56a99",
+  "license": "MIT"
+}

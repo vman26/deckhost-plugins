@@ -1,0 +1,11 @@
+{
+  "id": "io.github.mugen0815.hermes-streamdeck",
+  "name": "Hermes Streamdeck",
+  "author": "Mugen0815",
+  "description": "Start, monitor and stop Hermes Agent runs from your Stream Deck. Unofficial community plugin.",
+  "version": "0.3.0.0",
+  "repository": "https://github.com/Mugen0815/hermes-streamdeck",
+  "download_url": "https://github.com/Mugen0815/hermes-streamdeck/releases/download/v0.3.0/io.github.mugen0815.hermes-streamdeck.streamDeckPlugin",
+  "sha256": "f1a6c9f159b13508dcacf38aee7d67a8b5c0e9e8745360eda1992b535b7b5f34",
+  "license": "MIT"
+}

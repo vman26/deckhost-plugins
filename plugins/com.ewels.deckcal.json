@@ -1,0 +1,11 @@
+{
+  "id": "com.ewels.deckcal",
+  "name": "DeckCal",
+  "author": "Phil Ewels",
+  "description": "Live countdown to your next Google Calendar meeting, sweeping across as many keys as you give it.",
+  "version": "1.1.1.0",
+  "repository": "https://github.com/ewels/DeckCal",
+  "download_url": "https://github.com/ewels/DeckCal/releases/download/v1.1.1/com.ewels.deckcal.streamDeckPlugin",
+  "sha256": "1ec4959bf4d7d9d4fd7d387e0671cd5608510e24920b6942261adae008e2c286",
+  "license": "MIT"
+}

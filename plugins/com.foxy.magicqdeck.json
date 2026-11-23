@@ -1,0 +1,11 @@
+{
+  "id": "com.foxy.magicqdeck",
+  "name": "MagicQ Deck",
+  "author": "FoxyCTG21",
+  "description": "Control ChamSys MagicQ from a Stream Deck: executors with automatic names and colours, playbacks, pages and live feedback over OSC.",
+  "version": "1.0.1.0",
+  "repository": "https://github.com/FoxyCTG21/magicq-streamdeck",
+  "download_url": "https://github.com/FoxyCTG21/magicq-streamdeck/releases/download/v1.0.1/com.foxy.magicqdeck.streamDeckPlugin",
+  "sha256": "dee988741e19f50faa3f234e9a63bb07b5074e716a171711bd4324a109a11640",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "io.github.hsalazr.deck-for-t3code",
+  "name": "Deck for T3 Code",
+  "author": "hsalazr",
+  "description": "Your T3 Code threads on Stream Deck. Live status, a flash when an agent needs you, and subagents folded into their thread.",
+  "version": "1.2.3.0",
+  "repository": "https://github.com/hsalazr/deck-for-t3code",
+  "download_url": "https://github.com/hsalazr/deck-for-t3code/releases/download/v1.2.3/io.github.hsalazr.deck-for-t3code.streamDeckPlugin",
+  "sha256": "7a5c3b6c223345195ef15f870f34018be8953e6133da7ecce5d22d446a98a0f9",
+  "license": "GPL-3.0"
+}

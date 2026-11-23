@@ -1,0 +1,11 @@
+{
+  "id": "au.gkw.orcaslicer",
+  "name": "OrcaSlicer",
+  "author": "GKW",
+  "description": "Free, open-source OrcaSlicer shortcuts for Stream Deck. Pick any of OrcaSlicer's commands per key, with OrcaSlicer's own icons. Follows the shortcuts you've changed in OrcaSlicer, and brings OrcaSlicer to the front when needed.",
+  "version": "0.1.0.0",
+  "repository": "https://github.com/Glenno-H/orcaslicer-streamdeck",
+  "download_url": "https://github.com/Glenno-H/orcaslicer-streamdeck/releases/download/v0.1.0/au.gkw.orcaslicer.streamDeckPlugin",
+  "sha256": "2b95d58f26233640c57e993a8fb52848ad7006d72be571a6593763ffe3cd60aa",
+  "license": "AGPL-3.0"
+}

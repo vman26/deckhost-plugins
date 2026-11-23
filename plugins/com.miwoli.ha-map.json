@@ -1,0 +1,11 @@
+{
+  "id": "com.miwoli.ha-map",
+  "name": "HA Map",
+  "author": "Miwoli",
+  "description": "",
+  "version": "0.2.1.0",
+  "repository": "https://github.com/Miwoli/opendeck-hub",
+  "download_url": "https://github.com/Miwoli/opendeck-hub/releases/download/ha-map-v0.2.1/com.miwoli.ha-map.sdPlugin-0.2.1.streamDeckPlugin",
+  "sha256": "aa49abc6bb746164423e1662f18696f39e6f41ddeb521a378e153197c3d58286",
+  "license": "MIT"
+}

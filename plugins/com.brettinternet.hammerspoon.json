@@ -1,0 +1,11 @@
+{
+  "id": "com.brettinternet.hammerspoon",
+  "name": "Hammerspoon",
+  "author": "Brett",
+  "description": "Control Hammerspoon actions from Stream Deck.",
+  "version": "0.6.0.0",
+  "repository": "https://github.com/brettinternet/stream-deck-hammerspoon",
+  "download_url": "https://github.com/brettinternet/stream-deck-hammerspoon/releases/download/v0.6.0.0/com.brettinternet.hammerspoon-0.6.0.0.streamDeckPlugin",
+  "sha256": "6311328b3a7b28f937ea63650c56cdf604eb2c50214672f433e9c3dfd7146d1a",
+  "license": "MIT"
+}

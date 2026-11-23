@@ -1,0 +1,11 @@
+{
+  "id": "com.len.fetcher",
+  "name": "Fetcher: JSON & HTML Monitor",
+  "author": "lenadweb",
+  "description": "Generic Stream Deck plugin to fetch JSON and extract a value via JSON path to display on keys or dials.",
+  "version": "0.2.5.0",
+  "repository": "https://github.com/lenadweb/stream-deck-fetcher",
+  "download_url": "https://github.com/lenadweb/stream-deck-fetcher/releases/download/v0.2.5.0/com.len.fetcher.streamDeckPlugin",
+  "sha256": "b2bce322322a946e1b4cbf4cb4760f0e9e4054e6eabfbe4ebe5240810497d83c",
+  "license": "MIT"
+}

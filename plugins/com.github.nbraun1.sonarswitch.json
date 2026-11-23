@@ -1,0 +1,11 @@
+{
+  "id": "com.github.nbraun1.sonarswitch",
+  "name": "Sonar Device Switcher",
+  "author": "nbraun1",
+  "description": "Switch the output and input devices of SteelSeries GG Sonar channels with one key press and set their volume and mute state.",
+  "version": "1.0.0.0",
+  "repository": "https://github.com/nbraun1/streamdeck-steelseries-sonar-switcher",
+  "download_url": "https://github.com/nbraun1/streamdeck-steelseries-sonar-switcher/releases/download/v1.0.0/com.github.nbraun1.sonarswitch.streamDeckPlugin",
+  "sha256": "08270766e9a6cc4525c6b1d07990b091604f02b809b774f77edc7fd30e495621",
+  "license": "MIT"
+}

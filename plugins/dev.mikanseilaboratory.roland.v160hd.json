@@ -1,0 +1,11 @@
+{
+  "id": "dev.mikanseilaboratory.roland.v160hd",
+  "name": "Roland V-160HD [MikanseiLaboratory]",
+  "author": "未完成成果物研究所",
+  "description": "Roland V-160HD LAN control for Stream Deck.",
+  "version": "0.1.0.0",
+  "repository": "https://github.com/MikanseiLaboratory/streamdeck-roland-v160hd",
+  "download_url": "https://github.com/MikanseiLaboratory/streamdeck-roland-v160hd/releases/download/v0.1.0.0/dev.mikanseilaboratory.roland.v160hd.streamDeckPlugin",
+  "sha256": "7a1d2461e14acfbd156e817e8f262720afdb5cecbf19af9482a9fe7cfcbc5c70",
+  "license": "MIT"
+}

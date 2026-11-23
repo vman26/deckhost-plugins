@@ -1,0 +1,11 @@
+{
+  "id": "com.andondeck.plugin",
+  "name": "Andon Deck for Claude Code",
+  "author": "claude-deck contributors",
+  "description": "Control Claude Code from your Stream Deck. Every key's border shows Claude's state the way a factory andon light does: working, waiting for you, or stopped. Live status, prompt queueing, permission approvals, plan limits and usage history, and a full-deck alert when Claude needs you — free and open source.",
+  "version": "1.0.0.0",
+  "repository": "https://github.com/web-workers-com/andondeck",
+  "download_url": "https://github.com/web-workers-com/andondeck/releases/download/v1.0.0/andondeck-1.0.0.streamDeckPlugin",
+  "sha256": "0e42a1800f129fb683b7843fe8fb7af0ab8f471c0a26580ee29934b10ea272c5",
+  "license": "MIT"
+}

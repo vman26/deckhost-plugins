@@ -1,0 +1,11 @@
+{
+  "id": "com.tj.livenflscores",
+  "name": "Live NFL Scores",
+  "author": "T.J. Lauerman aka ThatSportsGamer",
+  "description": "Shows live NFL scores on your Stream Deck. Track one team per key, or lay out the whole week with the Scoreboard action — score, quarter, clock, and possession at a glance.",
+  "version": "1.1.6.0",
+  "repository": "https://github.com/ThatSportsGamer/live-nfl-scores-for-stream-deck",
+  "download_url": "https://github.com/ThatSportsGamer/live-nfl-scores-for-stream-deck/releases/download/v1.1.6.0/Live.NFL.Scores.streamDeckPlugin",
+  "sha256": "352efac65decfd4eb4dc4ae542277e556f5a8b5773f6f4b59bf77997c0dcb723",
+  "license": "MIT"
+}

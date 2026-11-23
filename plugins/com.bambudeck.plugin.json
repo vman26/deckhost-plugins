@@ -1,0 +1,11 @@
+{
+  "id": "com.bambudeck.plugin",
+  "name": "Bambu Deck",
+  "author": "Bambu Deck",
+  "description": "Watch less. Print more. Bao the panda watches your Bambu Lab printers: progress, AMS spools, temperatures, and the whole deck when a print is done or needs you. Runs on your LAN. Unofficial, not affiliated with Bambu Lab.",
+  "version": "0.1.12.0",
+  "repository": "https://github.com/web-workers-com/bambu-deck",
+  "download_url": "https://github.com/web-workers-com/bambu-deck/releases/download/v0.1.12/bambu-deck-0.1.12.streamDeckPlugin",
+  "sha256": "ae6346dac1e6d4051e27fde7acdd56e3becc336436d0ee49c355769df6f7c617",
+  "license": "MIT"
+}

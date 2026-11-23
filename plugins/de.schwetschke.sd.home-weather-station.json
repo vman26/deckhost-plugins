@@ -1,0 +1,11 @@
+{
+  "id": "de.schwetschke.sd.home-weather-station",
+  "name": "Home Weather Station",
+  "author": "Stefan Schwetschke",
+  "description": "Shows indoor and outdoor temperature, humidity, CO2, noise, pressure, rain, wind and trends from a Netatmo weather station on your keys. Unofficial: independent project, not affiliated with or endorsed by Netatmo, Elgato or Corsair.",
+  "version": "0.1.4.0",
+  "repository": "https://github.com/geggo98/stream-deck-home-weather-station",
+  "download_url": "https://github.com/geggo98/stream-deck-home-weather-station/releases/download/v0.1.4/de.schwetschke.sd.home-weather-station.streamDeckPlugin",
+  "sha256": "e75a5f1da55fe536623896fbf0132e01b0a04a25aaceb70315ea1e4461f00dce",
+  "license": "MIT"
+}

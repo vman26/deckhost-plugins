@@ -1,0 +1,11 @@
+{
+  "id": "net.jwowk.voicemeeter",
+  "name": "Voicemeeter",
+  "author": "jwowk",
+  "description": "Control Voicemeeter Banana from your Stream Deck — strip and bus faders, EQ, comp/gate, pan, routing and the recorder, with live Stream Deck + dials.",
+  "version": "1.0.1.0",
+  "repository": "https://github.com/joshuawowk/voicemeeter-streamdeck-dials",
+  "download_url": "https://github.com/joshuawowk/voicemeeter-streamdeck-dials/releases/download/v1.0.1/net.jwowk.voicemeeter.streamDeckPlugin",
+  "sha256": "069dd104e13bd5e6ff2207f60cbe113e88771884274a30e09b7b6560ee6c3c9d",
+  "license": "GPL-3.0"
+}

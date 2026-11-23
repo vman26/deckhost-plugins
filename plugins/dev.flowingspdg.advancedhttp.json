@@ -1,0 +1,11 @@
+{
+  "id": "dev.flowingspdg.advancedhttp",
+  "name": "Advanced HTTP Client [FlowingSPDG]",
+  "author": "Shugo Kawamura",
+  "description": "Advanced HTTP Client",
+  "version": "0.4.0",
+  "repository": "https://github.com/MikanseiLaboratory/streamdeck-advanced-http",
+  "download_url": "https://github.com/MikanseiLaboratory/streamdeck-advanced-http/releases/download/v0.4.0/dev.flowingspdg.advancedhttp.streamDeckPlugin",
+  "sha256": "cb53044528b4beefa31f576b65f47729cd6be3223de8dca89d1c244d6642d70e",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "com.ratio32.faderlight.mixer",
+  "name": "Faderlight",
+  "author": "ratio32.com",
+  "description": "Controls and monitors RME interfaces through TotalMix FX: channel keys with meters, monitoring, snapshots and a full console layout for the XL. Not affiliated with RME or Elgato.",
+  "version": "0.1.1.0",
+  "repository": "https://github.com/akorobko/faderlight",
+  "download_url": "https://github.com/akorobko/faderlight/releases/download/v0.1.1/Faderlight-0.1.1.streamDeckPlugin",
+  "sha256": "4f897be9527eedc851483f5331bf66d2c7275d2dab4f9d750edbe747b0354ada",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "com.niklas970.faderust",
+  "name": "Faderust",
+  "author": "Niklas970",
+  "description": "Steuert den Faderust-Mixer: Fader, Stummschalten, Presets und Windows-Standardgeräte.",
+  "version": "0.3.7.0",
+  "repository": "https://github.com/Niklas970/faderust",
+  "download_url": "https://github.com/Niklas970/faderust/releases/download/v0.8.7/com.niklas970.faderust.streamDeckPlugin",
+  "sha256": "a62e9109fee3bdfd468a7cb410f462eb2d20b50e488f2f55dfcc3dc019904374",
+  "license": "MIT"
+}

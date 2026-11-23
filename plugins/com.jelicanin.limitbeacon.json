@@ -1,0 +1,11 @@
+{
+  "id": "com.jelicanin.limitbeacon",
+  "name": "LimitBeacon",
+  "author": "Milan Jelicanin",
+  "description": "Monitor Codex AI usage limits from Stream Deck.",
+  "version": "1.3.1.0",
+  "repository": "https://github.com/jelicanin/limitbeacon-streamdeck",
+  "download_url": "https://github.com/jelicanin/limitbeacon-streamdeck/releases/download/v1.3.1/LimitBeacon-v1.3.1.streamDeckPlugin",
+  "sha256": "1c131fdd374cb2e3556bc6c07586c4248aa8ccb765cad5d954a1a7d32297a4a8",
+  "license": "MIT"
+}

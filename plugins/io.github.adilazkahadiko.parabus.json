@@ -1,0 +1,11 @@
+{
+  "id": "io.github.adilazkahadiko.parabus",
+  "name": "ParaBus",
+  "author": "adilazkahadiko",
+  "description": "Local buttons for ParaBus external control API v1.",
+  "version": "0.1.3.0",
+  "repository": "https://github.com/adilazkahadiko/ParaBus-StreamDeck",
+  "download_url": "https://github.com/adilazkahadiko/ParaBus-StreamDeck/releases/download/v0.1.3/io.github.adilazkahadiko.parabus.streamDeckPlugin",
+  "sha256": "5075a3cbea88a4f65236de13ac08b02b3d83be6935eeb99c311578da2553765a",
+  "license": "GPL-3.0"
+}

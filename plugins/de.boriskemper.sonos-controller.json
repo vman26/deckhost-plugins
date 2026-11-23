@@ -1,0 +1,11 @@
+{
+  "id": "de.boriskemper.sonos-controller",
+  "name": "SONOS Controller",
+  "author": "Boris Kemper",
+  "description": "Control your SONOS system with your StreamDeck+\nThis plugin is not connected to SONOS.\n\nThis plugin uses SONOS-TS by Stephan van Rooij (https://sonos-ts.svrooij.io/), licensed under MIT License.\n\nIcons by\nhttps://pictogrammers.com\n\nsdpi-components by GeekyEggo\nhttps://github.com/geekyeggo/sdpi-components",
+  "version": "0.4.10.0",
+  "repository": "https://github.com/rocklobster42195/streamdeck-sonos-controller",
+  "download_url": "https://github.com/rocklobster42195/streamdeck-sonos-controller/releases/download/v0.4.10/de.boriskemper.sonos-controller-v0.4.10.streamDeckPlugin",
+  "sha256": "1ab9fcfc4a6735684251ea2ef2f44294be09f0bb24efcfe4a991071577b6b7fe",
+  "license": "MIT"
+}

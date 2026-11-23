@@ -1,0 +1,11 @@
+{
+  "id": "com.ronyladouceur.quota-meter",
+  "name": "Quota Meter",
+  "author": "RonyLaDouceur",
+  "description": "Keep an eye on your Claude Code subscription usage: 5-hour session and weekly quotas, with the time left until they reset.",
+  "version": "1.0.0.0",
+  "repository": "https://github.com/RonyLaDouceur/quota-meter",
+  "download_url": "https://github.com/RonyLaDouceur/quota-meter/releases/download/v1.0.0/com.ronyladouceur.quota-meter.streamDeckPlugin",
+  "sha256": "9c08ed07794b0aab84f7adee61f6eb1b7574d17fa63d89370728b761dd1869b6",
+  "license": "MIT"
+}

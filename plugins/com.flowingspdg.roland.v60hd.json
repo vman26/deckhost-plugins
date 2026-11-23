@@ -1,0 +1,11 @@
+{
+  "id": "com.flowingspdg.roland.v60hd",
+  "name": "Roland V-60HD [MikanseiLaboratory]",
+  "author": "Shugo Kawamura",
+  "description": "Roland V-60HD LAN control for Stream Deck.",
+  "version": "0.1.0.0",
+  "repository": "https://github.com/MikanseiLaboratory/streamdeck-roland-v60hd",
+  "download_url": "https://github.com/MikanseiLaboratory/streamdeck-roland-v60hd/releases/download/v0.1.0/com.flowingspdg.roland.v60hd.streamDeckPlugin",
+  "sha256": "062ba8262c715c3c60f3021346b88731463bc07bf6409954b5d63f8ceb027b60",
+  "license": "MIT"
+}

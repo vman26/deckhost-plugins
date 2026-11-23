@@ -1,0 +1,11 @@
+{
+  "id": "agency.redmango.ptzhub",
+  "name": "PTZ Hub",
+  "author": "Redmango",
+  "description": "Recall PTZ Hub presets and control the camera from Stream Deck: live preset thumbnails, active preset highlighted, STOP, Home, zoom and small moves.",
+  "version": "1.4.0.0",
+  "repository": "https://github.com/Redmango-Agency/PTZhub",
+  "download_url": "https://github.com/Redmango-Agency/PTZhub/releases/download/v1.5.6/PTZ-Hub.streamDeckPlugin",
+  "sha256": "3f4a2a4488e20a46b3b22cfe2fa07c8a545363f1ba074a69b04ea18e2ab40c03",
+  "license": "MIT"
+}

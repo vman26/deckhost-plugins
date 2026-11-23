@@ -1,0 +1,11 @@
+{
+  "id": "com.coreloop.t3",
+  "name": "T3 Deck",
+  "author": "Core Loop",
+  "description": "T3 Code on your Stream Deck: live thread status (needs you, failed, done, working), open threads, quick replies, stop and mark done, T3's shortcuts and dials. The deck follows the program in front: T3 Code gets its own profile.",
+  "version": "1.0.0.0",
+  "repository": "https://github.com/maxzinko/t3-deck",
+  "download_url": "https://github.com/maxzinko/t3-deck/releases/download/v1.0.0/com.coreloop.t3.streamDeckPlugin",
+  "sha256": "8a5052793f794f49ed106cd0626055ce81e56ceee76a05ca4d660fc22a20040b",
+  "license": "MIT"
+}

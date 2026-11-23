@@ -1,0 +1,11 @@
+{
+  "id": "com.fcannizzaro.hoyodeck",
+  "name": "HoYo Deck",
+  "author": "fcannizzaro",
+  "description": "HoYoverse games utilities for Stream Deck (Genshin Impact, Honkai: Star Rail and Zenless Zone Zero)",
+  "version": "1.1.0.2",
+  "repository": "https://github.com/fcannizzaro/hoyodeck",
+  "download_url": "https://github.com/fcannizzaro/hoyodeck/releases/download/v1.1.0.2/com.fcannizzaro.hoyodeck.streamDeckPlugin",
+  "sha256": "1075b1d1cb2fa5c16404bdf396e47bffe621c2ef41065bbd4c690227c597d50e",
+  "license": "Apache-2.0"
+}
