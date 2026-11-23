@@ -1,0 +1,11 @@
+{
+  "id": "com.protomothis.spotify-deck-plus",
+  "name": "Spotify Deck+",
+  "author": "Protomothis",
+  "description": "Spotify controls for Stream Deck +: playback keys, a volume dial and a folder-style library browser.",
+  "version": "0.1.0.0",
+  "repository": "https://github.com/Protomothis/spotify-deck-plus",
+  "download_url": "https://github.com/Protomothis/spotify-deck-plus/releases/download/v0.1.0/com.protomothis.spotify-deck-plus.streamDeckPlugin",
+  "sha256": "7df511221ea08f463e22408dd5e339e03b6e74538d754523427028d33b1fe5d4",
+  "license": "MIT"
+}

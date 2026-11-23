@@ -1,0 +1,11 @@
+{
+  "id": "com.vexify4103.summonerwatch",
+  "name": "Summoner Watch",
+  "author": "Vexify4103",
+  "description": "Enemy summoner spell timers for League of Legends. Press when an enemy uses Flash, see the countdown, hear when it is back.",
+  "version": "0.1.6.0",
+  "repository": "https://github.com/Vexify4103/summoner-watch",
+  "download_url": "https://github.com/Vexify4103/summoner-watch/releases/download/v0.1.6/com.vexify4103.summonerwatch.streamDeckPlugin",
+  "sha256": "1a54d913a8b0de605f8502ff1358f2cc4a714027f9e597aff6e8d25d5dec4594",
+  "license": "MIT"
+}

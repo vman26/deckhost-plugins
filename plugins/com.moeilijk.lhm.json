@@ -1,0 +1,11 @@
+{
+  "id": "com.moeilijk.lhm",
+  "name": "Libre Hardware Monitor",
+  "author": "moeilijk",
+  "description": "Display sensor readings from Libre Hardware Monitor. Enable its remote web server on port 8085 for the plugin to connect.",
+  "version": "2.1.1.0",
+  "repository": "https://github.com/moeilijk/lhm-streamdeck",
+  "download_url": "https://github.com/moeilijk/lhm-streamdeck/releases/download/v2.1.1/com.moeilijk.lhm-2.1.1.streamDeckPlugin",
+  "sha256": "44355ddea81e983ccf398e7f8771d84a314258a4ab1f9ebf15a373646be05938",
+  "license": "GPL-3.0"
+}

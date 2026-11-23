@@ -1,0 +1,11 @@
+{
+  "id": "de.felitendo.feishin",
+  "name": "Feishin",
+  "author": "Felitendo",
+  "description": "Control Feishin, a modern self-hosted music player",
+  "version": "2.1.0.0",
+  "repository": "https://github.com/FeloDeck/Feishin-Plugin",
+  "download_url": "https://github.com/FeloDeck/Feishin-Plugin/releases/download/v2.1.0/Feishin-v2.1.0.streamDeckPlugin",
+  "sha256": "e2c53e3bd6d36e5037076238a934f684234585f36c431b43ab1c567c0e0be78c",
+  "license": "GPL-3.0"
+}

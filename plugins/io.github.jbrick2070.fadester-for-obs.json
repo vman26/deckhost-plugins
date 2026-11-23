@@ -1,0 +1,11 @@
+{
+  "id": "io.github.jbrick2070.fadester-for-obs",
+  "name": "Fadester for OBS",
+  "author": "Jeffrey A. Brick",
+  "description": "Direct OBS source browsing, show/hide, scenes, transitions, mixer fades, and optional creative layer controls. Midi Fadester integration is optional.",
+  "version": "1.5.0.0",
+  "repository": "https://github.com/jbrick2070/streamdeck-fadester",
+  "download_url": "https://github.com/jbrick2070/streamdeck-fadester/releases/download/v1.5.0/io.github.jbrick2070.fadester-for-obs.streamDeckPlugin",
+  "sha256": "1446ca1dfb3fa9b6b27eb241c716898ef74a9764331c8cde458238c908ecf97a",
+  "license": "GPL-2.0"
+}

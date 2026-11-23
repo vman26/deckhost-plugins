@@ -1,0 +1,11 @@
+{
+  "id": "com.edenmichal.musicdeck",
+  "name": "Music Deck",
+  "author": "EdenMichal",
+  "description": "Crossfade two music decks, switch track cues, ride the ambient level and fire SFX in Foundry VTT from your Stream Deck+.",
+  "version": "0.11.0.0",
+  "repository": "https://github.com/EdenMichal/music-deck",
+  "download_url": "https://github.com/EdenMichal/music-deck/releases/download/v1.1.0/com.edenmichal.musicdeck.streamDeckPlugin",
+  "sha256": "75657d5587a8de588ea929f5b5b62e426e4368922d7a818cc5ce7f4a0f91c24c",
+  "license": "MIT"
+}

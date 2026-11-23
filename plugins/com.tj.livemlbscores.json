@@ -1,0 +1,11 @@
+{
+  "id": "com.tj.livemlbscores",
+  "name": "Live MLB Scores",
+  "author": "T.J. Lauerman aka ThatSportsGamer",
+  "description": "Shows live MLB scores on your Stream Deck. Each key tracks one team — see the current score, inning, and game status at a glance.",
+  "version": "1.0.33.0",
+  "repository": "https://github.com/ThatSportsGamer/live-mlb-scores-for-stream-deck",
+  "download_url": "https://github.com/ThatSportsGamer/live-mlb-scores-for-stream-deck/releases/download/v1.0.33.0/Live.MLB.Scores.streamDeckPlugin",
+  "sha256": "a926d4ebd5e61ae1b7595bd686016ea2810f30075cf420d28dceccde1682eff3",
+  "license": "MIT"
+}

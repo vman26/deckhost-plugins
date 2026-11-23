@@ -1,0 +1,11 @@
+{
+  "id": "com.badcodes.sc-profile-switcher",
+  "name": "SC Profile Switcher",
+  "author": "BadCodes",
+  "description": "Switch Simucube Tuner profiles for your ActivePedal and wheelbase with one key press. Tuner must be running. Not affiliated with or endorsed by Simucube or Granite Devices Oy; Simucube and Simucube Tuner are trademarks of their respective owner.",
+  "version": "1.0.0.0",
+  "repository": "https://github.com/BadCodesGG/streamdeck-sc-profile-switcher",
+  "download_url": "https://github.com/BadCodesGG/streamdeck-sc-profile-switcher/releases/download/v1.0.0/com.badcodes.sc-profile-switcher.streamDeckPlugin",
+  "sha256": "1a0ecec71d7f4e7aff557d6c8b96def38adfb663741ab27f1e858baf8da70026",
+  "license": "MIT"
+}

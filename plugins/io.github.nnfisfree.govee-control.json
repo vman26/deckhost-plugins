@@ -1,0 +1,11 @@
+{
+  "id": "io.github.nnfisfree.govee-control",
+  "name": "Govee Control",
+  "author": "nnfisfree",
+  "description": "Control Govee lights and appliances with the official Govee cloud API: power, brightness, colour, white temperature, scenes, presets, music mode, light-strip segments and more, plus temperature and humidity sensors. Works on keys and Stream Deck+ dials, for single devices or groups.",
+  "version": "0.2.0",
+  "repository": "https://github.com/nnfisfree/govee-control-opendeck",
+  "download_url": "https://github.com/nnfisfree/govee-control-opendeck/releases/download/v0.2.0/io.github.nnfisfree.govee-control.streamDeckPlugin",
+  "sha256": "0513761148d5c7da99269b75d9c792abc028f6dd61367635bba8b9a4670829e7",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "com.jakubjirak.jetdeck",
+  "name": "JetDeck",
+  "author": "Jakub Jirák",
+  "description": "Live status and one-touch control of Claude Code, Codex and Copilot CLI sessions, plus live CPU, GPU, Neural Engine, RAM, disk and power of your Mac.",
+  "version": "1.4.0.0",
+  "repository": "https://github.com/JirakJ/jetdeck",
+  "download_url": "https://github.com/JirakJ/jetdeck/releases/download/v1.4.0/com.jakubjirak.jetdeck.streamDeckPlugin",
+  "sha256": "084c4154fda0938516797ff2cf22a48723576a808690c0e32f39c18fed90d84a",
+  "license": "MIT"
+}

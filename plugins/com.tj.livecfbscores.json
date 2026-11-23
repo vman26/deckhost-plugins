@@ -1,0 +1,11 @@
+{
+  "id": "com.tj.livecfbscores",
+  "name": "Live CFB Scores",
+  "author": "T.J. Lauerman aka ThatSportsGamer",
+  "description": "Shows live college football scores on your Stream Deck. Track one FBS team per key, or lay out the week's Top 25, a conference, or all of FBS with the Scoreboard action — score, quarter, clock, possession and rankings at a glance.",
+  "version": "1.1.6.0",
+  "repository": "https://github.com/ThatSportsGamer/live-cfb-scores-for-stream-deck",
+  "download_url": "https://github.com/ThatSportsGamer/live-cfb-scores-for-stream-deck/releases/download/v1.1.6.0/Live.CFB.Scores.streamDeckPlugin",
+  "sha256": "ab6b39a0ed404e5807abdaed31c899e35b3de7aff5df26cdd50fe3e6c9028851",
+  "license": "MIT"
+}

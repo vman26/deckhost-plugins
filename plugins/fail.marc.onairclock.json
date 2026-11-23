@@ -1,0 +1,11 @@
+{
+  "id": "fail.marc.onairclock",
+  "name": "On Air Clock",
+  "author": "Marc Herrmann",
+  "description": "A broadcast studio clock for your Stream Deck: five watchfaces, any color, time zones and a countdown.",
+  "version": "2.0.0.0",
+  "repository": "https://github.com/wortkrieg/streamdeck-onairclock",
+  "download_url": "https://github.com/wortkrieg/streamdeck-onairclock/releases/download/v2.0.0/fail.marc.onairclock.streamDeckPlugin",
+  "sha256": "8790bfc8ffbef69a86e1d4cd843ebf2c3315664939fe632da895a49bb4583f01",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "com.movingavg.switchboard",
+  "name": "Switchboard",
+  "author": "Moving Average Labs",
+  "description": "Switchboard — an operator's control surface for macOS. Live key faces show whether Claude Code, Codex CLI and Cursor CLI sessions are working or need you (tmux, iTerm2, or Terminal.app; press to raise them) — plus Safari tab jump, window tiling and cycling, tmux panes, BBEdit documents, and files.",
+  "version": "2.0.0.0",
+  "repository": "https://github.com/windaddict/switchboard-streamdeck",
+  "download_url": "https://github.com/windaddict/switchboard-streamdeck/releases/download/v2.0.0/com.movingavg.switchboard.streamDeckPlugin",
+  "sha256": "e3d7d12851731e7029907125ef0feaae152f69c48ab0d62e9ca11f0bfde5e744",
+  "license": "MIT"
+}

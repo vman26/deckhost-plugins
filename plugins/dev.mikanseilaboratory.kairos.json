@@ -1,0 +1,11 @@
+{
+  "id": "dev.mikanseilaboratory.kairos",
+  "name": "Panasonic Kairos [MikanseiLaboratory]",
+  "author": "未完成成果物研究所",
+  "description": "Control Panasonic KAIROS from Stream Deck (unofficial).",
+  "version": "0.1.0.0",
+  "repository": "https://github.com/MikanseiLaboratory/streamdeck-panasonic-kairos",
+  "download_url": "https://github.com/MikanseiLaboratory/streamdeck-panasonic-kairos/releases/download/v0.1.0.0-alpha.1/dev.mikanseilaboratory.kairos.streamDeckPlugin",
+  "sha256": "8ed428445a7d2e3f4dc737524a5dfdaa9b6c7158e6e6c6b3639877ecb454d986",
+  "license": "MIT"
+}

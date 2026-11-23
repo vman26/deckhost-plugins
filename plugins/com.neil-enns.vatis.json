@@ -1,0 +1,11 @@
+{
+  "id": "com.neil-enns.vatis",
+  "name": "vATIS",
+  "author": "Neil Enns",
+  "description": "Provides actions for displaying current ATIS information from vATIS.",
+  "version": "1.4.0.0",
+  "repository": "https://github.com/neilenns/streamdeck-vatis",
+  "download_url": "https://github.com/neilenns/streamdeck-vatis/releases/download/v1.4.0/com.neil-enns.vatis.streamDeckPlugin",
+  "sha256": "0c93b5285666d7b9b2b0a9c0e526866b46ab38e9671c07b71c9f2bb4d29c5dd8",
+  "license": "MIT"
+}

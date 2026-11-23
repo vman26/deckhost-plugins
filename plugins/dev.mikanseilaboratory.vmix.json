@@ -1,0 +1,11 @@
+{
+  "id": "dev.mikanseilaboratory.vmix",
+  "name": "vMix [MikanseiLaboratory]",
+  "author": "未完成成果物研究所",
+  "description": "Control any number of vMix instances from Stream Deck.",
+  "version": "0.2.1.0",
+  "repository": "https://github.com/MikanseiLaboratory/streamdeck-studiocoast-vmix",
+  "download_url": "https://github.com/MikanseiLaboratory/streamdeck-studiocoast-vmix/releases/download/v0.2.1.0/dev.mikanseilaboratory.vmix.streamDeckPlugin",
+  "sha256": "c5020a3bebf03d6524b37e431d2a223920e51133abe2b7a196b9c323c63949da",
+  "license": "Apache-2.0"
+}

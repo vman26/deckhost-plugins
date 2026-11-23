@@ -1,0 +1,11 @@
+{
+  "id": "com.tj.livenbascores",
+  "name": "Live NBA Scores",
+  "author": "T.J. Lauerman aka ThatSportsGamer",
+  "description": "Shows live NBA, WNBA, and G League scores on your Stream Deck. Track one team per key, or lay out today's games with the Scoreboard action — score, quarter, clock and lead changes at a glance.",
+  "version": "1.1.6.0",
+  "repository": "https://github.com/ThatSportsGamer/live-nba-scores-for-stream-deck",
+  "download_url": "https://github.com/ThatSportsGamer/live-nba-scores-for-stream-deck/releases/download/v1.1.6.0/Live.NBA.Scores.streamDeckPlugin",
+  "sha256": "c310c2d8e817bf908fe557e0cabeaceb8a9eda0e94bbb49c8bf7cf1863682e9e",
+  "license": "MIT"
+}

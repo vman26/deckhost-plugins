@@ -1,0 +1,11 @@
+{
+  "id": "com.holgermilz.myjbxheadsetcontrol",
+  "name": "JBxHeadsetControl",
+  "author": "holgermilz",
+  "description": "Controls mute, ANC, Ambient Aware, spatial sound, game-chat balance, EQ presets and the Footstep Booster on the JBL Quantum 950, with live battery status.",
+  "version": "2.1.1.0",
+  "repository": "https://github.com/666mille/MyJBxHeadsetControl",
+  "download_url": "https://github.com/666mille/MyJBxHeadsetControl/releases/download/v2.1.1/com.holgermilz.myjbxheadsetcontrol.streamDeckPlugin",
+  "sha256": "ddbc4a452f8ab981214e5dcca4ebc941077b5755d8dc02854c07bec3ed869bf7",
+  "license": "MIT"
+}

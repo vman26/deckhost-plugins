@@ -1,0 +1,11 @@
+{
+  "id": "me.the-h.calendar",
+  "name": "Meeting Countdown",
+  "author": "Amir H",
+  "description": "Countdown to your next meeting from a calendar feed (.ics), with one-press join",
+  "version": "1.0.0",
+  "repository": "https://github.com/amir-the-h/deckd-plugins",
+  "download_url": "https://github.com/amir-the-h/deckd-plugins/releases/download/v1.3.0/me.the-h.calendar.streamDeckPlugin",
+  "sha256": "e7558bc18979676536be9cd8af0e101241694bead28a7ae5f60eb1387b6afa97",
+  "license": "MIT"
+}

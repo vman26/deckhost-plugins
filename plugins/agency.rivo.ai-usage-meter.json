@@ -1,0 +1,11 @@
+{
+  "id": "agency.rivo.ai-usage-meter",
+  "name": "AI Usage Meter",
+  "author": "Rivo Agency",
+  "description": "Your AI coding limits on Stream Deck, for Claude, Codex and Kimi Code. Claude: 5-hour and weekly plan limits for every model, peak hours, cloud and API credit, tokens and API-equivalent cost of Claude Code, cache hits, model mix, session context, streak, status. Codex: 5-hour and weekly limits, credits, tokens, cost, cache, models, status. Kimi Code: 5-hour, weekly and monthly limits, extra usage, status. Plus one key with all three, and keys that start each tool. Unofficial; not affiliated with Anthropic, OpenAI or Moonshot AI.",
+  "version": "4.0.1.0",
+  "repository": "https://github.com/developerscompany/ai-usage-meter",
+  "download_url": "https://github.com/developerscompany/ai-usage-meter/releases/download/v4.0.1/agency.rivo.ai-usage-meter.streamDeckPlugin",
+  "sha256": "7ff658388e172897226cb77cd599a634247796d4b81a709be2f1759924f740c5",
+  "license": "MIT"
+}

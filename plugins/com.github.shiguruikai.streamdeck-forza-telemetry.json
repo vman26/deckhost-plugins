@@ -1,0 +1,11 @@
+{
+  "id": "com.github.shiguruikai.streamdeck-forza-telemetry",
+  "name": "Forza Telemetry",
+  "author": "shiguruikai",
+  "description": "Displays Forza Horizon and Forza Motorsport telemetry data on Stream Deck.",
+  "version": "1.1.0.0",
+  "repository": "https://github.com/shiguruikai/streamdeck-forza-telemetry",
+  "download_url": "https://github.com/shiguruikai/streamdeck-forza-telemetry/releases/download/v1.1.0/com.github.shiguruikai.streamdeck-forza-telemetry.streamDeckPlugin",
+  "sha256": "57b0aa0bd577afb14c4cdee8217c40f3870e23210a00198ec0a2d4a5928ad431",
+  "license": "MIT"
+}

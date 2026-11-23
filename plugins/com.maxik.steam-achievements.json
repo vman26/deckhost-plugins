@@ -1,0 +1,11 @@
+{
+  "id": "com.maxik.steam-achievements",
+  "name": "Steam Achievement Hunter",
+  "author": "Maxik",
+  "description": "Track Steam achievements in real-time on your Stream Deck. Auto-detect running games, monitor unlock progress, and view global stats.",
+  "version": "0.3.0.0",
+  "repository": "https://github.com/SantosMaxime/Streamdeck-Steam-Achievements",
+  "download_url": "https://github.com/SantosMaxime/Streamdeck-Steam-Achievements/releases/download/v0.3.0/com.maxik.steam-achievements.streamDeckPlugin",
+  "sha256": "a4f811612fc9f5738ff6b698faed5aff05adc92e59f3d42f268286a2c4ce6f5e",
+  "license": "MIT"
+}

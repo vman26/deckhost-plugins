@@ -1,0 +1,11 @@
+{
+  "id": "com.deanlongstaff.gifpaste",
+  "name": "GIF Paste",
+  "author": "Dean Longstaff",
+  "description": "Paste an animated GIF from a URL or file. The key shows the GIF, animated.",
+  "version": "3.0.0.0",
+  "repository": "https://github.com/deanlongstaff/streamdeck-gif-paste",
+  "download_url": "https://github.com/deanlongstaff/streamdeck-gif-paste/releases/download/streamdeck-gif-paste-v3.0.0/com.deanlongstaff.gifpaste.streamDeckPlugin",
+  "sha256": "6da697a4ae85a98f232d92ca81cd1994c43036c53552679ae90b499dc3e76c21",
+  "license": "MIT"
+}

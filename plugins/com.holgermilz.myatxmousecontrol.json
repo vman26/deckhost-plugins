@@ -1,0 +1,11 @@
+{
+  "id": "com.holgermilz.myatxmousecontrol",
+  "name": "MyATxMouseControl",
+  "author": "holgermilz",
+  "description": "Control your ATK X1 Ultimate mouse right from the Stream Deck - battery level, DPI stages, polling rate and sensor firmware. No ATK HUB required.",
+  "version": "1.0.1.0",
+  "repository": "https://github.com/666mille/MyATxMouseControl",
+  "download_url": "https://github.com/666mille/MyATxMouseControl/releases/download/v1.0.1/com.holgermilz.myatxmousecontrol.streamDeckPlugin",
+  "sha256": "d9224930bca99cbbce78572e5fdd268fbcdc50ba6808972e29eda51390f32323",
+  "license": "MIT"
+}

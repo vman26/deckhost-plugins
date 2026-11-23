@@ -1,0 +1,11 @@
+{
+  "id": "com.mrshu.muxboard",
+  "name": "Muxboard",
+  "author": "mrshu",
+  "description": "Stream Deck+ dashboard for cmux, Orca, and Herdr coding agents, with live attention keys and CodexBar quotas, pace, spend, tokens, and credits on the LCD.",
+  "version": "0.2.0.0",
+  "repository": "https://github.com/mrshu/muxboard",
+  "download_url": "https://github.com/mrshu/muxboard/releases/download/v0.2.0/com.mrshu.muxboard.streamDeckPlugin",
+  "sha256": "a20c1806772ac03ff46db1f4b0aa90ae55daebb492d506771653915c4e7d185c",
+  "license": "MIT"
+}

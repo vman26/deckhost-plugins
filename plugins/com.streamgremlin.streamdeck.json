@@ -1,0 +1,11 @@
+{
+  "id": "com.streamgremlin.streamdeck",
+  "name": "StreamGremlin",
+  "author": "StreamGremlin",
+  "description": "Press your StreamGremlin buttons from your Stream Deck, count, see your stream's status, switch workflows, timers, the chat lock and OBS scenes, run workflows, run countdowns and snooze ads. Pair once with the code StreamGremlin shows.",
+  "version": "0.2.0.65535",
+  "repository": "https://github.com/shawnbutts/StreamGremlin",
+  "download_url": "https://github.com/shawnbutts/StreamGremlin/releases/download/v0.2.0/StreamGremlin-0.2.0-streamdeck.streamDeckPlugin",
+  "sha256": "82b3f5c9958e9187746baa61deac2a24184e5a0a9ae8344b8c43e300a5deb073",
+  "license": "Apache-2.0"
+}

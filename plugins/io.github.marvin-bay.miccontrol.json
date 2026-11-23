@@ -1,0 +1,11 @@
+{
+  "id": "io.github.marvin-bay.miccontrol",
+  "name": "Mic Control",
+  "author": "Marvin Bay",
+  "description": "Mute and adjust the input level of any microphone at system level, with a level ring on the key.",
+  "version": "1.0.0.0",
+  "repository": "https://github.com/marvin-bay/streamdeck-mic-control",
+  "download_url": "https://github.com/marvin-bay/streamdeck-mic-control/releases/download/v1.0.0/io.github.marvin-bay.miccontrol.streamDeckPlugin",
+  "sha256": "8b7cb542d2bd2dbe350b5584a2fe73a1fe5864eb2c0ace06fe2eedd960168995",
+  "license": "MIT"
+}
