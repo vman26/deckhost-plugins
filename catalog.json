@@ -505,9 +505,9 @@
     "marketplace_url": "https://marketplace.elgato.com/search?q=Delayed%20Text%20Input",
     "license": "MIT",
     "source_repository": "https://github.com/BarRaider/streamdeck-delayedtext",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "3f0a43a46c73958f1a9561273352abe22da43195d9dfd5a58c577fd3b468600f",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.barraider.delayedtext-1.01.zip",
+    "mirrored": true,
     "source": "snapshot"
   },
   {
@@ -1280,9 +1280,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/crypto-ticker-pro-4350dbca-7e3c-4933-8a94-f8f8a960079e",
     "license": "MIT",
     "source_repository": "https://github.com/tubededentifrice/streamdeck-crypto",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "00386badae481a3878608904f3948043917e55ff429372562690c19448ec197c",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.courcelle.cryptoticker-1.5.1.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "4350dbca-7e3c-4933-8a94-f8f8a960079e",
     "description": "This lets you display the price of a crypto currency (all Bitfinex pairs are supported). Supports a very wide range of customizations.",
@@ -1293,7 +1293,7 @@
       "Windows"
     ],
     "last_published": "2025-10-29T17:30:55.338552Z",
-    "download_version": null
+    "download_version": "1.5.1"
   },
   {
     "id": "com.courcelle.reminder",
@@ -1304,9 +1304,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/reminder-2c5c63dd-af9b-4dde-9b15-1d674e772674",
     "license": "MIT",
     "source_repository": "https://github.com/tubededentifrice/streamdeck-reminder",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "c15425a6dd401f2e6df066584af32b35da43b539fa632e65dbfb6d5580c44a28",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.courcelle.reminder-1.0.0.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "2c5c63dd-af9b-4dde-9b15-1d674e772674",
     "description": "This lets you define reminders to get an alert at regular intervals",
@@ -1317,7 +1317,7 @@
       "Windows"
     ],
     "last_published": "2022-09-05T07:59:06.074854Z",
-    "download_version": null
+    "download_version": "1.0.0"
   },
   {
     "id": "com.dahnandpartners.btcticker",
@@ -2189,9 +2189,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/cookieclicker-8f99f006-9d71-4889-8790-ff7edaf49eea",
     "license": "MIT",
     "source_repository": "https://github.com/f00d4tehg0dz/elgato-streamdeck-cookie-clicker",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "f7b1bfcce01a750f228a91a73b0f83ab3f4c3ea8d11fd8eaeeb575fbdb6ae316",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.f00d4tehg0dz.cookieclicker-3.6.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "8f99f006-9d71-4889-8790-ff7edaf49eea",
     "description": "Welcome to Cookie Clicker, the irresistibly fun and simple game now available as a plugin for your Elgato StreamDeck. Embark on a delightful journey of cookie-making with just the press of a button!",
@@ -2202,7 +2202,7 @@
       "Windows"
     ],
     "last_published": "2024-02-08T19:43:04.600529Z",
-    "download_version": null
+    "download_version": "3.6"
   },
   {
     "id": "com.f00d4tehg0dz.teslafi",
@@ -2566,9 +2566,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/sound-deck-131c7cee-6a63-4e89-840e-156b0d17c0bb",
     "license": "GPL-3.0",
     "source_repository": "https://github.com/GeekyEggo/SoundDeck",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "dca321a49fe51f52d19cbf47c5345a27f6ef12e2e0242580f78009fde4e46b58",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.geekyeggo.sounddeck-3.7.2.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "131c7cee-6a63-4e89-840e-156b0d17c0bb",
     "description": "A powerful audio-focused plugin that allows you to capture, record, playback, and sample audio. Sound Deck also includes actions that let you control your audio devices and the audio of applications, e.g. set the default audio device, change the audio volume, or control the media playback of an application.",
@@ -2578,7 +2578,7 @@
       "Windows"
     ],
     "last_published": "2022-09-05T08:01:17.737635Z",
-    "download_version": null
+    "download_version": "3.7.2"
   },
   {
     "id": "com.geekyeggo.windowsdisplaysettings",
@@ -3280,9 +3280,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/universal-devices-control-ccab03c7-b449-45dd-942a-371a7978e615",
     "license": "GPL-3.0",
     "source_repository": "https://github.com/Mazecreator/udcontrol-streamdeck",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "e213a5f3799224b26a9129437460cbfc8b43f600c012371011d14345fde9f2b5",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.mazecreator.udcontrol-1.0.0.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "ccab03c7-b449-45dd-942a-371a7978e615",
     "description": "Universal Devices Tool to send ON/25%/50%/75%/OFF commands to Nodes while monitoring status and Control Programs.",
@@ -3293,7 +3293,7 @@
       "Windows"
     ],
     "last_published": "2022-09-05T07:57:13.576916Z",
-    "download_version": null
+    "download_version": "1.0.0"
   },
   {
     "id": "com.mediabounds.streamdeck.jira",
@@ -3763,9 +3763,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/unity-2bbb19d7-374b-4f08-b548-5e3f847742fa",
     "license": "MIT",
     "source_repository": "https://github.com/nicollasricas/streamdeck-unity",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "44b9274a25ed93858932e61c9be3058cd31af3b143b175d6eca496c22ae009fb",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.nicollasr.streamdeckunity-2.0.1.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "2bbb19d7-374b-4f08-b548-5e3f847742fa",
     "description": "Enables Stream Deck integration with Unity.",
@@ -3775,7 +3775,7 @@
       "Windows"
     ],
     "last_published": "2022-09-05T07:55:17.655532Z",
-    "download_version": null
+    "download_version": "2.0.1"
   },
   {
     "id": "com.nicollasr.streamdeckunity.mac",
@@ -3786,9 +3786,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/unity-mac-aa5b2e1b-8bea-46b5-9eba-71d9f0d7c0aa",
     "license": "MIT",
     "source_repository": "https://github.com/nicollasricas/streamdeck-unity",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "b938c0e13c4c209dcccb3316a1fdace9454682d29d7a6ea0b50c3c488b7e987d",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.nicollasr.streamdeckunity.mac-2.0.1.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "aa5b2e1b-8bea-46b5-9eba-71d9f0d7c0aa",
     "description": "Enables Stream Deck integration with Unity.",
@@ -3798,7 +3798,7 @@
       "Mac"
     ],
     "last_published": "2022-09-05T07:57:54.001325Z",
-    "download_version": null
+    "download_version": "2.0.1"
   },
   {
     "id": "com.nicollasr.streamdeckvs",
@@ -3823,9 +3823,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/visual-studio-code-61254b24-a60c-4a87-acae-70c39eda8a19",
     "license": "MIT",
     "source_repository": "https://github.com/nicollasricas/streamdeckvsc",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "ee1478051836c1abe8e4f32f36f86a075c750014280bb55b9547cefd5fbeb08f",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.nicollasr.streamdeckvsc-5.1.3.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "61254b24-a60c-4a87-acae-70c39eda8a19",
     "description": "Enables Stream Deck integration with Visual Studio Code. This plugin requires Visual Studio Code extension `Stream Deck for Visual Studio Code`.",
@@ -3835,7 +3835,7 @@
       "Windows"
     ],
     "last_published": "2022-09-05T07:52:06.022483Z",
-    "download_version": null
+    "download_version": "5.1.3"
   },
   {
     "id": "com.nicollasr.streamdeckvsc.mac",
@@ -3846,9 +3846,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/visual-studio-code-mac-5377d183-f8ca-4bea-a9ca-f5b05a252441",
     "license": "MIT",
     "source_repository": "https://github.com/nicollasricas/streamdeckvsc",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "ca19682f8f783d7d3ee75ca2e16f4256b36dc5d7f0ccfc78c34c9c9a5b0de99b",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.nicollasr.streamdeckvsc.mac-5.1.3.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "5377d183-f8ca-4bea-a9ca-f5b05a252441",
     "description": "Enables Stream Deck integration with Visual Studio Code. This plugin requires Visual Studio Code extension `Stream Deck for Visual Studio Code`.",
@@ -3858,7 +3858,7 @@
       "Mac"
     ],
     "last_published": "2022-09-05T07:55:14.780959Z",
-    "download_version": null
+    "download_version": "5.1.3"
   },
   {
     "id": "com.nuagic.myip",
@@ -3965,9 +3965,9 @@
     "marketplace_url": "https://marketplace.elgato.com/search?q=iCal",
     "license": "MIT",
     "source_repository": "https://github.com/pedrofuentes/stream-deck-ical",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "3528becdd0a2b868115777eb8a90ba602468cc910af2978d2f8b57ac8a2633dd",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.pedrofuentes.ical-1.1.0.zip",
+    "mirrored": true,
     "source": "snapshot"
   },
   {
@@ -4003,9 +4003,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/awake-87efa59b-bde1-4eeb-9b14-11582c1ac49c",
     "license": "MIT",
     "source_repository": "https://github.com/pgerke/streamdeck-awake",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "6b29d2187f3d0d531d7d053df2320552c888479fbdc139454a3e7699315ee484",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.philipgerke.awake-2.1.1.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "87efa59b-bde1-4eeb-9b14-11582c1ac49c",
     "description": "A Power Toys Awake inspired plugin for the Elgato Stream Deck to prevent the PC from going into standby.",
@@ -4015,7 +4015,7 @@
       "Windows"
     ],
     "last_published": "2022-09-05T08:00:03.115770Z",
-    "download_version": null
+    "download_version": "2.1.1"
   },
   {
     "id": "com.polypoplive",
@@ -4172,9 +4172,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/vlc-remote-57b209e9-b4a7-4ca4-a0a5-53c79fe6bea1",
     "license": "MIT",
     "source_repository": "https://github.com/RGPaul/streamdeck-vlc",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "7dea0eff48678262601c3aca8f9667f9166cc1c8d3a67f472b6c137d5100f805",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.rgpaul.vlc-1.1.0.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "57b209e9-b4a7-4ca4-a0a5-53c79fe6bea1",
     "description": "Remote controlling of VLC media player",
@@ -4185,7 +4185,7 @@
       "Windows"
     ],
     "last_published": "2022-09-05T07:57:19.216017Z",
-    "download_version": null
+    "download_version": "1.1.0"
   },
   {
     "id": "com.richardplucker.pvp",
@@ -4722,9 +4722,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/color-picker-00cb3238-508b-4e7d-a380-3b0c6b21417c",
     "license": "GPL-3.0",
     "source_repository": "https://github.com/VictorGrycuk/streamdeck-color-picker",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "5c1aa92e2c95aeddbe2fa80bd5df8fb0fd680c0671e099fc781fc90e2fc78d0a",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.victorgrycuk.colorpicker-1.5.0.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "00cb3238-508b-4e7d-a380-3b0c6b21417c",
     "description": "Colorblind Helper & Color Picker for Stream Deck.\r\nShows a color's name, its RGB or hexadecimal value.",
@@ -4734,7 +4734,7 @@
       "Windows"
     ],
     "last_published": "2024-02-29T05:01:16.025301Z",
-    "download_version": null
+    "download_version": "1.5.0"
   },
   {
     "id": "com.victorgrycuk.keepass",
@@ -4745,9 +4745,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/streamdeck-keepass-521e08df-786c-47a0-a92c-559de8e1b327",
     "license": "GPL-3.0",
     "source_repository": "https://github.com/VictorGrycuk/StreamDeck-KeePass",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "0204bedc8606db0d29bdf49a641936c5dd348a8d8f8fb2f7cf524e3e7fe106c5",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.victorgrycuk.keepass-1.7.0.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "521e08df-786c-47a0-a92c-559de8e1b327",
     "description": "Simple interface to retrieve information from KeePass database. Unofficial.",
@@ -4757,7 +4757,7 @@
       "Windows"
     ],
     "last_published": "2023-09-11T11:45:37.174153Z",
-    "download_version": null
+    "download_version": "1.7.0"
   },
   {
     "id": "com.victorgrycuk.magnifier",
@@ -4768,9 +4768,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/magnifier-b6825583-085d-423f-b459-d242f974d14c",
     "license": "GPL-3.0",
     "source_repository": "https://github.com/VictorGrycuk/streamdeck-magnifier",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "e4a5236dcb59213c7f9ee57735fee18f0f7ef172385052999a577a3ad29d34c7",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.victorgrycuk.magnifier-1.2.2.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "b6825583-085d-423f-b459-d242f974d14c",
     "description": "Converts a Stream Deck key into a screen magnifier, with up to 32x zoom.\r\nIncludes an option to move the mouse pixel by pixel for better precision.",
@@ -4780,7 +4780,7 @@
       "Windows"
     ],
     "last_published": "2022-09-05T07:57:05.463132Z",
-    "download_version": null
+    "download_version": "1.2.2"
   },
   {
     "id": "com.victorgrycuk.repositorywatcher",
@@ -4791,9 +4791,9 @@
     "marketplace_url": "https://marketplace.elgato.com/search?q=Repository%20Watcher",
     "license": "GPL-3.0",
     "source_repository": "https://github.com/VictorGrycuk/streamdeck-repository-watcher",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "04c2e6c257f16b868abfa78557c2b5a312fa55cff8c2fb6fe82a594f126e763e",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.victorgrycuk.repositorywatcher-1.1.zip",
+    "mirrored": true,
     "source": "snapshot"
   },
   {
@@ -4805,9 +4805,9 @@
     "marketplace_url": "https://marketplace.elgato.com/product/dice-45474a5c-6884-41cb-a896-411da79e0804",
     "license": "GPL-3.0",
     "source_repository": "https://github.com/viddie/sdDice",
-    "sha256": null,
-    "download_url": null,
-    "mirrored": false,
+    "sha256": "abb502353af0deaa1e62d7d4628c8c9857f4aef09165efbb10fc3d57b569c2ed",
+    "download_url": "https://github.com/vman26/deckhost-plugins/releases/download/elgato-mirror/com.viddie.dice-1.0.4.zip",
+    "mirrored": true,
     "source": "marketplace",
     "marketplace_id": "45474a5c-6884-41cb-a896-411da79e0804",
     "description": "A simple plugin to roll a dice or any other range, your choice",
@@ -4818,7 +4818,7 @@
       "Windows"
     ],
     "last_published": "2022-09-05T07:53:12.401838Z",
-    "download_version": null
+    "download_version": "1.0.4"
   },
   {
     "id": "com.vivremotion.autotranslate",
@@ -30404,7 +30404,7 @@
     "description": "Launch Sites In Context\nBrowser Profile Launchpad is a Stream Deck plugin for people who keep work, personal, client, or project browsing in separate Google Chrome or Safari profiles. The Website Launcher action opens a configured URL from one Stream Deck Keypad key, using the operating system’s default browser or a...",
     "marketplace_url": "https://marketplace.elgato.com/product/browser-profile-launchpad-ac9f0b3c-4066-4df4-827b-b2f834d01cce",
     "is_free": false,
-    "price": "$4.99",
+    "price": "$6.99",
     "platforms": [
       "Mac",
       "Windows"
@@ -40396,7 +40396,7 @@
     "description": "Turn Every Thought Into Flow\nBring Wispr Flow closer to your fingertips with dedicated Stream Deck controls for dictation, commands, transcript recovery, notes, and custom shortcuts. Wispr Flow Controls turns your Wispr Flow features into tap, toggle, and press-and-hold actions, so you can speak, write, recover text...",
     "marketplace_url": "https://marketplace.elgato.com/product/wispr-flow-controls-ec51d6b0-fee9-4f23-aa0f-4f53537123f6",
     "is_free": false,
-    "price": "$9.99",
+    "price": "$12.99",
     "platforms": [
       "Mac"
     ],
