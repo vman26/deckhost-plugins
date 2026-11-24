@@ -180,6 +180,26 @@ def check_package(data: bytes, plugin_id: str) -> str | None:
     return None
 
 
+def normalize_paths(data: bytes) -> bytes | None:
+    """The package with Windows-style paths (a\\b) rewritten with / so it unpacks into folders everywhere;
+    the files and their contents stay the same. None when no path needs it."""
+    with zipfile.ZipFile(io.BytesIO(data)) as archive:
+        entries = archive.infolist()
+        if not any("\\" in entry.filename for entry in entries):
+            return None
+        buffer = io.BytesIO()
+        with zipfile.ZipFile(buffer, "w", zipfile.ZIP_DEFLATED) as rewritten:
+            for entry in entries:
+                name = entry.filename.replace("\\", "/")
+                if name.endswith("/"):
+                    continue  # folders come from the paths of their files
+                info = zipfile.ZipInfo(name, date_time=entry.date_time)
+                info.compress_type = zipfile.ZIP_DEFLATED
+                info.external_attr = entry.external_attr
+                rewritten.writestr(info, archive.read(entry))
+    return buffer.getvalue()
+
+
 def load_blocklist(path: pathlib.Path | None) -> tuple[set[str], set[str]]:
     if path is None or not path.exists():
         return set(), set()
@@ -320,12 +340,15 @@ def run(network: Network, catalogue: list, *, previous: dict[str, dict], blocked
                     if problem:
                         report(f"skip  {plugin_id} {version}: {problem}")
                     else:
+                        rewritten = normalize_paths(data)
+                        data = rewritten or data
                         asset = asset_name(plugin_id, version)
                         uploads[asset] = data
                         entry["sha256"] = hashlib.sha256(data).hexdigest()
                         entry["download_url"] = f"https://github.com/{repository}/releases/download/{RELEASE_TAG}/{asset}"
                         entry["mirrored"] = True
-                        report(f"new   {plugin_id} {version} ({entry['license']}, {len(data) // 1024} KiB)")
+                        note = ", paths rewritten with /" if rewritten else ""
+                        report(f"new   {plugin_id} {version} ({entry['license']}, {len(data) // 1024} KiB{note})")
         else:
             report(f"list  {plugin_id} {version}: {reason}")
         entries.append(entry)
@@ -483,7 +506,8 @@ def notice(entries: list[dict], repository: str) -> str:
         "- **The former Stream Deck Store** (closed by Elgato in April 2024): our own snapshot of it, taken",
         f"  from the community archive ({COMMUNITY_ARCHIVE}) of what Elgato's servers served.",
         "  A plugin is copied only when its source repository has an open-source license that allows",
-        "  passing it on; the copy is unchanged apart from the checks below and stored with its SHA-256.",
+        "  passing it on; the copy is unchanged apart from Windows-style paths in the zip (rewritten with /",
+        "  so it unpacks on every system) and stored with its SHA-256.",
         "  The others are listed with a link to the Elgato Marketplace and are not copied.",
         "- **The Elgato Marketplace**: its public plugin list, each plugin with a link to its Marketplace page.",
         "  Nothing is downloaded from the Marketplace or copied: you get a plugin there.",

@@ -5,6 +5,7 @@ test has Arrange / Act / Assert sections with one Act, no loops or conditions in
 hold them), and no magic strings (named constants).
 """
 
+import hashlib
 import io
 import json
 import pathlib
@@ -52,6 +53,27 @@ def package(plugin_id: str, extra: dict[str, str] | None = None) -> bytes:
         for name, content in (extra or {}).items():
             archive.writestr(name, content)
     return buffer.getvalue()
+
+
+WINDOWS_FILE = "images\\icon.png"
+WINDOWS_CONTENT = b"icon bytes"
+
+
+def windows_package(plugin_id: str, extra: dict[str, str] | None = None) -> bytes:
+    """A package zipped on Windows: \\ in its paths, and a folder entry."""
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w") as archive:
+        archive.writestr(f"{plugin_id}.sdPlugin\\", b"")
+        archive.writestr(f"{plugin_id}.sdPlugin\\manifest.json", json.dumps({"Name": "Test", "Version": "1.0.0.0", "Author": "A"}))
+        archive.writestr(f"{plugin_id}.sdPlugin\\{WINDOWS_FILE}", WINDOWS_CONTENT)
+        for name, content in (extra or {}).items():
+            archive.writestr(name, content)
+    return buffer.getvalue()
+
+
+def zip_contents(data: bytes) -> dict[str, bytes]:
+    with zipfile.ZipFile(io.BytesIO(data)) as archive:
+        return {name: archive.read(name) for name in archive.namelist()}
 
 
 class FakeNetwork(mirror.Network):
@@ -653,6 +675,65 @@ class RunSnapshotTests(unittest.TestCase):
 
         # Assert
         self.assertIsNone(entries[0]["icon"])
+
+
+class WindowsPathTests(unittest.TestCase):
+    def test_run_package_with_windows_paths_is_mirrored_with_forward_slashes(self):
+        # Arrange
+        network = FakeNetwork({REPOSITORY: MIT}, {ONE: windows_package(ONE)})
+
+        # Act
+        entries, uploads, _, log = run(network, [archive(ONE)])
+
+        # Assert
+        self.assertTrue(entries[0]["mirrored"])
+        contents = zip_contents(uploads[f"{ONE}-1.0.zip"])
+        self.assertEqual(contents[f"{ONE}.sdPlugin/images/icon.png"], WINDOWS_CONTENT)
+        self.assertEqual(sorted(contents), [f"{ONE}.sdPlugin/images/icon.png", f"{ONE}.sdPlugin/manifest.json"])
+        self.assertTrue(any_line_contains(log, "paths rewritten with /"))
+
+    def test_run_checksum_is_of_the_rewritten_package(self):
+        # Arrange
+        network = FakeNetwork({REPOSITORY: MIT}, {ONE: windows_package(ONE)})
+
+        # Act
+        entries, uploads, _, _ = run(network, [archive(ONE)])
+
+        # Assert
+        self.assertEqual(entries[0]["sha256"], hashlib.sha256(uploads[f"{ONE}-1.0.zip"]).hexdigest())
+
+    def test_run_package_with_forward_slashes_is_copied_byte_for_byte(self):
+        # Arrange
+        data = package(ONE)
+        network = FakeNetwork({REPOSITORY: MIT}, {ONE: data})
+
+        # Act
+        _, uploads, _, _ = run(network, [archive(ONE)])
+
+        # Assert
+        self.assertEqual(uploads[f"{ONE}-1.0.zip"], data)
+
+    def test_run_windows_path_outside_the_archive_is_not_mirrored(self):
+        # Arrange
+        network = FakeNetwork({REPOSITORY: MIT}, {ONE: windows_package(ONE, {"..\\escape.txt": "x"})})
+
+        # Act
+        entries, uploads, _, log = run(network, [archive(ONE)])
+
+        # Assert
+        self.assertFalse(entries[0]["mirrored"])
+        self.assertEqual(uploads, {})
+        self.assertTrue(any_line_contains(log, "outside the archive"))
+
+    def test_normalize_paths_package_with_forward_slashes_gives_none(self):
+        # Arrange
+        data = package(ONE)
+
+        # Act
+        result = mirror.normalize_paths(data)
+
+        # Assert
+        self.assertIsNone(result)
 
 
 class ImportTests(unittest.TestCase):
