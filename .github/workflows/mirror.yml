@@ -94,9 +94,19 @@ jobs:
           git add mirror/snapshot.json
           git commit -m "Elgato mirror: our own snapshot of the former Stream Deck Store" -m "From the community archive's catalogue, by the mirror workflow (import)."
           git push --force origin "$branch"
-          gh pr create --head "$branch" --title "Elgato mirror: the snapshot" \
-            --body "Our own copy of the community archive's catalogue of the former Stream Deck Store (id, name, author, link, version), made by the mirror workflow's import. Once merged, the mirror reads it instead of the archive. The icons are already on mirror-data." \
-            || echo "A pull request for $branch is already open."
+          title="Elgato mirror: the snapshot"
+          body="Our own copy of the community archive's catalogue of the former Stream Deck Store (id, name, author, link, version), made by the mirror workflow's import. Once merged, the mirror reads it instead of the archive. The icons are already on mirror-data."
+          if pr="$(gh pr create --head "$branch" --title "$title" --body "$body")" \
+             || pr="$(gh pr view "$branch" --json url --jq .url 2>/dev/null)"; then
+            echo "$pr"
+          else
+            # Without "Allow GitHub Actions to create and approve pull requests" (Settings > Actions >
+            # General) the token can push but not open the pull request: leave a link to open it by hand.
+            compare="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/${{ github.event.repository.default_branch }}...$branch?expand=1"
+            echo "::warning::Could not open the pull request. Open it from $compare"
+            printf '### Elgato mirror snapshot\n\nThe branch `%s` is pushed; [open the pull request](%s).\n' \
+              "$branch" "$compare" >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Mirror
         env:
