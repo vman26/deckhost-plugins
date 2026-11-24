@@ -1,0 +1,2277 @@
+[
+  {
+    "id": "app.casthub.streamdeck",
+    "name": "CastHub",
+    "author": "CastHub Limited",
+    "link": "https://casthub.app",
+    "version": "1.2.0"
+  },
+  {
+    "id": "app.kickbot.kickbot",
+    "name": "KickBot",
+    "author": "KickBot",
+    "link": "https://docs.kickbot.app/dashboard/stream-deck/setup",
+    "version": "1.1.0"
+  },
+  {
+    "id": "app.liveedit.liveosc",
+    "name": "LiveEdit",
+    "author": "The LiveEdit Team",
+    "link": "https://www.liveedit.app",
+    "version": "1.2.0"
+  },
+  {
+    "id": "bot.streamer.streamdeck",
+    "name": "Streamer.Bot",
+    "author": "Streamer.bot",
+    "link": "https://streamdeck.streamer.bot",
+    "version": "1.0.2"
+  },
+  {
+    "id": "ch.claudiobernasconi.youtubestats",
+    "name": "YouTube Channel Statistics",
+    "author": "Claudio Bernasconi",
+    "link": "https://github.com/claudiobernasconi/streamdeck-youtube",
+    "version": "1.2"
+  },
+  {
+    "id": "co.abetterhome.lighterstreamdeck",
+    "name": "Lighter for Philips Hue",
+    "author": "A Better Home LLC",
+    "link": "https://abetterhome.co/",
+    "version": "1.1.5"
+  },
+  {
+    "id": "co.meldstudio.streamdeck",
+    "name": "Meld Studio",
+    "author": "Meld Studio, Inc.",
+    "link": "https://meldstudio.co/",
+    "version": "0.3.0"
+  },
+  {
+    "id": "co.uk.clarionmusic.midibutton",
+    "name": "Midi Button",
+    "author": "Tom Kelly",
+    "link": null,
+    "version": "1.07"
+  },
+  {
+    "id": "co.weimeng.streamdeck-gitlab",
+    "name": "GitLab Dashboard",
+    "author": "Wei-Meng Lee",
+    "link": "https://gitlab.com/weimeng/streamdeck-gitlab",
+    "version": "1.1"
+  },
+  {
+    "id": "com.adamcarballo.unity-integration",
+    "name": "Unity Integration",
+    "author": "Àdam Carballo",
+    "link": "https://f10.dev",
+    "version": "1.2.0"
+  },
+  {
+    "id": "com.adrian-miasik.sdpdota2",
+    "name": "SDP - Dota 2",
+    "author": "Adrian Miasik",
+    "link": "https://www.adrian-miasik.com",
+    "version": "1.3.1"
+  },
+  {
+    "id": "com.alphalaneous.loquibot",
+    "name": "loquibot",
+    "author": "Alphalaneous",
+    "link": null,
+    "version": "1.2"
+  },
+  {
+    "id": "com.animapix.oscremote",
+    "name": "OSC Remote",
+    "author": "Animapix",
+    "link": null,
+    "version": "1.0.2"
+  },
+  {
+    "id": "com.appgineering.atvo",
+    "name": "ATVO Hotkeys",
+    "author": "Appgineering GbR",
+    "link": "https://appgineering.com",
+    "version": "1.1.0"
+  },
+  {
+    "id": "com.arkyasmal.windowactions",
+    "name": "Window Actions",
+    "author": "Arky Asmal",
+    "link": "https://github.com/aasmal97/Window-Actions",
+    "version": "3.0.0"
+  },
+  {
+    "id": "com.ascend.japanesereviews",
+    "name": "Japanese Reviews",
+    "author": "Ascend - Will Eddins",
+    "link": "https://github.com/ascendedguard/streamdeck-japanesereviews",
+    "version": "1.0.2"
+  },
+  {
+    "id": "com.aximmetry",
+    "name": "Aximmetry Integration",
+    "author": "Aximmetry Technologies",
+    "link": "https://aximmetry.com/learn/broadcast-production-workflow/preparation-of-the-production-environment-phase-i/setting-up-inputs-outputs-for-virtual-production/external-controllers/using-elgato-stream-deck-to-control-a-scene/",
+    "version": "2.0"
+  },
+  {
+    "id": "com.baptiewright.nanoleaf",
+    "name": "Nanoleaf Controller",
+    "author": "Baptiewright Designs",
+    "link": "http://www.baptiewright.com",
+    "version": "1.4"
+  },
+  {
+    "id": "com.barraider.advancedlauncher",
+    "name": "Advanced Launcher",
+    "author": "BarRaider",
+    "link": "https://BarRaider.com/",
+    "version": "1.8"
+  },
+  {
+    "id": "com.barraider.apininja",
+    "name": "API Ninja",
+    "author": "BarRaider",
+    "link": "https://barraider.com/",
+    "version": "1.3"
+  },
+  {
+    "id": "com.barraider.audiometer",
+    "name": "Audio Meter",
+    "author": "BarRaider",
+    "link": "https://BarRaider.com/",
+    "version": "1.2"
+  },
+  {
+    "id": "com.barraider.battery",
+    "name": "Battery",
+    "author": "BarRaider",
+    "link": "https://BarRaider.com/",
+    "version": "1.6"
+  },
+  {
+    "id": "com.barraider.delayedtext",
+    "name": "Delayed Text Input",
+    "author": "BarRaider",
+    "link": "https://github.com/BarRaider/streamdeck-delayedtext",
+    "version": "1.01"
+  },
+  {
+    "id": "com.barraider.disco",
+    "name": "Disco Visual Effects",
+    "author": "BarRaider",
+    "link": "https://BarRaider.com/",
+    "version": "1.1"
+  },
+  {
+    "id": "com.barraider.emojipicker",
+    "name": "Emoji Picker",
+    "author": "BarRaider",
+    "link": "https://barraider.com/",
+    "version": "1.0"
+  },
+  {
+    "id": "com.barraider.facecam",
+    "name": "Elgato Facecam",
+    "author": "BarRaider",
+    "link": "https://barraider.com/",
+    "version": "1.0"
+  },
+  {
+    "id": "com.barraider.games",
+    "name": "Stream Deck Games",
+    "author": "BarRaider",
+    "link": "https://BarRaider.com/",
+    "version": "1.7"
+  },
+  {
+    "id": "com.barraider.minecraft",
+    "name": "Minecraft Stats",
+    "author": "BarRaider",
+    "link": "https://BarRaider.com/",
+    "version": "1.3"
+  },
+  {
+    "id": "com.barraider.obstools",
+    "name": "OBS Tools",
+    "author": "BarRaider",
+    "link": "https://barraider.github.io/",
+    "version": "3.2"
+  },
+  {
+    "id": "com.barraider.sdscreensaver",
+    "name": "Advanced Screen Saver",
+    "author": "BarRaider",
+    "link": "https://BarRaider.com/",
+    "version": "2.4"
+  },
+  {
+    "id": "com.barraider.shadowplay",
+    "name": "ShadowPlay",
+    "author": "BarRaider",
+    "link": "https://BarRaider.com/",
+    "version": "1.5"
+  },
+  {
+    "id": "com.barraider.soundpad",
+    "name": "Soundpad Integration",
+    "author": "BarRaider",
+    "link": "https://barraider.github.io/",
+    "version": "1.6"
+  },
+  {
+    "id": "com.barraider.speedtest",
+    "name": "Speed Test",
+    "author": "BarRaider",
+    "link": "https://barraider.com/",
+    "version": "1.3"
+  },
+  {
+    "id": "com.barraider.spotify",
+    "name": "Spotify Integration",
+    "author": "BarRaider",
+    "link": "https://barraider.github.io/spotify",
+    "version": "2.9.1"
+  },
+  {
+    "id": "com.barraider.stockticker",
+    "name": "Stock Ticker",
+    "author": "BarRaider",
+    "link": "https://barraider.github.io/",
+    "version": "1.9"
+  },
+  {
+    "id": "com.barraider.stopwatch",
+    "name": "Stopwatch",
+    "author": "BarRaider",
+    "link": "https://github.com/BarRaider/streamdeck-stopwatch",
+    "version": "1.7"
+  },
+  {
+    "id": "com.barraider.streamcountdowntimer",
+    "name": "Stream Countdown Timer",
+    "author": "BarRaider",
+    "link": "https://BarRaider.com/",
+    "version": "1.8"
+  },
+  {
+    "id": "com.barraider.streamcounter",
+    "name": "Stream Counter",
+    "author": "BarRaider",
+    "link": "https://barraider.github.io/",
+    "version": "1.8"
+  },
+  {
+    "id": "com.barraider.supermacro",
+    "name": "SuperMacro",
+    "author": "BarRaider",
+    "link": "https://barraider.github.io/",
+    "version": "2.2"
+  },
+  {
+    "id": "com.barraider.textfiletools",
+    "name": "Text File Tools",
+    "author": "BarRaider",
+    "link": "https://barraider.github.io/",
+    "version": "1.4"
+  },
+  {
+    "id": "com.barraider.tts",
+    "name": "TextToSpeech",
+    "author": "BarRaider",
+    "link": "https://barraider.com/",
+    "version": "1.1"
+  },
+  {
+    "id": "com.barraider.twitchtools",
+    "name": "Twitch Tools",
+    "author": "BarRaider",
+    "link": "https://BarRaider.com/",
+    "version": "3.2"
+  },
+  {
+    "id": "com.barraider.voicemeeter",
+    "name": "VoiceMeeter Integration",
+    "author": "BarRaider",
+    "link": "https://github.com/BarRaider/streamdeck-voicemeeter",
+    "version": "2.2"
+  },
+  {
+    "id": "com.barraider.webcam",
+    "name": "Cam Control",
+    "author": "BarRaider",
+    "link": "https://barraider.com/",
+    "version": "1.2"
+  },
+  {
+    "id": "com.barraider.windowsmover",
+    "name": "Windows Mover & Resizer",
+    "author": "BarRaider",
+    "link": "https://barraider.github.io/",
+    "version": "2.5"
+  },
+  {
+    "id": "com.barraider.wintools",
+    "name": "Win Tools",
+    "author": "BarRaider",
+    "link": "https://barraider.com/",
+    "version": "1.8"
+  },
+  {
+    "id": "com.barraider.worldtime",
+    "name": "World Time",
+    "author": "BarRaider",
+    "link": "https://barraider.github.io/",
+    "version": "2.0"
+  },
+  {
+    "id": "com.bi0s.mqtt",
+    "name": "MQTT",
+    "author": "Patrick Herting",
+    "link": "https://github.com/pherting/streamdeck-mqtt",
+    "version": "1.3"
+  },
+  {
+    "id": "com.billzbawb.signalrgb",
+    "name": "SignalRGB-Deck",
+    "author": "William Z. Bawb and BarRaider",
+    "link": "https://github.com/bill-z-bawb/SignalRGB-Deck",
+    "version": "1.0.7"
+  },
+  {
+    "id": "com.broadcastpix.panelbutton",
+    "name": "Broadcast Pix",
+    "author": "Broadcast Pix",
+    "link": "https://broadcastpix.com/stream-control-control/",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.buzzet.azurepipeline",
+    "name": "Azure Pipeline",
+    "author": "Jannik Reinefeld",
+    "link": null,
+    "version": "1.1"
+  },
+  {
+    "id": "com.bzbgear.camera",
+    "name": "BZBGEAR Camera",
+    "author": "BZBGEAR",
+    "link": "https://bzbgear.com/",
+    "version": "1.0"
+  },
+  {
+    "id": "com.caratask.activity.prod",
+    "name": "CTMS Activity",
+    "author": "Cara",
+    "link": "https://task.cara.com.my",
+    "version": "1.1.0"
+  },
+  {
+    "id": "com.chhtv.udts",
+    "name": "UDTS",
+    "author": "chhopsky.tv",
+    "link": "https://updatethestream.com/",
+    "version": "0.0.1"
+  },
+  {
+    "id": "com.cloudcastsystems.remoteplay",
+    "name": "RemotePlay",
+    "author": "cloudcastsystems",
+    "link": "http://www.cloudcastsystems.com.au",
+    "version": "1.0"
+  },
+  {
+    "id": "com.corcules.kmlink",
+    "name": "KMLink",
+    "author": "Corcules",
+    "link": "https://www.corcules.com",
+    "version": "1.5"
+  },
+  {
+    "id": "com.corsair.icue",
+    "name": "iCUE",
+    "author": "Corsair",
+    "link": "https://www.corsair.com/icue",
+    "version": "1.5.182"
+  },
+  {
+    "id": "com.courcelle.cryptoticker",
+    "name": "Crypto ticker PRO",
+    "author": "Vincent Courcelle",
+    "link": "https://github.com/tubededentifrice/streamdeck-crypto",
+    "version": "1.5.1"
+  },
+  {
+    "id": "com.courcelle.reminder",
+    "name": "Reminder",
+    "author": "Vincent Courcelle",
+    "link": "https://github.com/tubededentifrice/streamdeck-reminder",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.dahnandpartners.btcticker",
+    "name": "BTC Ticker",
+    "author": "Florian Zevedei",
+    "link": null,
+    "version": "1.6.0"
+  },
+  {
+    "id": "com.dahnandpartners.cmcticker",
+    "name": "CoinMarketCap Ticker",
+    "author": "Florian Zevedei",
+    "link": "https://dahn.partners",
+    "version": "1.2.0"
+  },
+  {
+    "id": "com.dahnandpartners.ytticker",
+    "name": "Youtube Ticker",
+    "author": "Florian Zevedei",
+    "link": null,
+    "version": "2.1.0"
+  },
+  {
+    "id": "com.davidborzek.foobar2000",
+    "name": "Foobar2000",
+    "author": "David Borzek",
+    "link": null,
+    "version": "1.5"
+  },
+  {
+    "id": "com.dddice.app",
+    "name": "dddice",
+    "author": "dddice",
+    "link": "https://www.dddice.com/",
+    "version": "0.2.0"
+  },
+  {
+    "id": "com.dec04.github-ci",
+    "name": "Github CI",
+    "author": "Dec04",
+    "link": "https://github.com/dec04/com.dec04.github-ci.sdPlugin",
+    "version": "1.0.1"
+  },
+  {
+    "id": "com.dim.streamdeck",
+    "name": "DIM Stream Deck",
+    "author": "Francesco Saverio Cannizzaro",
+    "link": "https://dimstreamdeck.vercel.app/",
+    "version": "2.0.3"
+  },
+  {
+    "id": "com.dixper",
+    "name": "Dixper",
+    "author": "Dixper",
+    "link": "https://dixper.gg",
+    "version": "1.0.6"
+  },
+  {
+    "id": "com.dlprows.focusvolumecontrol",
+    "name": "Focused Application Volume",
+    "author": "dlprows",
+    "link": "https://github.com/dlprows/FocusVolumeControl",
+    "version": "1.1.2"
+  },
+  {
+    "id": "com.dms.streamdeck.github",
+    "name": "DMS Github Plugin",
+    "author": "Rafael Dohms",
+    "link": "https://github.com/rdohms/com.dms.streamdeck.github",
+    "version": "0.2.0"
+  },
+  {
+    "id": "com.ecamm.ecammliveplugin",
+    "name": "Ecamm Live",
+    "author": "Ecamm Network",
+    "link": "https://www.ecamm.com/mac/ecammlive/",
+    "version": "4.3"
+  },
+  {
+    "id": "com.egg-rp.fxcommands",
+    "name": "FxCommands",
+    "author": "EggRP",
+    "link": "https://github.com/EggRP/fxcommands",
+    "version": "1.1"
+  },
+  {
+    "id": "com.elgato.4kcu",
+    "name": "4K Capture Utility",
+    "author": "Elgato",
+    "link": "https://www.elgato.com",
+    "version": "1.3"
+  },
+  {
+    "id": "com.elgato.analogclock",
+    "name": "Analog Clock",
+    "author": "Elgato",
+    "link": "https://developer.elgato.com",
+    "version": "2.0.0"
+  },
+  {
+    "id": "com.elgato.applemail",
+    "name": "Apple Mail",
+    "author": "Elgato",
+    "link": "https://developer.elgato.com",
+    "version": "1.5"
+  },
+  {
+    "id": "com.elgato.applemusic",
+    "name": "Apple Music",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/gaming/stream-deck",
+    "version": "1.1"
+  },
+  {
+    "id": "com.elgato.blacklist",
+    "name": "Blacklist",
+    "author": "Elgato",
+    "link": "https://www.elgato.com",
+    "version": null
+  },
+  {
+    "id": "com.elgato.camerahub",
+    "name": "Camera Hub",
+    "author": "Elgato",
+    "link": "https://elgato.com/downloads",
+    "version": "1.3.0.247"
+  },
+  {
+    "id": "com.elgato.camlinkpro",
+    "name": "Cam Link Pro",
+    "author": "Elgato",
+    "link": "https://elgato.com",
+    "version": "1.0.0.175"
+  },
+  {
+    "id": "com.elgato.clocks",
+    "name": "Clocks",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/",
+    "version": "0.9.2.38"
+  },
+  {
+    "id": "com.elgato.controlcenter",
+    "name": "Control Center",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/en/gaming/stream-deck",
+    "version": "1.9.3.274"
+  },
+  {
+    "id": "com.elgato.counter",
+    "name": "Counter",
+    "author": "Elgato",
+    "link": "https://developer.elgato.com",
+    "version": "1.4"
+  },
+  {
+    "id": "com.elgato.cpu",
+    "name": "CPU",
+    "author": "Elgato",
+    "link": "https://developer.elgato.com",
+    "version": "1.3"
+  },
+  {
+    "id": "com.elgato.discord",
+    "name": "Discord",
+    "author": "Elgato",
+    "link": "https://elgato.com/",
+    "version": "2.0.0"
+  },
+  {
+    "id": "com.elgato.edelkrone-motion-control",
+    "name": "edelkrone Motion Control",
+    "author": "edelkrone",
+    "link": "https://edelkrone.com/products/edelkrone-link-adapter",
+    "version": "1.0.1"
+  },
+  {
+    "id": "com.elgato.facebook",
+    "name": "Facebook",
+    "author": "Elgato",
+    "link": "https://www.facebook.com/gaming/",
+    "version": "1.0.1"
+  },
+  {
+    "id": "com.elgato.keycreator",
+    "name": "KeyCreator",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/gaming/stream-deck",
+    "version": "2.0.0.135"
+  },
+  {
+    "id": "com.elgato.keynote",
+    "name": "Keynote",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/gaming/stream-deck",
+    "version": "1.1"
+  },
+  {
+    "id": "com.elgato.memorygame",
+    "name": "Memory Game",
+    "author": "Elgato",
+    "link": "https://developer.elgato.com",
+    "version": "1.4"
+  },
+  {
+    "id": "com.elgato.obsstudio",
+    "name": "OBS Studio",
+    "author": "Elgato",
+    "link": "https://help.elgato.com/hc/en-us/articles/360028239431--Elgato-Stream-Deck-OBS-Studio-Integration-",
+    "version": "2.2.4"
+  },
+  {
+    "id": "com.elgato.philips-hue",
+    "name": "Philips Hue",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/gaming/stream-deck",
+    "version": "1.6.3"
+  },
+  {
+    "id": "com.elgato.powerpoint",
+    "name": "PowerPoint",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/gaming/stream-deck",
+    "version": "1.2.2"
+  },
+  {
+    "id": "com.elgato.reactiondeck",
+    "name": "Reaction Deck",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/gaming/stream-deck",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.elgato.spotify",
+    "name": "Spotify",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/gaming/stream-deck",
+    "version": "1.0.3"
+  },
+  {
+    "id": "com.elgato.streamlabs",
+    "name": "Streamlabs",
+    "author": "Elgato",
+    "link": "https://streamlabs.com",
+    "version": "1.5.1"
+  },
+  {
+    "id": "com.elgato.timestamp",
+    "name": "Timestamp",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/en/gaming/stream-deck",
+    "version": "1.0"
+  },
+  {
+    "id": "com.elgato.twitch",
+    "name": "Twitch",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/en/gaming/stream-deck",
+    "version": "1.8.7"
+  },
+  {
+    "id": "com.elgato.volume-controller",
+    "name": "Volume Controller",
+    "author": "Elgato",
+    "link": "https://e.lga.to/VolumeControllerOverview",
+    "version": "1.0.3"
+  },
+  {
+    "id": "com.elgato.wavelink",
+    "name": "Wave Link",
+    "author": "Elgato",
+    "link": "https://elgato.com/wave-3",
+    "version": "2.0.3.591"
+  },
+  {
+    "id": "com.elgato.youtube",
+    "name": "YouTube",
+    "author": "Elgato",
+    "link": "https://www.elgato.com/en/gaming/stream-deck",
+    "version": "2.0.1"
+  },
+  {
+    "id": "com.eruben.vtspog",
+    "name": "VTS P.O.G.",
+    "author": "Eruben",
+    "link": "https://vtspog.com",
+    "version": "0.0.1"
+  },
+  {
+    "id": "com.exension.hwinfo",
+    "name": "HWiNFO",
+    "author": "exension",
+    "link": "https://github.com/exension/hwinfo-streamdeck",
+    "version": "2.0.5"
+  },
+  {
+    "id": "com.exension.stocks",
+    "name": "Stocks",
+    "author": "exension",
+    "link": "https://github.com/exension/stock-ticker-stream-deck-plugin",
+    "version": "1.1.3"
+  },
+  {
+    "id": "com.f00d4tehg0dz.aipaints",
+    "name": "AI Paints",
+    "author": "f00d4tehg0dz",
+    "link": "https://github.com/f00d4tehg0dz/elgato-streamdeck-ai-paints",
+    "version": "1.0.2"
+  },
+  {
+    "id": "com.f00d4tehg0dz.cookieclicker",
+    "name": "CookieClicker",
+    "author": "f00d4tehg0dz",
+    "link": "https://github.com/f00d4tehg0dz/elgato-streamdeck-cookie-clicker",
+    "version": "3.6"
+  },
+  {
+    "id": "com.f00d4tehg0dz.teslafi",
+    "name": "TeslaFi",
+    "author": "f00d4tehg0dz",
+    "link": "https://github.com/f00d4tehg0dz/Teslafi-Status-Plugin-for-Eglato-Streamdeck",
+    "version": "2.4"
+  },
+  {
+    "id": "com.f1-tools.mvf1",
+    "name": "MVF1",
+    "author": "F1-Tools",
+    "link": "https://github.com/f1-tools/MVF1-Streamdeck",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.faithlife.proclaim",
+    "name": "Faithlife Proclaim",
+    "author": "Faithlife LLC",
+    "link": "https://faithlife.com",
+    "version": "0.2"
+  },
+  {
+    "id": "com.falti.camooz",
+    "name": "CamooZ",
+    "author": "Falti",
+    "link": "https://www.camooz.de",
+    "version": "1.3"
+  },
+  {
+    "id": "com.feydelight.serialirblaster",
+    "name": "Serial IR Blaster",
+    "author": "FeyDelight",
+    "link": "https://github.com/feydelight/IRDecoderAndBlaster",
+    "version": "1.2"
+  },
+  {
+    "id": "com.fiercekittenz.gifbot",
+    "name": "GIFBot Stream Deck",
+    "author": "Fierce Kitten Studio",
+    "link": null,
+    "version": "1.0"
+  },
+  {
+    "id": "com.fish-bytes.camcontroller",
+    "name": "CamController",
+    "author": "FishBytes",
+    "link": "http://www.camcontroller.com",
+    "version": "1.5"
+  },
+  {
+    "id": "com.flowics.graphics",
+    "name": "Flowics Graphics",
+    "author": "Flowics",
+    "link": "https://www.flowics.com/graphics/",
+    "version": "0.1.0"
+  },
+  {
+    "id": "com.fredemmott.audiooutputswitch",
+    "name": "Audio Switcher",
+    "author": "Fred Emmott",
+    "link": "https://go.fredemmott.com/streamdeck-audioswitcher",
+    "version": "3.1.3.66"
+  },
+  {
+    "id": "com.fredemmott.micmutetoggle",
+    "name": "Audio Mute",
+    "author": "Fred Emmott",
+    "link": "https://go.fredemmott.com/streamdeck-audiomute",
+    "version": "3.1.0"
+  },
+  {
+    "id": "com.fredemmott.streamingremote",
+    "name": "Streaming Remote",
+    "author": "Fred Emmott",
+    "link": "https://github.com/fredemmott/streaming-remote/",
+    "version": "2.2.1"
+  },
+  {
+    "id": "com.fsoft.nanoleaf",
+    "name": "Nanoleaf Tiles",
+    "author": "fSoft Ltd.",
+    "link": "https://github.com/GaryFunk/Nanoleaf-Tiles/blob/main/README.md",
+    "version": "1.3"
+  },
+  {
+    "id": "com.funky.rokuremotejs",
+    "name": "Roku Remote",
+    "author": "Jasper Cools",
+    "link": "https://github.com/FUNKYJASPER2/StreamDeck-Roku-Remote-Plugin",
+    "version": "1.0"
+  },
+  {
+    "id": "com.gabrielperales.osascript",
+    "name": "OSA Script",
+    "author": "Gabriel Perales",
+    "link": "https://github.com/gabrielperales/streamdeck-osascript",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.gallowaylabs.tomato",
+    "name": "Tomato Timer",
+    "author": "Galloway Labs",
+    "link": "https://github.com/gallowaylabs/streamdeck-tomato-timer",
+    "version": "0.6.0"
+  },
+  {
+    "id": "com.gataquadrada.wftimers",
+    "name": "Warframe Timers",
+    "author": "GataQuadrada",
+    "link": "https://www.gata.dev",
+    "version": "0.0.3"
+  },
+  {
+    "id": "com.geekyeggo.goveecontroller",
+    "name": "Govee Controller",
+    "author": "GeekyEggo",
+    "link": "https://github.com/GeekyEggo/GoveeController",
+    "version": "1.2.3"
+  },
+  {
+    "id": "com.geekyeggo.sounddeck",
+    "name": "Sound Deck",
+    "author": "GeekyEggo",
+    "link": "https://github.com/GeekyEggo/SoundDeck",
+    "version": "3.7.2"
+  },
+  {
+    "id": "com.geekyeggo.windowsdisplaysettings",
+    "name": "Windows Display Settings",
+    "author": "GeekyEggo",
+    "link": "https://github.com/GeekyEggo/windows-display-settings",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.gingeraudio.room",
+    "name": "ROOM",
+    "author": "Ginger Audio",
+    "link": "https://www.gingeraudio.com",
+    "version": "1.0.2"
+  },
+  {
+    "id": "com.gingeraudio.sphere",
+    "name": "SPHERE",
+    "author": "Ginger Audio",
+    "link": "https://www.gingeraudio.com",
+    "version": "1.0.4"
+  },
+  {
+    "id": "com.github.guyb7.github-api-streamdeck-plugin",
+    "name": "GitHub API",
+    "author": "guyb7",
+    "link": "https://github.com/guyb7/github-api-streamdeck-plugin",
+    "version": "0.1.0"
+  },
+  {
+    "id": "com.github.mjbnz.sd-api-request",
+    "name": "API Request",
+    "author": "Mike Beattie",
+    "link": "https://github.com/mjbnz/streamdeck-api-request",
+    "version": "0.2"
+  },
+  {
+    "id": "com.holotech.animazeplugin",
+    "name": "Animaze Plugin",
+    "author": "Holotech Studios",
+    "link": "https://store.steampowered.com/app/1364390/Animaze_by_FaceRig/",
+    "version": "1.08"
+  },
+  {
+    "id": "com.hyperate.hyperate",
+    "name": "HypeRate",
+    "author": "Ian Chandler",
+    "link": "https://www.hyperate.io/",
+    "version": "2.5.2"
+  },
+  {
+    "id": "com.iccms.sport-in-the-box",
+    "name": "Sport In The Box",
+    "author": "IC Control Media & Sport",
+    "link": "https://sportinthebox.com",
+    "version": "3.4.0"
+  },
+  {
+    "id": "com.ilifesmart.cololight",
+    "name": "Cololight",
+    "author": "LifeSmart",
+    "link": "http://www.ilifesmart.com/",
+    "version": "1.0.3"
+  },
+  {
+    "id": "com.inet.cowork",
+    "name": "i-net CoWork",
+    "author": "i-net software",
+    "link": "https://www.inetsoftware.de/products/cowork",
+    "version": "1.2.1"
+  },
+  {
+    "id": "com.javanpoirier.audiomixer",
+    "name": "Audio Mixer",
+    "author": "Javan Poirier",
+    "link": "https://github.com/JavanPoirier/AudioMixer",
+    "version": "1.3.1"
+  },
+  {
+    "id": "com.javitesoft.rustplusbot",
+    "name": "RustPlusBot",
+    "author": "JaviteSoft",
+    "link": "https://bot.rustplus.io/",
+    "version": "2.0"
+  },
+  {
+    "id": "com.jetbrains.ide",
+    "name": "JetBrains IDE",
+    "author": "Jacky Liu",
+    "link": "https://github.com/JetBrains/intellij-streamdeck-plugin",
+    "version": "1.0.1"
+  },
+  {
+    "id": "com.jetbrains.youtrack",
+    "name": "YouTrack Ticket Counter",
+    "author": "Konstantin Annikov",
+    "link": "https://github.com/JetBrains/youtrack-streamdeck-plugin",
+    "version": "1.0.6"
+  },
+  {
+    "id": "com.jk.weather",
+    "name": "Weather",
+    "author": "Jaouher Kharrat",
+    "link": "https://github.com/JaouherK",
+    "version": "2.1.2"
+  },
+  {
+    "id": "com.k1dbo.deck-master-6000",
+    "name": "Deck Master 6000",
+    "author": "K1DBO",
+    "link": "https://github.com/K1DBO/deck-master-6000",
+    "version": "1.0.4.14"
+  },
+  {
+    "id": "com.kiswe.studio",
+    "name": "Kiswe Studio",
+    "author": "Kiswe",
+    "link": "https://kiswestudio.zendesk.com/hc/en-us/articles/13915453588375-Use-the-streamdeck",
+    "version": "2.0.0"
+  },
+  {
+    "id": "com.kobaltz.wled",
+    "name": "WLED",
+    "author": "Dave Kimura",
+    "link": "https://github.com/kobaltz/streamdeck-wled",
+    "version": "1.0.5"
+  },
+  {
+    "id": "com.komordzsi.tarkovtime",
+    "name": "Tarkov Time",
+    "author": "komordzsi",
+    "link": "https://tarkov-time.adam.id.au",
+    "version": "1.0.4"
+  },
+  {
+    "id": "com.krabs.clockworks",
+    "name": "Clockworks",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/clockworks",
+    "version": "1.0.11"
+  },
+  {
+    "id": "com.krabs.daysuntil",
+    "name": "Days Until",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/days-until",
+    "version": "1.0.26"
+  },
+  {
+    "id": "com.krabs.discordmembercount",
+    "name": "Discord Member Count",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/discord-member-count/",
+    "version": "1.0.31"
+  },
+  {
+    "id": "com.krabs.discordmemberstatus",
+    "name": "Discord Member Status",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/discord-member-status/",
+    "version": "1.1.10"
+  },
+  {
+    "id": "com.krabs.discordmessenger",
+    "name": "Discord Messenger",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/discord-messenger",
+    "version": "1.0.21"
+  },
+  {
+    "id": "com.krabs.gameactiontimer",
+    "name": "Game Action Timer",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/game-action-timer",
+    "version": "1.0.5"
+  },
+  {
+    "id": "com.krabs.hdrtoggle",
+    "name": "HDR Toggle",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/hdrtoggle",
+    "version": "1.0.9"
+  },
+  {
+    "id": "com.krabs.magicaleightball",
+    "name": "Magical Eight Ball",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/magical-eight-ball",
+    "version": "2.0.4"
+  },
+  {
+    "id": "com.krabs.onscreendisplaytools",
+    "name": "On Screen Display Tools",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/",
+    "version": "1.0.24"
+  },
+  {
+    "id": "com.krabs.time",
+    "name": "Time",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/time",
+    "version": "1.1.8"
+  },
+  {
+    "id": "com.krabs.twitchwatcher",
+    "name": "Twitch Watcher",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/twitch-watcher",
+    "version": "1.0.10"
+  },
+  {
+    "id": "com.krabs.windowsgizmos",
+    "name": "Windows Gizmos",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/windows-gizmos",
+    "version": "1.0.52"
+  },
+  {
+    "id": "com.krabs.windowsshutdownmenu",
+    "name": "Windows Shutdown Menu",
+    "author": "Krabs",
+    "link": "https://www.krabs.me/streamdeck-plugins/",
+    "version": "1.0.20"
+  },
+  {
+    "id": "com.live-score-app.streamdeck",
+    "name": "Live Score Plugin",
+    "author": "Live Score GmbH",
+    "link": "https://www.live-score-app.com/",
+    "version": "1.1"
+  },
+  {
+    "id": "com.lostdomain.zoom",
+    "name": "Zoom Plugin",
+    "author": "Martijn Smit",
+    "link": "https://lostdomain.org/stream-deck-plugin-for-zoom/",
+    "version": "3.0"
+  },
+  {
+    "id": "com.lumiacove.stream",
+    "name": "Lumia Stream",
+    "author": "Lumia Stream",
+    "link": "https://lumiastream.com/products/streamdeck",
+    "version": "2.6.1"
+  },
+  {
+    "id": "com.maagames.versus",
+    "name": "Versus",
+    "author": "maaGames",
+    "link": "https://obsproject.com/forum/resources/versus-%E2%93%87evolution-scoreboard.1339/",
+    "version": "2.3.0"
+  },
+  {
+    "id": "com.marlburrow.uptime-kuma",
+    "name": "Uptime Kuma",
+    "author": "Nicolas Varrot MarlburroW",
+    "link": "https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma",
+    "version": "1.2.3"
+  },
+  {
+    "id": "com.mazecreator.udcontrol",
+    "name": "Universal Devices Control",
+    "author": "Greg Peatfield",
+    "link": "https://github.com/Mazecreator/udcontrol-streamdeck",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.mediabounds.streamdeck.jira",
+    "name": "Jira",
+    "author": "Daniel Pfeiffer",
+    "link": "https://github.com/mediabounds/streamdeck-jira",
+    "version": "1.3.0"
+  },
+  {
+    "id": "com.medialooks.directtake",
+    "name": "Direct Take Recording",
+    "author": "Medialooks",
+    "link": "https://medialooks.com/direct-take",
+    "version": "1.0"
+  },
+  {
+    "id": "com.microsoft.teams",
+    "name": "Microsoft Teams",
+    "author": "Microsoft",
+    "link": "https://www.microsoft.com/microsoft-teams",
+    "version": "2.0.27"
+  },
+  {
+    "id": "com.mitchmckean.mccontrol",
+    "name": "McControl",
+    "author": "Mitch McKean",
+    "link": "https://github.com/MitchMcKean/mccontrol",
+    "version": "0.7.2"
+  },
+  {
+    "id": "com.mixitup.streamdeckplugin",
+    "name": "Mix It Up",
+    "author": "Mix It Up",
+    "link": "https://mixitupapp.com/",
+    "version": "4.2.0"
+  },
+  {
+    "id": "com.mmattdonk.solrock",
+    "name": "Solrock TTS",
+    "author": "SocksTheWolf",
+    "link": "https://solrock.mmattdonk.com/",
+    "version": "1.0.1"
+  },
+  {
+    "id": "com.mongeon.mm",
+    "name": "MM.StreamDeck",
+    "author": "Gabriel Mongeon",
+    "link": "https://github.com/mongeon/MattermostAPI",
+    "version": "0.1"
+  },
+  {
+    "id": "com.morphclue.wakatime",
+    "name": "Wakatime",
+    "author": "Morphclue",
+    "link": "https://github.com/Morphclue/streamdeck-wakatime",
+    "version": "1.0.11"
+  },
+  {
+    "id": "com.mutedeck.plugin",
+    "name": "MuteDeck for Zoom, Teams, and more",
+    "author": "MuteDeck",
+    "link": "https://mutedeck.com/",
+    "version": "8.0.0"
+  },
+  {
+    "id": "com.nagopy.streamdeck.tasktimer",
+    "name": "Task Timer",
+    "author": "75py",
+    "link": "https://github.com/75py/streamdeck-tasktimer",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.naver.prism",
+    "name": "PRISM Live Studio",
+    "author": "NAVER Corp.",
+    "link": "https://prismlive.com/ko_kr/pcapp/",
+    "version": "1.0.3"
+  },
+  {
+    "id": "com.neewer.controlcenter",
+    "name": "NEEWER Control",
+    "author": "neewer",
+    "link": "https://neewer.com/pages/neewer-live-app",
+    "version": "2.0.0"
+  },
+  {
+    "id": "com.neewer.livecenter",
+    "name": "NEEWER Live",
+    "author": "neewer",
+    "link": "https://neewer.com/pages/neewer-live-app",
+    "version": "1.9.1.000"
+  },
+  {
+    "id": "com.nefrit.telegram",
+    "name": "Telegram Stats Tracker",
+    "author": "ArtemNeFRiT",
+    "link": "https://github.com/ArtemNeFRiT/elgato-telegram-statistics",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.nefrit.youtube",
+    "name": "YouTube Stats Tracker",
+    "author": "ArtemNeFRiT",
+    "link": "https://github.com/ArtemNeFRiT/streamdeck-youtube-statistics#api-key",
+    "version": "1.2.0"
+  },
+  {
+    "id": "com.nettai.cosmetickey",
+    "name": "Cosmetic Key",
+    "author": "Nettai",
+    "link": null,
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.newblue.ovrstream",
+    "name": "OvrStream",
+    "author": "NewBlue",
+    "link": "https://www.ovrstream.com/",
+    "version": "1.2"
+  },
+  {
+    "id": "com.newblue.stretchcast",
+    "name": "Presto StretchCast",
+    "author": "NewBlue",
+    "link": "https://www.newbluefx.com",
+    "version": "1.3.3"
+  },
+  {
+    "id": "com.newblue.titlerlive",
+    "name": "Titler Live",
+    "author": "NewBlue",
+    "link": "https://newbluefx.com/products/titler-live/",
+    "version": "1.1.0"
+  },
+  {
+    "id": "com.newblue.vividcast",
+    "name": "NewBlue VividCast",
+    "author": "NewBlue",
+    "link": "https://newbluefx.com/",
+    "version": "1.4.0"
+  },
+  {
+    "id": "com.newtek.api",
+    "name": "NewTek",
+    "author": "NewTek",
+    "link": "https://www.newtek.com/",
+    "version": "1.3"
+  },
+  {
+    "id": "com.nicollasr.streamdeckunity",
+    "name": "Unity",
+    "author": "Nicollas R.",
+    "link": "https://github.com/nicollasricas/streamdeck-unity",
+    "version": "2.0.1"
+  },
+  {
+    "id": "com.nicollasr.streamdeckunity.mac",
+    "name": "Unity Mac",
+    "author": "Nicollas R.",
+    "link": "https://github.com/nicollasricas/streamdeck-unity",
+    "version": "2.0.1"
+  },
+  {
+    "id": "com.nicollasr.streamdeckvs",
+    "name": "Visual Studio",
+    "author": "Nicollas R.",
+    "link": "https://github.com/nicollasricas/streamdeckvs",
+    "version": "3.3.3"
+  },
+  {
+    "id": "com.nicollasr.streamdeckvsc",
+    "name": "Visual Studio Code",
+    "author": "Nicollas R.",
+    "link": "https://github.com/nicollasricas/streamdeckvsc",
+    "version": "5.1.3"
+  },
+  {
+    "id": "com.nicollasr.streamdeckvsc.mac",
+    "name": "Visual Studio Code Mac",
+    "author": "Nicollas R.",
+    "link": "https://github.com/nicollasricas/streamdeckvsc",
+    "version": "5.1.3"
+  },
+  {
+    "id": "com.nuagic.myip",
+    "name": "My IP",
+    "author": "Nuagic",
+    "link": "https://github.com/Nuagic/streamdeck-myip",
+    "version": "1.3"
+  },
+  {
+    "id": "com.obsbot.webcam",
+    "name": "OBSBOT WebCam",
+    "author": "Remo Tech.",
+    "link": "https://www.obsbot.com",
+    "version": "1.2"
+  },
+  {
+    "id": "com.overlayon.plugin",
+    "name": "OverlayOn",
+    "author": "OverlayOn",
+    "link": "https://overlayon.com",
+    "version": "1.1.0"
+  },
+  {
+    "id": "com.owenbush.streamdeck.noko",
+    "name": "Noko",
+    "author": "Owen Bush",
+    "link": "https://github.com/owenbush/streamdeck-noko",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.pedrofuentes.ical",
+    "name": "iCal",
+    "author": "Pedro Fuentes",
+    "link": "https://github.com/pedrofuentes/stream-deck-ical#readme",
+    "version": "1.1.0"
+  },
+  {
+    "id": "com.pedropombeiro.streamdeck-busylight",
+    "name": "Kuando Busylight",
+    "author": "Pedro Pombeiro",
+    "link": "https://gitlab.com/pedropombeiro/streamdeck-busylight",
+    "version": "1.0.58"
+  },
+  {
+    "id": "com.philipgerke.awake",
+    "name": "Awake",
+    "author": "Ingenieurbüro Philip Gerke",
+    "link": "https://github.com/pgerke/streamdeck-awake",
+    "version": "2.1.1"
+  },
+  {
+    "id": "com.polypoplive",
+    "name": "PolyPop",
+    "author": "Simmetri, Inc.",
+    "link": "https://www.polypoplive.com",
+    "version": "1.2"
+  },
+  {
+    "id": "com.pulsoid",
+    "name": "Pulsoid",
+    "author": "Pulsoid",
+    "link": "https://pulsoid.net",
+    "version": "1.6"
+  },
+  {
+    "id": "com.reedhaffner.sharex",
+    "name": "ShareX",
+    "author": "Reed Haffner",
+    "link": "https://reedhaffner.com/",
+    "version": "1.3.1"
+  },
+  {
+    "id": "com.refactor.binance",
+    "name": "Binance Ticker",
+    "author": "Refactor Software Inc.",
+    "link": "http://refactor.ca",
+    "version": "1.1.0"
+  },
+  {
+    "id": "com.refactor.cryptoticker",
+    "name": "Crypto Ticker",
+    "author": "Refactor Software Inc.",
+    "link": "http://refactor.ca",
+    "version": "1.6.0"
+  },
+  {
+    "id": "com.remote.ytmd",
+    "name": "YTMD Encoder Remote",
+    "author": "Levin Ng",
+    "link": "https://github.com/levindecaro/streamdeck-ytmd-remote",
+    "version": "1.0.1"
+  },
+  {
+    "id": "com.renewedvision.propresenter",
+    "name": "ProPresenter",
+    "author": "Renewed Vision",
+    "link": "https://renewedvision.com",
+    "version": "2.0"
+  },
+  {
+    "id": "com.rgpaul.vlc",
+    "name": "VLC Remote",
+    "author": "Ralph-Gordon Paul",
+    "link": "https://github.com/RGPaul/streamdeck-vlc",
+    "version": "1.1.0"
+  },
+  {
+    "id": "com.richardplucker.pvp",
+    "name": "PVP",
+    "author": "Richard Plucker",
+    "link": "https://github.com/rplucker/streamdeckpvp",
+    "version": "1.0"
+  },
+  {
+    "id": "com.samhorne.mediamonkey5",
+    "name": "Mediamonkey 5",
+    "author": "Sam Horne",
+    "link": null,
+    "version": "1.1.0"
+  },
+  {
+    "id": "com.sdn.homey",
+    "name": "Homey Integration",
+    "author": "Thomas Hebendanz",
+    "link": "https://community.athom.com/t/elgato-streamdeck-integration/27393",
+    "version": "1.9.0"
+  },
+  {
+    "id": "com.sentinelite.streamdeckshortcuts",
+    "name": "Shortcuts",
+    "author": "SENTINELITE",
+    "link": "https://github.com/SENTINELITE/StreamDeck-Shortcuts",
+    "version": "1.0.7.1"
+  },
+  {
+    "id": "com.sergeytihon.homebridge",
+    "name": "Homebridge",
+    "author": "Sergey Tihon",
+    "link": "https://github.com/sergey-tihon/streamdeck-homebridge",
+    "version": "1.4.0"
+  },
+  {
+    "id": "com.sobolevn.bluetooth",
+    "name": "Bluetooth Switcher",
+    "author": "Nikita Sobolev",
+    "link": "https://github.com/sobolevn/bluetooth-streamdeck-plugin",
+    "version": "1.1.0"
+  },
+  {
+    "id": "com.softouch.easyworship",
+    "name": "EasyWorship",
+    "author": "Softouch Development, Inc.",
+    "link": "https://easyworship.com",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.soundsinsync.ediprompt",
+    "name": "Sounds In Sync",
+    "author": "Sounds In Sync",
+    "link": "https://soundsinsync.com/ediprompt",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.stairways.keyboardmaestro",
+    "name": "Keyboard Maestro",
+    "author": "Stairways Software",
+    "link": "https://www.keyboardmaestro.com/",
+    "version": "9.0.4"
+  },
+  {
+    "id": "com.start-automating.scriptdeck",
+    "name": "ScriptDeck",
+    "author": "Start-Automating",
+    "link": "https://github.com/StartAutomating/ScriptDeck",
+    "version": "0.4.6"
+  },
+  {
+    "id": "com.start-automating.windowsscriptdeck",
+    "name": "Windows ScriptDeck",
+    "author": "Start-Automating",
+    "link": "https://github.com/StartAutomating/ScriptDeck",
+    "version": "0.4.6"
+  },
+  {
+    "id": "com.stephaneturquay.gateio.tracker",
+    "name": "Gate.io - Portfolio tracker",
+    "author": "Stéphane Turquay",
+    "link": "https://github.com/StephaneTurquay/streamdeck-gateio",
+    "version": "1.1"
+  },
+  {
+    "id": "com.streamcaptain.streamraiders",
+    "name": "Stream Raiders",
+    "author": "Stream Captain",
+    "link": "https://www.streamraiders.com/",
+    "version": "1.0.6"
+  },
+  {
+    "id": "com.streamelements.obslive",
+    "name": "StreamElements SE.Live",
+    "author": "StreamElements",
+    "link": "https://strms.net/obslivestreamdeck",
+    "version": "22.6.21.87"
+  },
+  {
+    "id": "com.streamfog.main",
+    "name": "AR Overlay",
+    "author": "Streamfog",
+    "link": "https://streamfog.com/",
+    "version": "0.1.1"
+  },
+  {
+    "id": "com.streamloots",
+    "name": "Streamloots",
+    "author": "Streamloots",
+    "link": "https://www.streamloots.com",
+    "version": "1.2.0"
+  },
+  {
+    "id": "com.streamtools.webhooks",
+    "name": "Streamtools",
+    "author": "Streamtools",
+    "link": "https://streamtools.com",
+    "version": "1.0.28"
+  },
+  {
+    "id": "com.tchelicon.goxlr",
+    "name": "GoXLR Plugin",
+    "author": "TC Helicon",
+    "link": "https://www.tc-helicon.com/",
+    "version": "0.18"
+  },
+  {
+    "id": "com.thejoeiaut.bitwarden",
+    "name": "Bitwarden Tools",
+    "author": "TheJoeIaut",
+    "link": "https://github.com/TheJoeIaut/Bitwarden-Streamdeck-Plugin",
+    "version": "1.0"
+  },
+  {
+    "id": "com.theverge.bubbledeck",
+    "name": "BubbleDeck",
+    "author": "Mitchell Clark",
+    "link": "https://www.theverge.com",
+    "version": "1.2"
+  },
+  {
+    "id": "com.tiktok.livestudio",
+    "name": "TikTok LIVE Studio",
+    "author": "TikTok LIVE Studio",
+    "link": "https://www.tiktok.com/studio/download",
+    "version": "0.0.1"
+  },
+  {
+    "id": "com.tipeeestream.actions",
+    "name": "TipeeeStream",
+    "author": "TipeeeStream",
+    "link": "https://www.tipeeestream.com/",
+    "version": "1.0.3"
+  },
+  {
+    "id": "com.tobii.gaming.ghost",
+    "name": "Tobii Ghost",
+    "author": "Tobii AB",
+    "link": "https://gaming.tobii.com/for-creators/",
+    "version": "1.0.0"
+  },
+  {
+    "id": "com.triggercmd.trigger",
+    "name": "TRIGGERcmd",
+    "author": "TRIGGERcmd",
+    "link": "https://triggercmd.com",
+    "version": "1.0.1"
+  },
+  {
+    "id": "com.victorgrycuk.colorpicker",
+    "name": "Color Picker",
+    "author": "Victor Grycuk",
+    "link": "https://github.com/VictorGrycuk/streamdeck-color-picker",
+    "version": "1.5.0"
+  },
+  {
+    "id": "com.victorgrycuk.keepass",
+    "name": "StreamDeck-KeePass",
+    "author": "Victor Grycuk",
+    "link": "https://github.com/VictorGrycuk/StreamDeck-KeePass",
+    "version": "1.7.0"
+  },
+  {
+    "id": "com.victorgrycuk.magnifier",
+    "name": "Magnifier",
+    "author": "Victor Grycuk",
+    "link": "https://github.com/VictorGrycuk/streamdeck-magnifier",
+    "version": "1.2.2"
+  },
+  {
+    "id": "com.victorgrycuk.repositorywatcher",
+    "name": "Repository Watcher",
+    "author": "Victor Grycuk",
+    "link": "https://github.com/VictorGrycuk/streamdeck-repository-watcher",
+    "version": "1.1"
+  },
+  {
+    "id": "com.viddie.dice",
+    "name": "Dice",
+    "author": "viddie",
+    "link": "https://github.com/viddie/sdDice",
+    "version": "1.0.4"
+  },
+  {
+    "id": "com.vivremotion.autotranslate",
+    "name": "Auto Translate Engine",
+    "author": "VIVRE-MOTION",
+    "link": null,
+    "version": "1.5"
+  },
+  {
+    "id": "com.vivremotion.dropzone",
+    "name": "Drop Zone",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com",
+    "version": "1.0"
+  },
+  {
+    "id": "com.vivremotion.dynamicsearchisland",
+    "name": "Dynamic Search Island",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com",
+    "version": "1.1"
+  },
+  {
+    "id": "com.vivremotion.forcewindow",
+    "name": "Force Window onTop",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com/forcewindow",
+    "version": "1.3"
+  },
+  {
+    "id": "com.vivremotion.huddisplay",
+    "name": "Head-up-Display",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com/huddisplay",
+    "version": "1.1"
+  },
+  {
+    "id": "com.vivremotion.ipcamera",
+    "name": "Surveillance IP Camera",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com/",
+    "version": "1.5"
+  },
+  {
+    "id": "com.vivremotion.matrixdisplay",
+    "name": "Matrix Display",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com",
+    "version": "1.2"
+  },
+  {
+    "id": "com.vivremotion.momentsslideshow",
+    "name": "Moments Slideshow",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com",
+    "version": "1.1"
+  },
+  {
+    "id": "com.vivremotion.mousecontrol",
+    "name": "Mouse Control",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com",
+    "version": "1.0"
+  },
+  {
+    "id": "com.vivremotion.mousesimulator",
+    "name": "Mouse Simulator",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com/mousesimulator",
+    "version": "1.6"
+  },
+  {
+    "id": "com.vivremotion.mousespotlight",
+    "name": "Mouse Spotlight",
+    "author": "VIVRE-MOTION",
+    "link": null,
+    "version": "1.8"
+  },
+  {
+    "id": "com.vivremotion.netiopdupowercontrol",
+    "name": "NETIO PDU Power Control",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com",
+    "version": "1.0"
+  },
+  {
+    "id": "com.vivremotion.outlookinstantmail",
+    "name": "Outlook Instant Mail",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com",
+    "version": "1.1"
+  },
+  {
+    "id": "com.vivremotion.phantommouse",
+    "name": "Phantom Mouse",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com/phantommouse",
+    "version": "1.3"
+  },
+  {
+    "id": "com.vivremotion.standbyscreen",
+    "name": "Standby Screen",
+    "author": "VIVRE-MOTION",
+    "link": null,
+    "version": "1.2"
+  },
+  {
+    "id": "com.vivremotion.vbamacroexecute",
+    "name": "VBA Macro Execute",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com",
+    "version": "1.5"
+  },
+  {
+    "id": "com.vivremotion.windowscockpit",
+    "name": "Windows Cockpit",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com/windowscockpit",
+    "version": "1.5"
+  },
+  {
+    "id": "com.vivremotion.wol",
+    "name": "Wake on LAN (WOL)",
+    "author": "VIVRE-MOTION",
+    "link": "https://www.vivre-motion.com/wol",
+    "version": "1.3"
+  },
+  {
+    "id": "com.vmix.shortcuts",
+    "name": "vMix",
+    "author": "vMix",
+    "link": "https://www.vmix.com",
+    "version": "1.4"
+  },
+  {
+    "id": "com.welshtroll.preflightchecklist",
+    "name": "Preflight Checklist",
+    "author": "welshtroll",
+    "link": "https://welshtroll.co.uk/sd/",
+    "version": "0.2.0"
+  },
+  {
+    "id": "com.xsplit.gamecaster",
+    "name": "Gamecaster",
+    "author": "Gamecaster",
+    "link": "https://www.gamecaster.com/",
+    "version": "1.0.2106.2803"
+  },
+  {
+    "id": "com.xsplit.streamdeck",
+    "name": "XSplit Controller",
+    "author": "Splitmedialabs",
+    "link": "https://www.xsplit.com/",
+    "version": "1.2.2110.1501"
+  },
+  {
+    "id": "com.zergo0.teamspeak3integration",
+    "name": "TeamSpeak 3 Integration",
+    "author": "ZerGo0",
+    "link": "https://github.com/ZerGo0",
+    "version": "1.8"
+  },
+  {
+    "id": "cz.danol.discordmixer",
+    "name": "Discord Volume Mixer",
+    "author": "Danol",
+    "link": "https://github.com/CZDanol/StreamDeck-DiscordVolumeMixer2",
+    "version": "2.0.1.7"
+  },
+  {
+    "id": "de.firesplash.sdplugins.fflgame",
+    "name": "Fantasy Fight LIVE Controls",
+    "author": "Firesplash Entertainment",
+    "link": "https://firesplash.tv/fflgame/",
+    "version": "1.0"
+  },
+  {
+    "id": "de.flexniko.bakkesmodcommands",
+    "name": "BakkesModCommands",
+    "author": "FlexNiko",
+    "link": "https://github.com/FlexXx1212/StreamDeckBakkesPlugin",
+    "version": "1.5"
+  },
+  {
+    "id": "de.itxware.iracing",
+    "name": "iRaceIT",
+    "author": "Günter Denz",
+    "link": "http://iraceit.itxware.de/",
+    "version": "1.15.3"
+  },
+  {
+    "id": "de.kaleidox.vbandeck",
+    "name": "VBANDeck",
+    "author": "Kaleidox",
+    "link": "https://github.com/burdoto/VBAN-StreamDeck-Plugin",
+    "version": "1.0.2"
+  },
+  {
+    "id": "de.leonmarcel.teamspeak5",
+    "name": "TeamSpeak 5",
+    "author": "LeonMarcel",
+    "link": "https://github.com/LeonMarcel-HD/StreamDeck-TeamSpeak5",
+    "version": "1.0.0"
+  },
+  {
+    "id": "de.perdoctus.streamdeck.homeassistant",
+    "name": "Home Assistant",
+    "author": "Christoph Giesche",
+    "link": "https://github.com/cgiesche/streamdeck-homeassistant#configuration",
+    "version": "2.3.1"
+  },
+  {
+    "id": "de.shells.totalmix",
+    "name": "RME TotalMix FX",
+    "author": "shells",
+    "link": "https://github.com/shells-dw/streamdeck-totalmix",
+    "version": "3.2.2"
+  },
+  {
+    "id": "de.sven-wiegand.ultraschall",
+    "name": "Ultraschall (Alternative)",
+    "author": "Sven Wiegand",
+    "link": "https://github.com/svenwiegand/streamdeck-ultraschall",
+    "version": "2.1.0"
+  },
+  {
+    "id": "de.tobimori.streamdeck.ifttt",
+    "name": "IFTTT",
+    "author": "tobimori",
+    "link": "https://moeritz.cc",
+    "version": "2.0"
+  },
+  {
+    "id": "dev.aperez.tado",
+    "name": "Tado",
+    "author": "aperez",
+    "link": "https://github.com/aperezm85/streamdeck-tado-plugin",
+    "version": "2.0"
+  },
+  {
+    "id": "dev.cazzar.vtubestudio",
+    "name": "VTubeStudio",
+    "author": "Cazzar",
+    "link": "https://github.com/Cazzar/VTubeStudio-StreamDeck/wiki",
+    "version": "2.0.0"
+  },
+  {
+    "id": "dev.jduabe.obsideck",
+    "name": "Obsideck",
+    "author": "Jordan Duabe",
+    "link": "https://github.com/j4ckofalltrades/obsideck",
+    "version": "1.1.0"
+  },
+  {
+    "id": "dev.santiagomartin.devops",
+    "name": "DevOps for StreamDeck",
+    "author": "SantiMA10",
+    "link": "https://santiagomartin.dev",
+    "version": "1.7.0"
+  },
+  {
+    "id": "dev.sean.lifx",
+    "name": "LIFX Control",
+    "author": "wwsean08",
+    "link": "https://sean.dev",
+    "version": "0.7.1"
+  },
+  {
+    "id": "dev.theca11.multiobs",
+    "name": "Multi OBS Controller",
+    "author": "the_ca11",
+    "link": "https://github.com/theca11/multi-obs-controller#readme",
+    "version": "0.2.0"
+  },
+  {
+    "id": "dev.theca11.whack-a-mole",
+    "name": "Whack-A-Mole",
+    "author": "the_ca11",
+    "link": "https://github.com/theca11/whack-a-mole#readme",
+    "version": "1.0.1"
+  },
+  {
+    "id": "dev.timeblaster.leaguedeck",
+    "name": "LeagueDeck",
+    "author": "TimeBlaster",
+    "link": "https://github.com/TimeBlaster/LeagueDeck",
+    "version": "2.5"
+  },
+  {
+    "id": "es.mspi.elgato.plugins.microsoft",
+    "name": "Microsoft 365 Actions",
+    "author": "Marcell Spies",
+    "link": "https://github.com/marcells/streamdeck-microsoft365",
+    "version": "1.0"
+  },
+  {
+    "id": "fail.marc.onairclock",
+    "name": "On Air Clock",
+    "author": "Marc Herrmann",
+    "link": "https://github.com/wortkrieg/streamdeck-onairclock",
+    "version": "1.1.1"
+  },
+  {
+    "id": "fm.ultraschall.ultradeck",
+    "name": "Ultraschall",
+    "author": "Ultraschall",
+    "link": "https://ultraschall.fm",
+    "version": "1.2.3"
+  },
+  {
+    "id": "fr.arubinu42",
+    "name": "Arubinu42",
+    "author": "Alvin Pergens",
+    "link": "https://arubinu.github.io/Scripts-Manager",
+    "version": "2.2.0"
+  },
+  {
+    "id": "fr.twitchat",
+    "name": "Twitchat",
+    "author": "Durss",
+    "link": "https://twitchat.fr",
+    "version": "2.5"
+  },
+  {
+    "id": "fun.shiro.ytmd",
+    "name": "YouTube Music Desktop Connector",
+    "author": "XeroxDev",
+    "link": "https://github.com/XeroxDev/YTMD-StreamDeck",
+    "version": "1.7.0"
+  },
+  {
+    "id": "games.boyne.godot",
+    "name": "Godot Utilities",
+    "author": "Boyne Games",
+    "link": "https://github.com/BoyneGames/streamdeck-godot-plugin",
+    "version": "1.0.0"
+  },
+  {
+    "id": "gg.datagram.web-requests",
+    "name": "Web Requests",
+    "author": "Adrian Mullings",
+    "link": "https://github.com/data-enabler/streamdeck-web-requests",
+    "version": "0.1.0"
+  },
+  {
+    "id": "gg.efuse.clippy",
+    "name": "Sidekick",
+    "author": "eFuse",
+    "link": "https://efuse.gg/clippy",
+    "version": "1.1.3"
+  },
+  {
+    "id": "gg.rcv.league",
+    "name": "League Observer Tool",
+    "author": "RCVolus",
+    "link": "https://github.com/RCVolus/league-observer-tool-sdPlugin",
+    "version": "1.2.0"
+  },
+  {
+    "id": "in.std.streamdeck.workplace",
+    "name": "Facebook Workplace",
+    "author": "pgriess",
+    "link": "https://github.com/pgriess/streamdeck-workrooms/wiki",
+    "version": "2.0.2"
+  },
+  {
+    "id": "io.bitfocus.companion-plugin",
+    "name": "Companion button",
+    "author": "Bitfocus AS",
+    "link": "https://bitfocus.io/companion/",
+    "version": "2.2.0"
+  },
+  {
+    "id": "io.deckassistant.plugin",
+    "name": "AI DeckAssistant",
+    "author": "Martijn Smit",
+    "link": "https://deckassistant.io",
+    "version": "3.0.0"
+  },
+  {
+    "id": "io.moeritz.streamdeck.toggl",
+    "name": "Toggl",
+    "author": "tobimori",
+    "link": "https://moeritz.io",
+    "version": "1.4.1"
+  },
+  {
+    "id": "io.predictionbuttons",
+    "name": "Prediction Buttons",
+    "author": "GhostlyTuna",
+    "link": "https://github.com/ScottMellors/",
+    "version": "1.5.4"
+  },
+  {
+    "id": "io.streamhydra.execut",
+    "name": "StreamHydra",
+    "author": "Stream Hydra",
+    "link": "https://streamhydra.io",
+    "version": "1.0"
+  },
+  {
+    "id": "io.streamroll.controller",
+    "name": "Streamroll.io Controller",
+    "author": "GhostlyTuna",
+    "link": "https://streamroll.io",
+    "version": "1.1"
+  },
+  {
+    "id": "io.streamtimer",
+    "name": "GhostlyTuna's Stream Timer Controls",
+    "author": "GhostlyTuna",
+    "link": "https://streamtimer.io",
+    "version": "1.0"
+  },
+  {
+    "id": "me.alhazmy13.sensibo",
+    "name": "Sensibo",
+    "author": "Alhazmy13",
+    "link": "https://github.com/alhazmy13/streamdeck-sensibo",
+    "version": "1.1.0"
+  },
+  {
+    "id": "me.hckr.airplanemode",
+    "name": "Airplane mode",
+    "author": "Jarno Le Conté",
+    "link": "https://github.com/JarnoLeConte/streamdeck-airplanemode",
+    "version": "1.0"
+  },
+  {
+    "id": "me.hckr.appswitcher",
+    "name": "App Switcher",
+    "author": "Jarno Le Conté",
+    "link": "https://github.com/JarnoLeConte/streamdeck-appswitcher",
+    "version": "1.0.1"
+  },
+  {
+    "id": "me.hckr.findertags",
+    "name": "Finder Tags",
+    "author": "Jarno Le Conté",
+    "link": "https://github.com/JarnoLeConte/streamdeck-findertags",
+    "version": "1.1.1"
+  },
+  {
+    "id": "me.reinii.harvest-billables",
+    "name": "Billables Status",
+    "author": "Emma Litwa-Vulcu",
+    "link": "https://github.com/reiniiriarios/stream-deck-billables-harvest/",
+    "version": "0.5.1"
+  },
+  {
+    "id": "me.rumkee.bluetooth.monitor",
+    "name": "Bluetooth Monitor",
+    "author": "James Rumkee",
+    "link": "https://github.com/Rumkee/StreamDeckBluetoothMonitor",
+    "version": "1.0.0"
+  },
+  {
+    "id": "net.bliny.roon",
+    "name": "Roon",
+    "author": "Tomi Blinnikka",
+    "link": "https://bliny.net/streamdeck-roon/",
+    "version": "1.0.7"
+  },
+  {
+    "id": "net.ellreka.slack-status",
+    "name": "Slack Status",
+    "author": "ellreka",
+    "link": null,
+    "version": "1.0.2"
+  },
+  {
+    "id": "net.kystar.kommander",
+    "name": "kommander",
+    "author": "kommander",
+    "link": "http://www.kommander.com.cn/en/",
+    "version": "1.2"
+  },
+  {
+    "id": "net.localhost.streamdeck.clipboard-buddy",
+    "name": "Clipboard slot",
+    "author": "Commit-La-Grenouille",
+    "link": "https://github.com/Commit-La-Grenouille/streamdeck-clipboard-buddy",
+    "version": "0.7.0"
+  },
+  {
+    "id": "net.oksala.azuredevops",
+    "name": "AzureDevOps",
+    "author": "Panu Oksala",
+    "link": "https://github.com/panuoksala/streamdeck-azuredevops-plugin",
+    "version": "1.4.0"
+  },
+  {
+    "id": "net.telestream.wirecast",
+    "name": "Wirecast Plugin",
+    "author": "Telestream Inc.",
+    "link": "https://www.telestream.net",
+    "version": "1.4"
+  },
+  {
+    "id": "net.voicemod.windowsdesktop",
+    "name": "Voicemod",
+    "author": "Voicemod S.L.",
+    "link": "http://www.voicemod.net",
+    "version": "5.0.3"
+  },
+  {
+    "id": "network.workflow.livetime",
+    "name": "Live Time",
+    "author": "Workflow Network",
+    "link": "https://workflow.network",
+    "version": "1.0.3"
+  },
+  {
+    "id": "nl.nwrp.gms",
+    "name": "NowayRoleplay Status Update",
+    "author": "NowayRoleplay",
+    "link": "https://nowayroleplay.nl/",
+    "version": "1.0.1"
+  },
+  {
+    "id": "nl.nwrp.utils",
+    "name": "NowayRoleplay",
+    "author": "NowayRoleplay",
+    "link": "https://nowayroleplay.nl",
+    "version": "1.0.5"
+  },
+  {
+    "id": "org.danielkennett.xcode-streamdeck-plugin",
+    "name": "Xcode",
+    "author": "Daniel Kennett",
+    "link": "https://github.com/iKenndac/xcode-streamdeck-plugin",
+    "version": "1.0.1"
+  },
+  {
+    "id": "org.soundflow.streamdeck",
+    "name": "SoundFlow",
+    "author": "SoundFlow",
+    "link": "https://soundflow.org/landing/streamdeck-plugin",
+    "version": "3.7.0.8567"
+  },
+  {
+    "id": "org.tynsoe.streamdeck.wsproxy",
+    "name": "WebSocket Proxy",
+    "author": "Yann Bizeul",
+    "link": null,
+    "version": "1.2.0"
+  },
+  {
+    "id": "photo.lostcause.captureone",
+    "name": "Capture One",
+    "author": "Emory Dunn",
+    "link": "https://lostcause.photo",
+    "version": "2023.1.3"
+  },
+  {
+    "id": "pl.spooksoft.switchto",
+    "name": "SwitchTo",
+    "author": "Wojciech Sura",
+    "link": null,
+    "version": "1.1"
+  },
+  {
+    "id": "pro.own3d.streamdeck",
+    "name": "OWN3D Pro",
+    "author": "OWN3D",
+    "link": "https://www.own3d.pro",
+    "version": "1.0.0"
+  },
+  {
+    "id": "rocks.pretzel.play",
+    "name": "Pretzel Rocks",
+    "author": "Songtradr",
+    "link": "https://pretzel.rocks/?utm_source=elgato&utm_medium=plugin",
+    "version": "1.0.0"
+  },
+  {
+    "id": "se.sourcetech.keyboard",
+    "name": "4059EE Keyboard",
+    "author": "SourceTech AB",
+    "link": "https://www.sourcetech.se",
+    "version": "1.0.0.5"
+  },
+  {
+    "id": "se.trevligaspel.cubase",
+    "name": "Cubase",
+    "author": "Trevliga Spel",
+    "link": "https://trevligaspel.se/streamdeck/cubase/index.html",
+    "version": "2.0.2"
+  },
+  {
+    "id": "se.trevligaspel.midi",
+    "name": "Midi",
+    "author": "Trevliga Spel",
+    "link": "https://trevligaspel.se/streamdeck/midi/index.html",
+    "version": "3.5.3"
+  },
+  {
+    "id": "se.trevligaspel.nuendo",
+    "name": "Nuendo",
+    "author": "Trevliga Spel",
+    "link": "https://trevligaspel.se/streamdeck/nuendo/index.html",
+    "version": "2.0.2"
+  },
+  {
+    "id": "studio.mods.streamdeck.ms2.b",
+    "name": "Mods Studio 2",
+    "author": "Roadside Studio",
+    "link": "https://www.mods.studio/stream-deck/installation",
+    "version": "4.0"
+  },
+  {
+    "id": "tech.aerove.streamdeck.nestcontrol",
+    "name": "Nest Control",
+    "author": "Aeroverra",
+    "link": null,
+    "version": "1.1.9"
+  },
+  {
+    "id": "tech.flighttracker.streamdeck",
+    "name": "Flight Tracker",
+    "author": "By Hy, Pieter and rmroc451",
+    "link": "https://github.com/nguyenquyhy/Flight-Tracker-StreamDeck",
+    "version": "0.48"
+  },
+  {
+    "id": "tv.aitum.sdplugin",
+    "name": "Aitum TV",
+    "author": "Aitum LTD",
+    "link": "https://aitum.tv",
+    "version": "1.1.0"
+  },
+  {
+    "id": "tv.quicklink.cre8studio",
+    "name": "Quicklink Cre8",
+    "author": "Quicklink Ltd.",
+    "link": "https://quicklink.tv",
+    "version": "1.0.0"
+  },
+  {
+    "id": "tv.twitch.studio",
+    "name": "Twitch Studio",
+    "author": "Twitch",
+    "link": "https://www.twitch.tv/broadcast/studio",
+    "version": "1.2"
+  },
+  {
+    "id": "us.johnholbrook.pihole",
+    "name": "Pihole",
+    "author": "John Holbrook",
+    "link": "https://github.com/johnholbrook/streamdeck-pihole",
+    "version": "1.2.0"
+  },
+  {
+    "id": "us.johnholbrook.vextm",
+    "name": "VEX Tournament Manager",
+    "author": "John Holbrook",
+    "link": "https://vextm.dwabtech.com",
+    "version": "1.2.0"
+  },
+  {
+    "id": "warudo.streamdeck",
+    "name": "Warudo",
+    "author": "Hakuya Labs",
+    "link": "https://warudo.app",
+    "version": "1.0.0"
+  }
+]
