@@ -250,6 +250,13 @@ def discover(topics: list[str]) -> int:
                 print(f"skip {url}: {entry['id']} is already listed")
                 continue
             path.write_text(json.dumps(entry, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            issues = problems(path)
+            if issues:
+                # Leave out what the check workflow would reject (an empty description, a bad id):
+                # one such entry would fail the whole pull request.
+                path.unlink()
+                print(f"skip {url}: {'; '.join(issues)}")
+                continue
             print(f"new  {entry['id']} {entry['version']} from {url}")
             written += 1
     print(f"{written} new plugin(s)")
