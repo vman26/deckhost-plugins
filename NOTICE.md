@@ -1,20 +1,23 @@
 # Elgato plugin mirror
 
-Copies of Stream Deck plugins from the Elgato Marketplace, kept for DeckHost's plugin store.
+Stream Deck plugins for DeckHost's plugin store, from two places:
 
-We are not the authors of these plugins and are not affiliated with Elgato. Each package is the
-copy kept by the community archive (https://github.com/nekename/ElgatoAppStoreArchive) of what Elgato's servers served,
-passed on unchanged apart from the checks below, and stored with its SHA-256. Every plugin keeps
+- **The former Stream Deck Store** (closed by Elgato in April 2024): our own snapshot of it, taken
+  from the community archive (https://github.com/nekename/ElgatoAppStoreArchive) of what Elgato's servers served.
+  A plugin is copied only when its source repository has an open-source license that allows
+  passing it on; the copy is unchanged apart from the checks below and stored with its SHA-256.
+  The others are listed with a link to the Elgato Marketplace and are not copied.
+- **The Elgato Marketplace**: its public plugin list, each plugin with a link to its Marketplace page.
+  Nothing is downloaded from the Marketplace or copied: you get a plugin there.
+
+We are not the authors of these plugins and are not affiliated with Elgato. Every plugin keeps
 its own license and its author, named in the table.
-
-A plugin is copied only when its source repository has an open-source license that allows
-passing it on. The others are listed with a link to the Elgato Marketplace and are not copied.
 
 Don't want a plugin here? Open an issue in https://github.com/vman26/deckhost-plugins (or send a pull request
 adding its id to `mirror/blocklist.json`). It is removed from the mirror, and its package deleted,
 by the next run (weekly) or at once when a maintainer runs the workflow.
 
-46 of 325 plugins are copied:
+1899 plugins are listed from the Elgato Marketplace. 46 of 1977 plugins are copied:
 
 | Plugin | Author | Version | License | Source |
 |---|---|---|---|---|
