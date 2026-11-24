@@ -132,7 +132,7 @@ def read_manifest(package: bytes) -> dict | None:
             data = json.loads(archive.read("plugin.json").decode("utf-8-sig"))
             return {key: data.get(key) for key in ("id", "name", "version", "author", "description")} | {"permissions": data.get("permissions") or []}
         for name in names:
-            parts = name.split("/")
+            parts = name.replace("\\", "/").split("/")  # packages zipped on Windows can use \
             if len(parts) == 2 and parts[0].lower().endswith(".sdplugin") and parts[1].lower() == "manifest.json":
                 data = json.loads(archive.read(name).decode("utf-8-sig"))
                 return {

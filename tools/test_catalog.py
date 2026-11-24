@@ -4,15 +4,19 @@ In the style of tools/test_mirror.py: names are test_<function>_<scenario>_<expe
 Assert with one Act, no loops or conditions in a test body, named constants.
 """
 
+import io
+import json
 import pathlib
 import sys
 import unittest
+import zipfile
 from unittest import mock
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import catalog  # noqa: E402
 
 QUERY = "topic:streamdeck-plugin archived:false"
+PLUGIN_ID = "com.viddie.dice"
 
 
 def repositories(count, start=0):
@@ -71,6 +75,20 @@ class SearchRepositoriesTests(unittest.TestCase):
 
         # Assert
         self.assertEqual(asked, list(range(1, catalog.SEARCH_MAX_PAGES + 1)))
+
+
+class ReadManifestTests(unittest.TestCase):
+    def test_read_manifest_package_zipped_with_windows_paths_is_read(self):
+        # Arrange
+        buffer = io.BytesIO()
+        with zipfile.ZipFile(buffer, "w") as archive:
+            archive.writestr(f"{PLUGIN_ID}.sdPlugin\\manifest.json", json.dumps({"Name": "Dice", "Version": "1.0.4", "Author": "A"}))
+
+        # Act
+        manifest = catalog.read_manifest(buffer.getvalue())
+
+        # Assert
+        self.assertEqual((manifest["id"], manifest["version"]), (PLUGIN_ID, "1.0.4"))
 
 
 if __name__ == "__main__":
