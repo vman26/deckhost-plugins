@@ -1,0 +1,3729 @@
+{
+ "plugins": {
+  "agency.redmango.ptzhub": {
+   "source": "deckhost",
+   "version": "1.4.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "agency.rivo.ai-usage-meter": {
+   "source": "deckhost",
+   "version": "4.0.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "app.casthub.streamdeck": {
+   "source": "elgato",
+   "version": "1.2.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "app.kickbot.kickbot": {
+   "source": "elgato",
+   "version": "1.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "app.liveedit.liveosc": {
+   "source": "elgato",
+   "version": "1.2.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "at.terrorwolf.helldivers2": {
+   "source": "openaction",
+   "version": "https://github.com/Terrorwolf01/opendeck-helldivers2/releases/download/v3.1.1/at.terrorwolf.helldivers2.sdPlugin.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "linux"
+   ]
+  },
+  "at.terrorwolf.linkwarden": {
+   "source": "openaction",
+   "version": "https://github.com/Terrorwolf01/streamdeck-linkwarden/releases/download/v1.0.2/at.terrorwolf.linkwarden.sdPlugin.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "linux"
+   ]
+  },
+  "au.gkw.orcaslicer": {
+   "source": "deckhost",
+   "version": "0.1.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "audio.dhd.rm1": {
+   "source": "openaction",
+   "version": "https://github.com/dhd-audio/streamdeck-rm1/releases/download/v1.1.0/audio.dhd.rm1.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "audio.dhd.s52": {
+   "source": "openaction",
+   "version": "https://github.com/dhd-audio/streamdeck-DHD/releases/download/v1.0.3/audio.dhd.s52.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "bot.streamer.streamdeck": {
+   "source": "elgato",
+   "version": "1.0.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "ch.claudiobernasconi.youtubestats": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "co.abetterhome.lighterstreamdeck": {
+   "source": "elgato",
+   "version": "1.1.5",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "co.anam.simplemute": {
+   "source": "deckhost",
+   "version": "0.2.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "co.meldstudio.streamdeck": {
+   "source": "elgato",
+   "version": "0.3.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "co.uk.clarionmusic.midibutton": {
+   "source": "openaction",
+   "version": "https://github.com/tsbkelly/Streamdeck-Midibutton/raw/refs/heads/master/Release/co.uk.clarionmusic.midibutton.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "co.weimeng.streamdeck-gitlab": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.5e.hwinfo-reader": {
+   "source": "openaction",
+   "version": "https://github.com/5e/streamdeck-hwinfo-plugin/raw/refs/heads/main/com.5e.hwinfo-reader.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.adamcarballo.unity-integration": {
+   "source": "openaction",
+   "version": "https://github.com/AdamCarballo/streamdeck-unity-plugin/releases/download/1.2.0/com.adamcarballo.unity-integration.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.adrian-miasik.sdpdota2": {
+   "source": "openaction",
+   "version": "https://github.com/adrian-miasik/stream-deck-plugins-dota-2/releases/download/v1.3.1/com.adrian-miasik.sdpdota2.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.ags.info_clock": {
+   "source": "openaction",
+   "version": "https://github.com/AlexGdevGT/infobar_clock/releases/download/v1.0.9/com.ags.info_clock.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.alphalaneous.loquibot": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.andondeck.plugin": {
+   "source": "deckhost",
+   "version": "1.0.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.animapix.oscremote": {
+   "source": "elgato",
+   "version": "1.0.2",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.appgineering.atvo": {
+   "source": "elgato",
+   "version": "1.1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.arkkis.nowplaying": {
+   "source": "openaction",
+   "version": "https://github.com/Arkkis/StreamDeckNowPlayingPlugin/releases/download/v1.0.1/com.arkkis.nowplaying.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.arkyasmal.windowactions": {
+   "source": "openaction",
+   "version": "https://github.com/aasmal97/Window-Actions/releases/download/v4.2.2/com.arkyasmal.windowactions.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.ascend.japanesereviews": {
+   "source": "openaction",
+   "version": "https://github.com/ascendedguard/streamdeck-japanesereviews/releases/download/v2.0.0/com.ascend.japanesereviews.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.aximmetry": {
+   "source": "elgato",
+   "version": "2.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.badcodes.sc-profile-switcher": {
+   "source": "deckhost",
+   "version": "1.0.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.bambudeck.plugin": {
+   "source": "deckhost",
+   "version": "0.1.12.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.baptiewright.nanoleaf": {
+   "source": "openaction",
+   "version": "https://github.com/Baptiewright/streamdeck-nanoleaf/raw/refs/heads/master/Releases/com.baptiewright.nanoleaf.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.barraider.advancedlauncher": {
+   "source": "elgato",
+   "version": "1.8",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.apininja": {
+   "source": "elgato",
+   "version": "1.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.audiometer": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.battery": {
+   "source": "elgato",
+   "version": "1.6",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.delayedtext": {
+   "source": "elgato",
+   "version": "1.01",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.disco": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.emojipicker": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.facecam": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.games": {
+   "source": "elgato",
+   "version": "1.7",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.minecraft": {
+   "source": "elgato",
+   "version": "1.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.obstools": {
+   "source": "elgato",
+   "version": "3.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.sdscreensaver": {
+   "source": "elgato",
+   "version": "2.4",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.shadowplay": {
+   "source": "elgato",
+   "version": "1.5",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.soundpad": {
+   "source": "elgato",
+   "version": "1.6",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.speedtest": {
+   "source": "elgato",
+   "version": "1.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.spotify": {
+   "source": "elgato",
+   "version": "2.9.1",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.stockticker": {
+   "source": "elgato",
+   "version": "1.9",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.stopwatch": {
+   "source": "elgato",
+   "version": "1.7",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.streamcountdowntimer": {
+   "source": "elgato",
+   "version": "1.8",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.streamcounter": {
+   "source": "elgato",
+   "version": "1.8",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.supermacro": {
+   "source": "elgato",
+   "version": "2.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.textfiletools": {
+   "source": "elgato",
+   "version": "1.4",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.tts": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.twitchtools": {
+   "source": "elgato",
+   "version": "3.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.voicemeeter": {
+   "source": "elgato",
+   "version": "2.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.webcam": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.windowsmover": {
+   "source": "elgato",
+   "version": "2.5",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.wintools": {
+   "source": "elgato",
+   "version": "1.8",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.barraider.worldtime": {
+   "source": "elgato",
+   "version": "2.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.bi0s.mqtt": {
+   "source": "openaction",
+   "version": "https://github.com/pherting/streamdeck-mqtt/releases/download/V1.3/com.bi0s.mqtt.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.billzbawb.signalrgb": {
+   "source": "elgato",
+   "version": "1.0.7",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.brettinternet.hammerspoon": {
+   "source": "deckhost",
+   "version": "0.6.0.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.broadcastpix.panelbutton": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.buzzet.azurepipeline": {
+   "source": "openaction",
+   "version": "https://github.com/Buzzet/streamdeck-azure-pipeline/raw/refs/heads/master/Release/com.buzzet.azurepipeline.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.bzbgear.camera": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.cadufpolis.monitor-brightness": {
+   "source": "openaction",
+   "version": "https://github.com/cadufpolis/linux-monitor-brightness/releases/download/v0.1.0/com.cadufpolis.monitor-brightness.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.cael-gomes.bt-controller": {
+   "source": "openaction",
+   "version": "https://github.com/cael-gomes/streamdeck-ble-plugin/releases/download/v1.0.0.1/com.cael-gomes.bt-controller.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.caratask.activity.prod": {
+   "source": "elgato",
+   "version": "1.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.carlesbalsach.waterreminder": {
+   "source": "openaction",
+   "version": "https://github.com/CarlesBalsach/water-reminder-elgato-plugin/raw/refs/heads/main/Release/com.carlesbalsach.waterreminder.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.cdeenen.materialdeck": {
+   "source": "openaction",
+   "version": "https://github.com/MaterialFoundry/MaterialDeck_SD/releases/download/v2.1.0.0/com.material-foundry.material-deck.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.ceridwen.audio": {
+   "source": "openaction",
+   "version": "https://github.com/ceridwen-com/CeridwenAudioTools/releases/download/v1.1.0/com.ceridwen.audio.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.chhtv.udts": {
+   "source": "elgato",
+   "version": "0.0.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.chrisregado.googlemeet": {
+   "source": "openaction",
+   "version": "https://github.com/ChrisRegado/streamdeck-googlemeet/releases/download/v1.6.3/com.chrisregado.googlemeet.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.cloudcastsystems.remoteplay": {
+   "source": "elgato",
+   "version": "1.0"
+  },
+  "com.corcules.kmlink": {
+   "source": "openaction",
+   "version": "https://github.com/Corcules/KMlink/raw/refs/heads/master/com.corcules.kmlink.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.coreloop.t3": {
+   "source": "deckhost",
+   "version": "1.0.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.coreparadox.opendeck.magtran-m3": {
+   "source": "openaction",
+   "version": "https://github.com/CoreParadox/opendeck-magtran-m3/releases/download/1.0.1/com.coreparadox.opendeck.magtran-m3.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.corsair.icue": {
+   "source": "elgato",
+   "version": "1.5.182",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.courcelle.cryptoticker": {
+   "source": "elgato",
+   "version": "1.5.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.courcelle.reminder": {
+   "source": "openaction",
+   "version": "https://github.com/tubededentifrice/streamdeck-reminder/raw/refs/heads/master/Release/com.courcelle.reminder.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.dahnandpartners.btcticker": {
+   "source": "elgato",
+   "version": "1.6.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.dahnandpartners.cmcticker": {
+   "source": "elgato",
+   "version": "1.2.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.dahnandpartners.ytticker": {
+   "source": "elgato",
+   "version": "2.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.darkdragon14.elgato-docker": {
+   "source": "openaction",
+   "version": "https://github.com/Darkdragon14/streamdeck-docker/releases/download/v2.2.0.0/com.darkdragon14.elgato-docker.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.davidborzek.foobar2000": {
+   "source": "openaction",
+   "version": "https://github.com/davidborzek/streamdeck-foobar2000/releases/download/v1.5/com.davidborzek.foobar2000.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.davidgolunski.autoclicker": {
+   "source": "openaction",
+   "version": "https://github.com/DavidGolunski/Autoclicker/raw/refs/heads/main/Plugin/com.davidgolunski.autoclicker.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.davidgolunski.goveelightcontroller": {
+   "source": "openaction",
+   "version": "https://github.com/DavidGolunski/GoveeLightController/raw/refs/heads/main/Plugin/com.davidgolunski.goveelightcontroller.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.dddice.app": {
+   "source": "openaction",
+   "version": "https://github.com/dddice/dddice-stream-deck-plugin/releases/download/v0.3.3/com.dddice.app.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.deanlongstaff.gifpaste": {
+   "source": "deckhost",
+   "version": "3.0.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.dec04.github-ci": {
+   "source": "elgato",
+   "version": "1.0.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.dim.streamdeck": {
+   "source": "openaction",
+   "version": "https://github.com/dim-stream-deck/com.dim.streamdeck/releases/download/3.4.0/com.dim.streamdeck.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.dixper": {
+   "source": "elgato",
+   "version": "1.0.6",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.dlprows.focusvolumecontrol": {
+   "source": "openaction",
+   "version": "https://github.com/dlprows/FocusVolumeControl/releases/download/v1.4.0/com.dlprows.focusvolumecontrol.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.dms.streamdeck.github": {
+   "source": "openaction",
+   "version": "https://github.com/rdohms/com.dms.streamdeck.github/raw/refs/heads/main/release/com.dms.streamdeck.github.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.ecamm.ecammliveplugin": {
+   "source": "elgato",
+   "version": "4.3",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.edenmichal.musicdeck": {
+   "source": "deckhost",
+   "version": "0.11.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.egg-rp.fxcommands": {
+   "source": "openaction",
+   "version": "https://github.com/josh-tf/fxcommands/releases/download/v2.1.1/tf.josh.fxcommands.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.eladavron.litra-glow-commander": {
+   "source": "openaction",
+   "version": "https://github.com/eladavron/litra-glow-commander/releases/download/v1.0.0.3/com.eladavron.litra-glow-commander.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.4kcu": {
+   "source": "elgato",
+   "version": "1.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.elgato.analogclock": {
+   "source": "openaction",
+   "version": "https://github.com/elgatosf/streamdeck-analogclock/raw/master/Release/com.elgato.analogclock.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.applemail": {
+   "source": "openaction",
+   "version": "https://github.com/elgatosf/streamdeck-applemail/raw/master/Release/com.elgato.applemail.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.elgato.applemusic": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.elgato.camerahub": {
+   "source": "elgato",
+   "version": "1.3.0.247",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.camlinkpro": {
+   "source": "elgato",
+   "version": "1.0.0.175",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.elgato.clocks": {
+   "source": "elgato",
+   "version": "0.9.2.38",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.controlcenter": {
+   "source": "elgato",
+   "version": "1.9.3.274",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.counter": {
+   "source": "openaction",
+   "version": "https://github.com/elgatosf/streamdeck-counter/raw/master/Release/com.elgato.counter.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.cpu": {
+   "source": "openaction",
+   "version": "https://github.com/elgatosf/streamdeck-cpu/releases/download/1.2/com.elgato.cpu.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.discord": {
+   "source": "elgato",
+   "version": "2.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.edelkrone-motion-control": {
+   "source": "elgato",
+   "version": "1.0.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.facebook": {
+   "source": "elgato",
+   "version": "1.0.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.keycreator": {
+   "source": "elgato",
+   "version": "2.0.0.135",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.keynote": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.elgato.memorygame": {
+   "source": "elgato",
+   "version": "1.4",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.obsstudio": {
+   "source": "elgato",
+   "version": "2.2.4",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.philips-hue": {
+   "source": "openaction",
+   "version": "https://github.com/elgatosf/streamdeck-philipshue/raw/master/Release/com.elgato.philips-hue.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.powerpoint": {
+   "source": "elgato",
+   "version": "1.2.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.reactiondeck": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.spotify": {
+   "source": "elgato",
+   "version": "1.0.3",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.elgato.streamlabs": {
+   "source": "elgato",
+   "version": "1.5.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.timestamp": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.twitch": {
+   "source": "elgato",
+   "version": "1.8.7",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.volume-controller": {
+   "source": "elgato",
+   "version": "1.0.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.elgato.wavelink": {
+   "source": "elgato",
+   "version": "2.0.3.591",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.elgato.youtube": {
+   "source": "elgato",
+   "version": "2.0.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.emaspa.openxlr": {
+   "source": "openaction",
+   "version": "https://github.com/emaspa/openxlr/releases/download/v0.9.4/com.emaspa.openxlr.sdPlugin.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.eruben.vtspog": {
+   "source": "elgato",
+   "version": "0.0.1",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.ewels.deckcal": {
+   "source": "deckhost",
+   "version": "1.1.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.exension.hwinfo": {
+   "source": "elgato",
+   "version": "2.0.5",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.exension.stocks": {
+   "source": "openaction",
+   "version": "https://github.com/shayne/stock-ticker-stream-deck-plugin/releases/download/v1.2.1/com.exension.stocks.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.f00d4tehg0dz.aipaints": {
+   "source": "openaction",
+   "version": "https://github.com/f00d4tehg0dz/elgato-streamdeck-ai-paints/releases/download/1.0.3/com.f00d4tehg0dz.aipaints.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.f00d4tehg0dz.cookieclicker": {
+   "source": "openaction",
+   "version": "https://github.com/f00d4tehg0dz/elgato-streamdeck-cookie-clicker/releases/download/release-4.1/com.f00d4tehg0dz.cookieclicker.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.f00d4tehg0dz.star-citizen-status": {
+   "source": "openaction",
+   "version": "https://github.com/f00d4tehg0dz/starcitizen-server-status-plugin-for-elgato-streamdeck/releases/download/0.3.0.0/com.f00d4tehg0dz.star-citizen-status.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.f00d4tehg0dz.teslafi": {
+   "source": "openaction",
+   "version": "https://github.com/f00d4tehg0dz/Teslafi-Status-Plugin-for-Eglato-Streamdeck/releases/download/release-4-2-1/com.f00d4tehg0dz.teslafi.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.f1-tools.mvf1": {
+   "source": "openaction",
+   "version": "https://github.com/f1-tools/MultiViewer-StreamDeck-Plugin/releases/download/v1.1.0/com.f1-tools.mvf1.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.faithlife.proclaim": {
+   "source": "elgato",
+   "version": "0.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.falti.camooz": {
+   "source": "elgato",
+   "version": "1.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.fcannizzaro.hoyodeck": {
+   "source": "deckhost",
+   "version": "1.1.0.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.felipedrummond.tuacasa": {
+   "source": "deckhost",
+   "version": "1.0.1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.feydelight.serialirblaster": {
+   "source": "openaction",
+   "version": "https://github.com/feydelight/StreamDeck-SerialIRBlaster/releases/download/release/1.2/com.feydelight.serialirblaster.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.fiercekittenz.gifbot": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.fish-bytes.camcontroller": {
+   "source": "elgato",
+   "version": "1.5",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.flowics.graphics": {
+   "source": "elgato",
+   "version": "0.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.flowingspdg.roland.v60hd": {
+   "source": "deckhost",
+   "version": "0.1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.foxy.magicqdeck": {
+   "source": "deckhost",
+   "version": "1.0.1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.fredemmott.audiooutputswitch": {
+   "source": "openaction",
+   "version": "https://github.com/fredemmott/StreamDeck-AudioSwitcher/releases/download/v3.2.1/com.fredemmott.audiooutputswitch.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.fredemmott.micmutetoggle": {
+   "source": "openaction",
+   "version": "https://github.com/fredemmott/StreamDeck-AudioMute/releases/download/v3.3.1/com.fredemmott.micmutetoggle.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.fredemmott.streamingremote": {
+   "source": "openaction",
+   "version": "https://github.com/fredemmott/streaming-remote/releases/download/v2.2.4/com.fredemmott.streamingremote.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.frostycoolslug.goxlr-utility": {
+   "source": "openaction",
+   "version": "https://github.com/GoXLR-on-Linux/goxlr-utility-streamdeck/releases/download/v0.4.3/com.frostycoolslug.goxlr-utility.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.fsoft.nanoleaf": {
+   "source": "elgato",
+   "version": "1.3",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.ftt.apimonkey": {
+   "source": "openaction",
+   "version": "https://github.com/ft-t/apimonkey/releases/download/1.0.15/com.ftt.apimonkey.sdPlugin.zip",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.funky.rokuremotejs": {
+   "source": "openaction",
+   "version": "https://github.com/FUNKYJASPER2/StreamDeck-Roku-Remote-Plugin/raw/refs/heads/main/Release/com.funky.rokuremotejs.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.gabe565.stopwatch": {
+   "source": "openaction",
+   "version": "https://github.com/gabe565/streamdeck-stopwatch/releases/download/v1.0.2/com.gabe565.stopwatch.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.gabrielperales.osascript": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.gallowaylabs.tomato": {
+   "source": "openaction",
+   "version": "https://github.com/gallowaylabs/streamdeck-tomato-timer/releases/download/v0.6.0/com.gallowaylabs.tomato.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.gataquadrada.wftimers": {
+   "source": "elgato",
+   "version": "0.0.3",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.gdwhisper.tikclock": {
+   "source": "openaction",
+   "version": "https://github.com/GDWhisper/opendeck-tikclock/releases/download/v1.1.0/com.gdwhisper.tikclock.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.geeksville.touchypad": {
+   "source": "openaction",
+   "version": "https://github.com/geeksville/touchy-pad/releases/download/v1.0.0/com.geeksville.touchypad.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.geekyeggo.goveecontroller": {
+   "source": "elgato",
+   "version": "1.2.3",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.geekyeggo.sounddeck": {
+   "source": "openaction",
+   "version": "https://github.com/GeekyEggo/SoundDeck/releases/download/v3.7.2/com.geekyeggo.sounddeck.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.geekyeggo.windowsdisplaysettings": {
+   "source": "openaction",
+   "version": "https://github.com/GeekyEggo/windows-display-settings/releases/download/v1.0.0/com.geekyeggo.windowsdisplaysettings.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.gingeraudio.room": {
+   "source": "elgato",
+   "version": "1.0.2",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.gingeraudio.sphere": {
+   "source": "elgato",
+   "version": "1.0.4",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.github.ambiso.opendeck-akp05": {
+   "source": "openaction",
+   "version": "https://github.com/ambiso/opendeck-akp05/releases/download/v0.12.0/opendeck-akp05.plugin.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.github.eliankars.multiple-counters": {
+   "source": "openaction",
+   "version": "https://github.com/ElianKars/StreamDeck-Multiple-Counters/releases/download/v1.2.2/com.github.eliankars.multiple-counters.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.github.grizbeard.opendeck-mirabox293v3": {
+   "source": "openaction",
+   "version": "https://github.com/Grizbeard/opendeck-mirabox293v3/releases/download/v0.1.0/opendeck-mirabox293v3.plugin.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.github.guyb7.github-api-streamdeck-plugin": {
+   "source": "elgato",
+   "version": "0.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.github.ibanks42.opendeck-m18": {
+   "source": "openaction",
+   "version": "https://github.com/ibanks42/opendeck-m18/releases/download/v0.2.1/opendeck-m18.plugin.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.github.mean-ui-thread.opendeck-stream-dock-xl": {
+   "source": "openaction",
+   "version": "https://github.com/mean-ui-thread/opendeck-stream-dock-xl/releases/download/0.1.4/opendeck-stream-dock-xl.plugin.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.github.mjbnz.sd-api-request": {
+   "source": "openaction",
+   "version": "https://github.com/mjbnz/streamdeck-api-request/releases/download/v0.2-alpha/com.github.mjbnz.sd-api-request.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.github.nbraun1.sonarswitch": {
+   "source": "deckhost",
+   "version": "1.0.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.github.pomeo.opendeck-mirabox-n1": {
+   "source": "openaction",
+   "version": "https://github.com/pomeo/opendeck-mirabox-n1/releases/download/v0.2.1/opendeck-mirabox-n1.plugin.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.github.shiguruikai.streamdeck-forza-telemetry": {
+   "source": "deckhost",
+   "version": "1.1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.glmagalhaes.ulanzi.d200": {
+   "source": "openaction",
+   "version": "https://github.com/glmagalhaes/rs-ulanzi-d200/releases/download/v0.6.5/com.glmagalhaes.ulanzi.d200.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.havner.uinput": {
+   "source": "openaction",
+   "version": "https://github.com/Havner/uinput-simulation/releases/download/v0.2.0/com.havner.uinput.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.hmarr.amphetamine": {
+   "source": "openaction",
+   "version": "https://github.com/hmarr/streamdeck-amphetamine/releases/download/v0.1.0/com.hmarr.amphetamine.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.holgermilz.myatxmousecontrol": {
+   "source": "deckhost",
+   "version": "1.0.1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.holgermilz.myjbxheadsetcontrol": {
+   "source": "deckhost",
+   "version": "2.1.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.holotech.animazeplugin": {
+   "source": "elgato",
+   "version": "1.08",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.hyperate.hyperate": {
+   "source": "elgato",
+   "version": "2.5.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.iccms.sport-in-the-box": {
+   "source": "elgato",
+   "version": "3.4.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.ilifesmart.cololight": {
+   "source": "elgato",
+   "version": "1.0.3",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.imdevinc.opencodeusage": {
+   "source": "openaction",
+   "version": "https://github.com/ImDevinC/opendeck-opencode-usage/releases/download/v0.0.2/com.imdevinc.opencodeusage.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.imdevinc.openroutercredits": {
+   "source": "openaction",
+   "version": "https://github.com/ImDevinC/opendeck-openrouter-usage/releases/download/v0.0.1/com.imdevinc.openroutercredits.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.inet.cowork": {
+   "source": "elgato",
+   "version": "1.2.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.infamous-pattern.openhomeb": {
+   "source": "openaction",
+   "version": "https://github.com/infamous-pattern/OpenHome/releases/download/v2.0.4/openhomeb-2.0.4-linux-universal.streamDeckPlugin",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.jakubjirak.jetdeck": {
+   "source": "deckhost",
+   "version": "1.4.0.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.javanpoirier.audiomixer": {
+   "source": "openaction",
+   "version": "https://github.com/JavanPoirier/AudioMixer/releases/download/v1.3.1/com.javanpoirier.audiomixer.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.javitesoft.rustplusbot": {
+   "source": "elgato",
+   "version": "2.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.jelicanin.limitbeacon": {
+   "source": "deckhost",
+   "version": "1.3.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.jetbrains.ide": {
+   "source": "openaction",
+   "version": "https://github.com/JetBrains/intellij-streamdeck-plugin/releases/download/1.0.6.1/com.jetbrains.ide.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.jetbrains.youtrack": {
+   "source": "openaction",
+   "version": "https://github.com/JetBrains/youtrack-streamdeck-plugin/releases/download/v1.0.6/com.jetbrains.youtrack.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.jk.weather": {
+   "source": "openaction",
+   "version": "https://github.com/JaouherK/streamDeck-weatherPlugin/releases/download/v2.1.2/com.jk.weather.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.justpush": {
+   "source": "openaction",
+   "version": "https://github.com/justpush-simracing/JustPush-Plugin/releases/download/v1.2.1/com.justpush.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.k1dbo.deck-master-6000": {
+   "source": "elgato",
+   "version": "1.0.4.14",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.kahikara.opendeck-redline": {
+   "source": "openaction",
+   "version": "https://github.com/kahikara/opendeck-redline-monitor/releases/download/v.1.0.9.1/redline-monitor-v1.0.9.1.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.kiswe.studio": {
+   "source": "elgato",
+   "version": "2.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.kobaltz.wled": {
+   "source": "openaction",
+   "version": "https://github.com/kobaltz/streamdeck-wled/releases/download/v1.0.5/com.kobaltz.wled.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.komordzsi.tarkovtime": {
+   "source": "elgato",
+   "version": "1.0.4",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.krabs.clockworks": {
+   "source": "elgato",
+   "version": "1.0.11",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.krabs.daysuntil": {
+   "source": "elgato",
+   "version": "1.0.26",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.krabs.discordmembercount": {
+   "source": "elgato",
+   "version": "1.0.31",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.krabs.discordmemberstatus": {
+   "source": "elgato",
+   "version": "1.1.10",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.krabs.discordmessenger": {
+   "source": "elgato",
+   "version": "1.0.21",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.krabs.gameactiontimer": {
+   "source": "elgato",
+   "version": "1.0.5",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.krabs.hdrtoggle": {
+   "source": "elgato",
+   "version": "1.0.9",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.krabs.magicaleightball": {
+   "source": "elgato",
+   "version": "2.0.4",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.krabs.onscreendisplaytools": {
+   "source": "elgato",
+   "version": "1.0.24",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.krabs.time": {
+   "source": "elgato",
+   "version": "1.1.8",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.krabs.twitchwatcher": {
+   "source": "elgato",
+   "version": "1.0.10",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.krabs.windowsgizmos": {
+   "source": "elgato",
+   "version": "1.0.52",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.krabs.windowsshutdownmenu": {
+   "source": "elgato",
+   "version": "1.0.20",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.lazydeck.plugin": {
+   "source": "deckhost",
+   "version": "0.6.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.len.fetcher": {
+   "source": "deckhost",
+   "version": "0.2.5.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.len.limits": {
+   "source": "deckhost",
+   "version": "0.1.30.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.lilithmoder.lifx": {
+   "source": "openaction",
+   "version": "https://github.com/lilithmoder/lifx-opendeck-plugin/releases/download/v1.0.0/lifx-opendeck-plugin-v1.0.0.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.live-score-app.streamdeck": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.llwhite.happtoggle": {
+   "source": "deckhost",
+   "version": "1.12.4.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.local.aiusagedeck": {
+   "source": "deckhost",
+   "version": "0.1.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.localmediacontrollers.vlc": {
+   "source": "deckhost",
+   "version": "1.1.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.lostdomain.zoom": {
+   "source": "elgato",
+   "version": "3.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.lumiacove.stream": {
+   "source": "elgato",
+   "version": "2.6.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.maagames.versus": {
+   "source": "elgato",
+   "version": "2.3.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.marikar.rocrailcontrol": {
+   "source": "openaction",
+   "version": "https://github.com/am1337/OpenDeck-RocRail-Plugin/releases/download/v1.0.5/com.marikar.rocrailcontrol.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.marlburrow.uptime-kuma": {
+   "source": "openaction",
+   "version": "https://github.com/MarlBurroW/Streamdeck-Uptime-Kuma/releases/download/v1.3.0/com.marlburrow.uptime-kuma.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.matextrem.tickertap": {
+   "source": "openaction",
+   "version": "https://github.com/matextrem/streamdeck-tickertap/releases/download/v1.13.1/com.matextrem.tickertap.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.maxik.steam-achievements": {
+   "source": "deckhost",
+   "version": "0.3.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.mazecreator.udcontrol": {
+   "source": "openaction",
+   "version": "https://github.com/Mazecreator/udcontrol-streamdeck/releases/download/1.0.0/com.mazecreator.udcontrol.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.mediabounds.streamdeck.jira": {
+   "source": "openaction",
+   "version": "https://github.com/mediabounds/streamdeck-jira/releases/download/1.8.0/com.mediabounds.streamdeck.jira.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.medialooks.directtake": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.mevo-companion": {
+   "source": "deckhost",
+   "version": "0.1.4.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.microsoft.teams": {
+   "source": "elgato",
+   "version": "2.0.27",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.mika.plugins.opendeck-duo87": {
+   "source": "openaction",
+   "version": "https://github.com/MikaBust/opendeck-duo87/releases/download/v0.2.0/opendeck-duo87.plugin.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.mitchmckean.mccontrol": {
+   "source": "openaction",
+   "version": "https://github.com/MitchMcKean/mccontrol/raw/refs/heads/master/Release/com.mitchmckean.mccontrol.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.miwoli.ha-map": {
+   "source": "deckhost",
+   "version": "0.2.1.0",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.mixitup.streamdeckplugin": {
+   "source": "elgato",
+   "version": "4.2.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.mmattdonk.solrock": {
+   "source": "openaction",
+   "version": "https://github.com/SocksTheWolf/streamdeck-solrocktts/releases/download/1.0.1/com.mmattdonk.solrock.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.moeilijk.hwinfo": {
+   "source": "deckhost",
+   "version": "3.1.4.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.moeilijk.lhm": {
+   "source": "deckhost",
+   "version": "2.1.1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.mongeon.mm": {
+   "source": "openaction",
+   "version": "https://github.com/mongeon/MattermostAPI/releases/download/v0.1.1/com.mongeon.mm.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.monkeykiller.plugins.opendeck-ss550": {
+   "source": "openaction",
+   "version": "https://github.com/MMonkeyKiller/opendeck-ss550/releases/download/v1.0.5/opendeck-ss550.plugin.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.morphclue.wakatime": {
+   "source": "openaction",
+   "version": "https://github.com/Morphclue/streamdeck-wakatime/releases/download/v1.1.1/com.morphclue.wakatime.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.mosadie.effectmc": {
+   "source": "openaction",
+   "version": "https://github.com/MoSadie/EffectMC/releases/download/v3.1.0/com.mosadie.effectmc.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.movingavg.switchboard": {
+   "source": "deckhost",
+   "version": "2.0.0.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.mroneleg.kdeconnect": {
+   "source": "openaction",
+   "version": "https://github.com/mroneleg/kde-connect-opendeck/releases/download/v1.0.0/com.mroneleg.kdeconnect.streamDeckPlugin",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.mrredstonia.clocks": {
+   "source": "openaction",
+   "version": "https://github.com/MrRedstonia/opendeck-clocks/releases/download/0.9.5/com.mrredstonia.clocks.sdPlugin.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "com.mrshu.muxboard": {
+   "source": "deckhost",
+   "version": "0.2.0.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.mutedeck.plugin": {
+   "source": "elgato",
+   "version": "8.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.nagopy.streamdeck.tasktimer": {
+   "source": "openaction",
+   "version": "https://github.com/75py/streamdeck-tasktimer/releases/download/1.1.0/com.nagopy.streamdeck.tasktimer.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.naver.prism": {
+   "source": "elgato",
+   "version": "1.0.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.neewer.controlcenter": {
+   "source": "elgato",
+   "version": "2.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.neewer.livecenter": {
+   "source": "elgato",
+   "version": "1.9.1.000",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.nefrit.telegram": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.nefrit.youtube": {
+   "source": "elgato",
+   "version": "1.2.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.neil-enns.trackaudio": {
+   "source": "openaction",
+   "version": "https://github.com/neilenns/streamdeck-trackaudio/releases/download/v4.4.0/com.neil-enns.trackaudio.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.neil-enns.vatis": {
+   "source": "deckhost",
+   "version": "1.4.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.nettai.cosmetickey": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.newblue.ovrstream": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.newblue.stretchcast": {
+   "source": "elgato",
+   "version": "1.3.3",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.newblue.titlerlive": {
+   "source": "elgato",
+   "version": "1.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.newblue.vividcast": {
+   "source": "elgato",
+   "version": "1.4.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.newtek.api": {
+   "source": "elgato",
+   "version": "1.3",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.niccohagedorn.steam-status-update": {
+   "source": "openaction",
+   "version": "https://github.com/9h03n1x/steam-status-update/raw/refs/heads/main/com.niccohagedorn.steam-status-update.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.niccohagedorn.teamsnavigator": {
+   "source": "openaction",
+   "version": "https://github.com/9h03n1x/teams-navigator/raw/refs/heads/main/com.niccohagedorn.teamsnavigator.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.nicollasr.streamdeckunity": {
+   "source": "openaction",
+   "version": "https://github.com/nicollasricas/decks-unity/releases/download/v2.0.1/com.nicollasr.streamdeckunity.mac.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.nicollasr.streamdeckunity.mac": {
+   "source": "elgato",
+   "version": "2.0.1",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.nicollasr.streamdeckvs": {
+   "source": "openaction",
+   "version": "https://github.com/nicollasricas/streamdeckvs/releases/download/3.3.3/com.nicollasr.streamdeckvs.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.nicollasr.streamdeckvsc": {
+   "source": "openaction",
+   "version": "https://github.com/nicollasricas/decks-vscode/releases/download/5.1.3/com.nicollasr.streamdeckvsc.mac.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.nicollasr.streamdeckvsc.mac": {
+   "source": "elgato",
+   "version": "5.1.3",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.niklas970.faderust": {
+   "source": "deckhost",
+   "version": "0.3.7.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.ntanis.essentials-for-spotify": {
+   "source": "openaction",
+   "version": "https://github.com/ntanis-dev/essentials-for-spotify/releases/download/v1.2.0.0/com.ntanis.essentials-for-spotify.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.nthompson.gpu": {
+   "source": "openaction",
+   "version": "https://github.com/thompsonnoahe/StreamDeckGpu/releases/download/v2.1.0.0/GPU.Metrics-2.1-windows.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.nuagic.myip": {
+   "source": "openaction",
+   "version": "https://github.com/Nuagic/streamdeck-myip/releases/download/v1.0/com.nuagic.myip.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.obsbot.webcam": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.overlayon.plugin": {
+   "source": "elgato",
+   "version": "1.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.owenbush.streamdeck.noko": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.ozgurkececioglu.random-text-generator": {
+   "source": "openaction",
+   "version": "https://github.com/ozgurkececioglu/random-text-generator-StreamDeck/releases/download/v0.2.0/com.ozgurkececioglu.random-text-generator.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.pedrofuentes.ical": {
+   "source": "openaction",
+   "version": "https://github.com/pedrofuentes/stream-deck-ical/releases/download/v2.4.5/com.pedrofuentes.ical.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.pedropombeiro.streamdeck-busylight": {
+   "source": "openaction",
+   "version": "https://github.com/pedropombeiro/streamdeck-busylight/raw/refs/heads/main/Release/com.pedropombeiro.streamdeck-busylight.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.philipgerke.awake": {
+   "source": "openaction",
+   "version": "https://github.com/pgerke/streamdeck-awake/releases/download/v2.1.1/com.philipgerke.awake.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.polypoplive": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.protomothis.spotify-deck-plus": {
+   "source": "deckhost",
+   "version": "0.1.0.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.pulsoid": {
+   "source": "elgato",
+   "version": "1.6",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.ratio32.faderlight.mixer": {
+   "source": "deckhost",
+   "version": "0.1.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.reedhaffner.sharex": {
+   "source": "openaction",
+   "version": "https://github.com/reedhaffner/ShareX4StreamDeck/releases/download/1.3.1/com.reedhaffner.sharex.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.refactor.binance": {
+   "source": "elgato",
+   "version": "1.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.refactor.cryptoticker": {
+   "source": "elgato",
+   "version": "1.6.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.remote.ytmd": {
+   "source": "openaction",
+   "version": "https://github.com/levindecaro/streamdeck-ytmd-remote/releases/download/v2.0.0/com.remote.ytmd.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.renewedvision.propresenter": {
+   "source": "elgato",
+   "version": "2.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.rgpaul.vlc": {
+   "source": "openaction",
+   "version": "https://github.com/RGPaul/streamdeck-vlc/releases/download/v1.1.0/com.rgpaul.vlc.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.richardplucker.pvp": {
+   "source": "openaction",
+   "version": "https://github.com/rplucker/streamdeckpvp/raw/refs/heads/main/release/com.richardplucker.pvp.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.ronyladouceur.quota-meter": {
+   "source": "deckhost",
+   "version": "1.0.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.salikov.claude-sessions": {
+   "source": "deckhost",
+   "version": "0.2.6.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.samhorne.mediamonkey5": {
+   "source": "openaction",
+   "version": "https://github.com/sam-horne/streamdeck-mediamonkey/releases/download/v1.2.4/com.samhorne.mediamonkey5.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.sdn.homey": {
+   "source": "elgato",
+   "version": "1.9.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.sentinelite.streamdeckshortcuts": {
+   "source": "elgato",
+   "version": "1.0.7.1",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.sergeytihon.homebridge": {
+   "source": "openaction",
+   "version": "https://github.com/sergey-tihon/streamdeck-homebridge/releases/download/1.6.1/com.sergeytihon.homebridge.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.sfgrimes.corsaircontrol": {
+   "source": "openaction",
+   "version": "https://github.com/CronusAK/OpenLinkHub-OpenDeck-Controller/releases/download/v0.1.0/com.sfgrimes.corsaircontrol.streamDeckPlugin",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.sfgrimes.pipewire-audio": {
+   "source": "openaction",
+   "version": "https://github.com/CronusAK/Pulse-Audio-Stream-Deck-Plugin/releases/download/v1.2.0/com.sfgrimes.pipewire-audio-1.2.0.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.simonedenadai.motu-avb": {
+   "source": "openaction",
+   "version": "https://github.com/Hecsall/streamdeck-motu-avb/releases/download/2.2.0/com.simonedenadai.motu-avb.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.sobolevn.bluetooth": {
+   "source": "openaction",
+   "version": "https://github.com/sobolevn/bluetooth-streamdeck-plugin/releases/download/1.1.2/com.sobolevn.bluetooth.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.softouch.easyworship": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.soundsinsync.ediprompt": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.stairways.keyboardmaestro": {
+   "source": "elgato",
+   "version": "9.0.4",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.stan.spotify": {
+   "source": "deckhost",
+   "version": "1.0.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.start-automating.scriptdeck": {
+   "source": "openaction",
+   "version": "https://github.com/StartAutomating/ScriptDeck/releases/download/v0.4.6/com.start-automating.scriptdeck.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.start-automating.windowsscriptdeck": {
+   "source": "elgato",
+   "version": "0.4.6",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.stephaneturquay.gateio.tracker": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.streamcaptain.streamraiders": {
+   "source": "elgato",
+   "version": "1.0.6",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.streamelements.obslive": {
+   "source": "elgato",
+   "version": "22.6.21.87",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.streamfog.main": {
+   "source": "elgato",
+   "version": "0.1.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.streamgremlin.streamdeck": {
+   "source": "deckhost",
+   "version": "0.2.0.65535",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.streamloots": {
+   "source": "elgato",
+   "version": "1.2.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.streamtools.webhooks": {
+   "source": "elgato",
+   "version": "1.0.28",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.t01ik.macoscontrols": {
+   "source": "openaction",
+   "version": "https://github.com/T01iK/opendeck-mac-controls/releases/download/v1.0.0/macos-controls.plugin.zip",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "com.tbye.datetime": {
+   "source": "openaction",
+   "version": "https://github.com/tbye/tbye-sdp-datetime/releases/download/1.1.0.1/com.tbye.datetime.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.tchelicon.goxlr": {
+   "source": "elgato",
+   "version": "0.18",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.thejoeiaut.bitwarden": {
+   "source": "openaction",
+   "version": "https://github.com/TheJoeIaut/Bitwarden-Streamdeck-Plugin/releases/download/v2.0.1/com.thejoeiaut.bitwarden.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.theverge.bubbledeck": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.tiktok.livestudio": {
+   "source": "elgato",
+   "version": "0.0.1",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.tipeeestream.actions": {
+   "source": "elgato",
+   "version": "1.0.3",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.tj.livecfbscores": {
+   "source": "deckhost",
+   "version": "1.1.6.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.tj.livemlbscores": {
+   "source": "deckhost",
+   "version": "1.0.33.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.tj.livenbascores": {
+   "source": "deckhost",
+   "version": "1.1.6.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.tj.livenflscores": {
+   "source": "deckhost",
+   "version": "1.1.6.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.tj.livenhlscores": {
+   "source": "deckhost",
+   "version": "1.3.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.tobii.gaming.ghost": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.triggercmd.trigger": {
+   "source": "elgato",
+   "version": "1.0.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.unaigonzalez.xbatt.ch": {
+   "source": "openaction",
+   "version": "https://github.com/unaigonzalezz/xBatt/releases/download/1.1/com.unaigonzalez.xbatt.ch.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.verringer.lastfm": {
+   "source": "openaction",
+   "version": "https://github.com/Verringer/streamdeck-lastfm/releases/download/v1.0.2/com.verringer.lastfm.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.vexify4103.summonerwatch": {
+   "source": "deckhost",
+   "version": "0.1.6.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.victorgrycuk.colorpicker": {
+   "source": "openaction",
+   "version": "https://github.com/VictorGrycuk/streamdeck-color-picker/releases/download/2.0.1/com.victorgrycuk.colorpicker.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.victorgrycuk.keepass": {
+   "source": "openaction",
+   "version": "https://github.com/VictorGrycuk/StreamDeck-KeePass/releases/download/v1.7.0/com.victorgrycuk.keepass.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.victorgrycuk.magnifier": {
+   "source": "openaction",
+   "version": "https://github.com/VictorGrycuk/streamdeck-magnifier/releases/download/v1.3.0/com.victorgrycuk.magnifier.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.victorgrycuk.repositorywatcher": {
+   "source": "openaction",
+   "version": "https://github.com/VictorGrycuk/streamdeck-repository-watcher/releases/download/v1.1/com.victorgrycuk.repositorywatcher.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.victormarin.graphs": {
+   "source": "openaction",
+   "version": "https://github.com/mdvictor/opendeck-graphs/releases/download/v2.2.0/com.victormarin.graphs.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.victormarin.volume-controller": {
+   "source": "openaction",
+   "version": "https://github.com/mdvictor/opendeck-volume-controller/releases/download/v2.0.0/com.victormarin.volume-controller.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "com.viddie.dice": {
+   "source": "openaction",
+   "version": "https://github.com/viddie/sdDice/releases/download/v1.0.4/com.viddie.dice.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.vivremotion.autotranslate": {
+   "source": "elgato",
+   "version": "1.5",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.dropzone": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.dynamicsearchisland": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.forcewindow": {
+   "source": "elgato",
+   "version": "1.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.ipcamera": {
+   "source": "elgato",
+   "version": "1.5",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.matrixdisplay": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.momentsslideshow": {
+   "source": "elgato",
+   "version": "1.1"
+  },
+  "com.vivremotion.mousecontrol": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.mousesimulator": {
+   "source": "elgato",
+   "version": "1.6",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.mousespotlight": {
+   "source": "elgato",
+   "version": "1.8",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.netiopdupowercontrol": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.outlookinstantmail": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.phantommouse": {
+   "source": "elgato",
+   "version": "1.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.standbyscreen": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.vbamacroexecute": {
+   "source": "elgato",
+   "version": "1.5",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vivremotion.wol": {
+   "source": "elgato",
+   "version": "1.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.vlad-gramuzov.stream-deck-stateful-executor": {
+   "source": "openaction",
+   "version": "https://github.com/pandomic/stream-deck-stateful-executor/releases/download/0.2.0.0/com.vlad-gramuzov.stream-deck-stateful-executor.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.vmix.shortcuts": {
+   "source": "elgato",
+   "version": "1.4",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.welshtroll.preflightchecklist": {
+   "source": "elgato",
+   "version": "0.2.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "com.xsplit.gamecaster": {
+   "source": "elgato",
+   "version": "1.0.2106.2803",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.xsplit.streamdeck": {
+   "source": "elgato",
+   "version": "1.2.2110.1501",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.zaphop.quickalarm": {
+   "source": "openaction",
+   "version": "https://github.com/BackTrak/StreamDeckQuickAlarm/releases/download/v1.0.0.1/com.zaphop.quickalarm.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.zaphop.visualizer": {
+   "source": "openaction",
+   "version": "https://github.com/BackTrak/StreamDeckVisualizerPlugin/releases/download/v1.0.0.6/com.zaphop.visualizer.sdPlugin.zip",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.zergo0.teamspeak3integration": {
+   "source": "openaction",
+   "version": "https://github.com/ZerGo0/streamdeck-teamspeak3integration/releases/download/v1.8/com.zergo0.teamspeak3integration.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "com.zstefanovic.steamscroll": {
+   "source": "openaction",
+   "version": "https://github.com/zoran-stefanovic/Game-Scroller/releases/download/v2.4.1.0/com.zstefanovic.steamscroll.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "cz.danol.discordmixer": {
+   "source": "openaction",
+   "version": "https://github.com/CZDanol/StreamDeck-DiscordVolumeMixer2/releases/download/v2.0.1.9/cz.danol.discordmixer.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "de.boriskemper.sonos-controller": {
+   "source": "deckhost",
+   "version": "0.4.10.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "de.felitendo.feishin": {
+   "source": "deckhost",
+   "version": "2.1.0.0",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "de.felitendo.obs-tools": {
+   "source": "openaction",
+   "version": "https://github.com/FeloDeck/obs-tools/releases/download/v0.3.2/OBS-Tools-v0.3.2.streamDeckPlugin",
+   "platforms": [
+    "macos",
+    "linux"
+   ]
+  },
+  "de.felitendo.voicenux": {
+   "source": "openaction",
+   "version": "https://github.com/voicenux/voicenux-plugin/releases/download/v0.4.0/Voicenux-v0.4.0.streamDeckPlugin",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "de.firesplash.sdplugins.fflgame": {
+   "source": "elgato",
+   "version": "1.0"
+  },
+  "de.flexniko.bakkesmodcommands": {
+   "source": "openaction",
+   "version": "https://github.com/FlexXx1212/StreamDeckBakkesPlugin/raw/refs/heads/main/Release/de.flexniko.bakkesmodcommands.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "de.itxware.iracing": {
+   "source": "elgato",
+   "version": "1.15.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "de.kaleidox.vbandeck": {
+   "source": "openaction",
+   "version": "https://github.com/burdoto/VBANDeck/releases/download/1.0.2/de.kaleidox.vbandeck.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "de.leonmarcel.teamspeak5": {
+   "source": "openaction",
+   "version": "https://github.com/LeonMarcel-HD/StreamDeck-TeamSpeak5/releases/download/v2.0.0.1/de.leonmarcel.teamspeak5.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "de.perdoctus.streamdeck.homeassistant": {
+   "source": "openaction",
+   "version": "https://github.com/cgiesche/streamdeck-homeassistant/releases/download/3.8.4/de.perdoctus.streamdeck.homeassistant.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "de.schwetschke.sd.home-weather-station": {
+   "source": "deckhost",
+   "version": "0.1.4.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "de.shells.totalmix": {
+   "source": "elgato",
+   "version": "3.2.2",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "de.sven-wiegand.ultraschall": {
+   "source": "openaction",
+   "version": "https://github.com/svenwiegand/streamdeck-ultraschall/releases/download/v2.1.0/de.sven-wiegand.ultraschall.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "de.tobimori.streamdeck.ifttt": {
+   "source": "openaction",
+   "version": "https://github.com/tobimori/streamdeck-ifttt/releases/download/v2.0/de.tobimori.streamdeck.ifttt.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "deckhost.plugin.obs": {
+   "source": "deckhost",
+   "version": "1.0.0",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "dev.aperez.tado": {
+   "source": "openaction",
+   "version": "https://github.com/aperezm85/streamdeck-tado-plugin/releases/download/2.1/dev.aperez.tado.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.cazzar.streamdeck.vtubestudio": {
+   "source": "openaction",
+   "version": "https://github.com/Cazzar/VTubeStudio-StreamDeck/releases/download/3.1.0/dev.cazzar.streamdeck.vtubestudio.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.cazzar.vtubestudio": {
+   "source": "elgato",
+   "version": "2.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.flowingspdg.advancedhttp": {
+   "source": "deckhost",
+   "version": "0.4.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.jduabe.obsideck": {
+   "source": "openaction",
+   "version": "https://github.com/j4ckofalltrades/obsideck/releases/download/v1.1.4/dev.jduabe.obsideck.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.mikanseilaboratory.kairos": {
+   "source": "deckhost",
+   "version": "0.1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.mikanseilaboratory.roland.v160hd": {
+   "source": "deckhost",
+   "version": "0.1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.mikanseilaboratory.vmix": {
+   "source": "deckhost",
+   "version": "0.2.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.santiagomartin.devops": {
+   "source": "openaction",
+   "version": "https://github.com/SantiMA10/devops-streamdeck/releases/download/v1.7.0/dev.santiagomartin.devops.streamDeckPlugin.zip"
+  },
+  "dev.sean.lifx": {
+   "source": "elgato",
+   "version": "0.7.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.tattn.streamdeck.switchbot-control": {
+   "source": "openaction",
+   "version": "https://github.com/tattn/streamdeck-switchbot-control/releases/download/0.0.1/dev.tattn.streamdeck.switchbot-control.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.theca11.multiobs": {
+   "source": "openaction",
+   "version": "https://github.com/theca11/multi-obs-controller/releases/download/v0.8.2/Multi-OBS-Controller-Plugin-v0.8.2.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.theca11.steam-price-tracker": {
+   "source": "openaction",
+   "version": "https://github.com/theca11/steam-price-tracker/releases/download/v1.2.0/Steam-Price-Tracker-Plugin-v1.2.0.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.theca11.whack-a-mole": {
+   "source": "openaction",
+   "version": "https://github.com/theca11/whack-a-mole/releases/download/v1.1.0/Whack-A-Mole-Plugin-v1.1.0.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "dev.timeblaster.leaguedeck": {
+   "source": "openaction",
+   "version": "https://github.com/TimeBlaster/LeagueDeck/releases/download/v2.5/dev.timeblaster.leaguedeck.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "digital.astronauta.sysmonitor": {
+   "source": "deckhost",
+   "version": "2.1.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "dude.serveny.tile-rain-matrix": {
+   "source": "openaction",
+   "version": "https://github.com/Serveny/streamdeck-matrix/releases/download/v1.1.2.0/dude.serveny.tile-rain-matrix.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "es.mspi.elgato.plugins.microsoft": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "fail.marc.onairclock": {
+   "source": "deckhost",
+   "version": "2.0.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "fm.ultraschall.ultradeck": {
+   "source": "elgato",
+   "version": "1.2.3",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "fr.arubinu42": {
+   "source": "openaction",
+   "version": "https://github.com/Arubinu/streamdeck-plugin/releases/download/v2.2.0/fr.arubinu42.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "fr.jourdois.pipewire": {
+   "source": "openaction",
+   "version": "https://github.com/sjourdois/opendeck-pipewire/releases/download/v0.6.0/fr.jourdois.pipewire.sdPlugin.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "fr.twitchat": {
+   "source": "openaction",
+   "version": "https://github.com/Durss/Twitchat/raw/refs/heads/main/streamdeck_plugin/fr.twitchat.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "fun.shiro.ytmd": {
+   "source": "openaction",
+   "version": "https://github.com/XeroxDev/YTMD-StreamDeck/releases/download/v2.3.0/fun.shiro.ytmd.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "games.boyne.godot": {
+   "source": "openaction",
+   "version": "https://github.com/BoyneGames/streamdeck-godot-plugin/releases/download/1.0.0/games.boyne.godot.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "gg.datagram.web-requests": {
+   "source": "openaction",
+   "version": "https://github.com/data-enabler/streamdeck-web-requests/releases/download/v0.1.1/gg.datagram.web-requests.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "gg.dennis.firebot": {
+   "source": "openaction",
+   "version": "https://github.com/dennisrijsdijk/firebot-streamdeck/releases/download/v1.0.0.1/gg.dennis.firebot-v1.0.0.1-DEBUG.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "gg.efuse.clippy": {
+   "source": "elgato",
+   "version": "1.1.3",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "gg.frontpage.streamdeck-stemplayer": {
+   "source": "openaction",
+   "version": "https://github.com/frontpage-ev/streamdeck-stemplayer-plugin/releases/download/1.0.3/gg.frontpage.streamdeck-stemplayer.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "gg.rcv.league": {
+   "source": "openaction",
+   "version": "https://github.com/RCVolus/league-observer-tool-sdPlugin/raw/refs/heads/main/Release/gg.rcv.league.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "hu.voji.keyboard": {
+   "source": "openaction",
+   "version": "https://github.com/voji/sendkey_sd/raw/refs/heads/main/hu.voji.keyboard.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "in.std.streamdeck.workplace": {
+   "source": "openaction",
+   "version": "https://github.com/pgriess/streamdeck-workrooms/releases/download/v2.0.1/in.std.streamdeck.workplace.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "info.degois.damien.opendeck.plugins.rotary-command": {
+   "source": "openaction",
+   "version": "https://github.com/babs/opendeck-plugins-rotary-command/releases/download/v1.1.0/info.degois.damien.opendeck.plugins.rotary-command.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "io.bitfocus.companion-plugin": {
+   "source": "openaction",
+   "version": "https://github.com/bitfocus/io.bitfocus.companion-plugin/releases/download/v3.4.0/io.bitfocus.companion-plugin.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "io.deckassistant.plugin": {
+   "source": "elgato",
+   "version": "3.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "io.github.adilazkahadiko.parabus": {
+   "source": "deckhost",
+   "version": "0.1.3.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "io.github.cdcxd.herdr": {
+   "source": "openaction",
+   "version": "https://github.com/cdcxd/opendeck-herdr-plugin/releases/download/v0.2.0/io.github.cdcxd.herdr.streamDeckPlugin",
+   "platforms": [
+    "macos",
+    "linux"
+   ]
+  },
+  "io.github.hsalazr.deck-for-t3code": {
+   "source": "deckhost",
+   "version": "1.2.3.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "io.github.jbrick2070.fadester-for-obs": {
+   "source": "deckhost",
+   "version": "1.5.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "io.github.marvin-bay.miccontrol": {
+   "source": "deckhost",
+   "version": "1.0.0.0",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "io.github.millenniumambiguity.saitekmultipanel": {
+   "source": "openaction",
+   "version": "https://github.com/millennIumAMbiguity/opendeck-saitek-multipanel/releases/download/v0.1.0/io.github.millenniumambiguity.saitekmultipanel.sdPlugin.zip",
+   "platforms": [
+    "windows",
+    "linux"
+   ]
+  },
+  "io.github.millenniumambiguity.warthunder": {
+   "source": "openaction",
+   "version": "https://github.com/millennIumAMbiguity/opendeck-warthunder/releases/download/v0.1.0/io.github.millenniumambiguity.warthunder.sdPlugin.zip",
+   "platforms": [
+    "windows",
+    "linux"
+   ]
+  },
+  "io.github.mugen0815.hermes-streamdeck": {
+   "source": "deckhost",
+   "version": "0.3.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "io.github.nnfisfree.govee-control": {
+   "source": "deckhost",
+   "version": "0.2.0",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "io.github.tonyheadband.opendeck-steam": {
+   "source": "openaction",
+   "version": "https://github.com/TonyHeadband/opendeck-steam-plugin/releases/download/v1.0.2/opendeck-steam-1.0.2.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "io.moeritz.streamdeck.toggl": {
+   "source": "elgato",
+   "version": "1.4.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "io.predictionbuttons": {
+   "source": "elgato",
+   "version": "1.5.4",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "io.streamhydra.execut": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "io.streamroll.controller": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "io.streamtimer": {
+   "source": "elgato",
+   "version": "1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "me.alhazmy13.sensibo": {
+   "source": "openaction",
+   "version": "https://github.com/alhazmy13/streamdeck-sensibo/releases/download/1.1.0/me.alhazmy13.sensibo.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "me.amankhanna.oacounter": {
+   "source": "openaction",
+   "version": "https://github.com/OpenActionPlugins/counter/releases/download/v1.0.1/me.amankhanna.oacounter.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "me.amankhanna.oadesktopentry": {
+   "source": "openaction",
+   "version": "https://github.com/OpenActionPlugins/desktopentry/releases/download/v1.0.3/me.amankhanna.oadesktopentry.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "me.amankhanna.oadiscord": {
+   "source": "openaction",
+   "version": "https://github.com/OpenActionPlugins/discord/releases/download/v0.5.1/me.amankhanna.oadiscord.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "me.amankhanna.oampris": {
+   "source": "openaction",
+   "version": "https://github.com/OpenActionPlugins/mpris/releases/download/v1.4.0/me.amankhanna.oampris.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "me.amankhanna.oasystem": {
+   "source": "openaction",
+   "version": "https://github.com/OpenActionPlugins/system/releases/download/v1.0.0/me.amankhanna.oasystem.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "me.duncte123.livesplit": {
+   "source": "openaction",
+   "version": "https://github.com/duncte123/LiveSplit.StreamDeck/releases/download/1.2.1.0/me.duncte123.livesplit.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "me.dwot.keylight": {
+   "source": "openaction",
+   "version": "https://github.com/dwot/opendeck-keylight/releases/download/v0.5.3/me.dwot.keylight-0.5.3.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "me.hckr.airplanemode": {
+   "source": "openaction",
+   "version": "https://github.com/JarnoLeConte/streamdeck-airplanemode/releases/download/v1.0.0/AirplaneMode.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "me.hckr.appswitcher": {
+   "source": "openaction",
+   "version": "https://github.com/JarnoLeConte/streamdeck-appswitcher/releases/download/v1.0.0/AppSwitcher.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "me.hckr.findertags": {
+   "source": "openaction",
+   "version": "https://github.com/JarnoLeConte/streamdeck-findertags/releases/download/v1.1.2/me.hckr.findertags.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "me.reinii.harvest-billables": {
+   "source": "openaction",
+   "version": "https://github.com/reiniiriarios/stream-deck-billables-harvest/releases/download/v0.5.3/build-v0.5.3.zip",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "me.rumkee.bluetooth.monitor": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "me.the-h.calendar": {
+   "source": "deckhost",
+   "version": "1.0.0",
+   "platforms": [
+    "macos",
+    "linux"
+   ]
+  },
+  "net.bliny.roon": {
+   "source": "elgato",
+   "version": "1.0.7",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "net.ellreka.slack-status": {
+   "source": "openaction",
+   "version": "https://github.com/ellreka/streamdeck-slack-status/releases/download/v1.0.2/net.ellreka.slack-status.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "net.jwowk.voicemeeter": {
+   "source": "deckhost",
+   "version": "1.0.1.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "net.kystar.kommander": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "net.localhost.streamdeck.clipboard-buddy": {
+   "source": "openaction",
+   "version": "https://github.com/Commit-La-Grenouille/streamdeck-clipboard-buddy/releases/download/0.7.1/net.localhost.streamdeck.clipboard-buddy.v0.7.1.streamDeckPlugin.zip"
+  },
+  "net.oksala.azuredevops": {
+   "source": "openaction",
+   "version": "https://github.com/panuoksala/streamdeck-azuredevops-plugin/releases/download/v1.5.0/net.oksala.azuredevops.zip"
+  },
+  "net.parrec.deck.windows-essentials": {
+   "source": "openaction",
+   "version": "https://github.com/xaviparrec/windows-essentials-opendeck/releases/download/v0.16.3/Windows-Essentials-0.16.3.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "net.telestream.wirecast": {
+   "source": "elgato",
+   "version": "1.4",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "net.voicemod.windowsdesktop": {
+   "source": "elgato",
+   "version": "5.0.3",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "network.workflow.livetime": {
+   "source": "elgato",
+   "version": "1.0.3",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "nl.nwrp.gms": {
+   "source": "elgato",
+   "version": "1.0.1",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "nl.nwrp.utils": {
+   "source": "elgato",
+   "version": "1.0.5",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "one.blueshift.streamdeck.toggl": {
+   "source": "openaction",
+   "version": "https://github.com/blueshiftone/streamdeck-toggl/releases/download/v1.7.3/one.blueshift.streamdeck.toggl.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "org.danielkennett.xcode-streamdeck-plugin": {
+   "source": "openaction",
+   "version": "https://github.com/iKenndac/xcode-streamdeck-plugin/releases/download/1.0.1/org.danielkennett.xcode-streamdeck-plugin.streamDeckPlugin",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "org.smyck.reaper-osc-action": {
+   "source": "openaction",
+   "version": "https://github.com/hukl/reaper_osc_action/releases/download/v1.1.0/org.smyck.reaper-osc-action.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "org.soundflow.streamdeck": {
+   "source": "elgato",
+   "version": "3.7.0.8567",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "org.tynsoe.streamdeck.wsproxy": {
+   "source": "openaction",
+   "version": "https://github.com/ybizeul/StreamDeckWS/releases/download/v1.2.0/org.tynsoe.streamdeck.wsproxy.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "org.xiphis.ohs": {
+   "source": "openaction",
+   "version": "https://github.com/atcurtis/streamdeck-ohs/releases/download/1.3.0/org.xiphis.ohs.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "photo.lostcause.captureone": {
+   "source": "elgato",
+   "version": "2023.1.3",
+   "platforms": [
+    "macos"
+   ]
+  },
+  "pl.sotomski.opendeck.openmasterhub": {
+   "source": "openaction",
+   "version": "https://github.com/OpenMasterHub/openmasterhub/releases/download/v0.2.2/pl.sotomski.opendeck.openmasterhub.sdPlugin.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "pl.spooksoft.switchto": {
+   "source": "elgato",
+   "version": "1.1",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "pro.own3d.streamdeck": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "rocks.pretzel.play": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "se.sourcetech.keyboard": {
+   "source": "elgato",
+   "version": "1.0.0.5",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "se.trevligaspel.cubase": {
+   "source": "elgato",
+   "version": "2.0.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "se.trevligaspel.midi": {
+   "source": "elgato",
+   "version": "3.5.3",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "se.trevligaspel.nuendo": {
+   "source": "elgato",
+   "version": "2.0.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "sh.cider.streamdeck": {
+   "source": "openaction",
+   "version": "https://github.com/ciderapp/CiderDeck/releases/download/v4.0.0/sh.cider.streamdeck.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "st.lynx.plugins.opendeck-akp03": {
+   "source": "openaction",
+   "version": "https://github.com/4ndv/opendeck-akp03/releases/download/v0.11.0/opendeck-akp03.plugin.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "st.lynx.plugins.opendeck-akp153": {
+   "source": "openaction",
+   "version": "https://github.com/4ndv/opendeck-akp153/releases/download/v0.11.1/opendeck-akp153.plugin.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "studio.mods.streamdeck.ms2.b": {
+   "source": "elgato",
+   "version": "4.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "systems.garcia.countdown": {
+   "source": "openaction",
+   "version": "https://github.com/NyleGarcia/countdown-opendeck/releases/download/v0.2.0/countdown-opendeck-0.2.0.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "systems.garcia.cztimer": {
+   "source": "openaction",
+   "version": "https://github.com/NyleGarcia/cztimer-opendeck/releases/download/v0.2.0/cztimer-opendeck-0.2.0.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "systems.garcia.gsr": {
+   "source": "openaction",
+   "version": "https://github.com/NyleGarcia/gpu-screen-recorder-opendeck/releases/download/v2.0.0/gpu-screen-recorder-opendeck-2.0.0.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "systems.garcia.openwave": {
+   "source": "openaction",
+   "version": "https://github.com/NyleGarcia/openwave-opendeck/releases/download/v1.0.1/openwave-opendeck-1.0.1.zip",
+   "platforms": [
+    "linux"
+   ]
+  },
+  "tech.aerove.streamdeck.nestcontrol": {
+   "source": "elgato",
+   "version": "1.1.9",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "tech.flighttracker.streamdeck": {
+   "source": "openaction",
+   "version": "https://github.com/nguyenquyhy/Flight-Tracker-StreamDeck/releases/download/v0.54/tech.flighttracker.streamdeck.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "tf.josh.fxcommands": {
+   "source": "openaction",
+   "version": "https://github.com/josh-tf/fxcommands/releases/download/v2.1.1/tf.josh.fxcommands.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "tv.aitum.sdplugin": {
+   "source": "elgato",
+   "version": "1.1.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "tv.quicklink.cre8studio": {
+   "source": "elgato",
+   "version": "1.0.0",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "tv.twitch.studio": {
+   "source": "elgato",
+   "version": "1.2",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "us.johnholbrook.pihole": {
+   "source": "openaction",
+   "version": "https://github.com/johnholbrook/streamdeck-pihole/releases/download/v2.0.0/us.johnholbrook.pihole.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "us.johnholbrook.vextm": {
+   "source": "elgato",
+   "version": "1.2.0",
+   "platforms": [
+    "windows",
+    "macos"
+   ]
+  },
+  "us.rivul.tacto": {
+   "source": "openaction",
+   "version": "https://github.com/RivulusLive/tacto-connect-source/releases/download/v1.2.2/us.rivul.tacto.zip",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "warudo.streamdeck": {
+   "source": "openaction",
+   "version": "https://github.com/HakuyaLabs/warudo-streamdeck/releases/download/1.1.0/warudo.streamdeck.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  },
+  "xyz.enfalion.twitchviewer": {
+   "source": "openaction",
+   "version": "https://github.com/Enfalion/Twitch-Viewer-Plugin/releases/download/v1.3.4/xyz.enfalion.twitchviewer.streamDeckPlugin",
+   "platforms": [
+    "windows",
+    "macos",
+    "linux"
+   ]
+  },
+  "zayik.commandsender": {
+   "source": "openaction",
+   "version": "https://github.com/Zayik/CommandSender/releases/download/v1.5/zayik.commandsender.streamDeckPlugin",
+   "platforms": [
+    "windows"
+   ]
+  }
+ }
+}
