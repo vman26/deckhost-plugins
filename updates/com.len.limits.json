@@ -1,0 +1,9 @@
+{
+  "id": "com.len.limits",
+  "version": "0.1.31.0",
+  "download_url": "https://github.com/lenadweb/stream-deck-ai-limits/releases/download/v0.1.31.0/com.len.limits.streamDeckPlugin",
+  "sha256": "1f3e1b8d10e0ecbe6bcc71559c04d702e1305460b78831a3b0be27afa6431c02",
+  "name": "AI Usage Limits",
+  "author": "len",
+  "description": "Track AI usage limits and reset times for native providers or any provider configured in CodexBar."
+}
