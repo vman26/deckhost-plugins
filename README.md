@@ -142,6 +142,18 @@ of the mirror. New Stream Deck plugins on GitHub come in through the **discover*
 - **Notice.** We are not the authors of these plugins and are not affiliated with Elgato. Every plugin
   keeps its licence and author (`mirror/NOTICE.md` lists the copied ones).
 
+## Which systems a plugin runs on
+
+DeckHost's store shows the systems each plugin is made for (Windows, macOS, Linux), hides the ones that
+can't run on yours by default, and won't install them. Many Stream Deck plugins are made for Windows and
+macOS only. The OpenAction catalogue and the Elgato archive don't say, so the **platforms** workflow
+(`tools/platforms.py`, weekly) reads each plugin's own manifest (a Stream Deck manifest's `OS` list, or a
+DeckHost `plugin.json`'s `platforms`) and publishes `platforms.json`. It reads only packages whose version
+changed since the last run, at most 200 a run.
+
+A catalog entry may give `platforms` itself (`["windows", "macos", "linux"]`); leave it out and the
+package's manifest decides. A DeckHost plugin without `platforms` runs everywhere DeckHost does.
+
 ## Rules
 
 - The plugin works with the current DeckHost and does what its description says.

@@ -47,6 +47,14 @@ jobs:
             cp mirror-data/catalog.json mirror-data/NOTICE.md site/mirror/
             if [[ -d mirror-data/icons ]]; then cp -r mirror-data/icons site/mirror/; fi
           fi
+      # Which systems each plugin is made for (platforms workflow), when it has run.
+      - name: Platforms
+        run: |
+          if git ls-remote --exit-code --heads origin platforms-data >/dev/null; then
+            git fetch --depth 1 origin platforms-data
+            git worktree add platforms-data FETCH_HEAD
+            cp platforms-data/platforms.json site/
+          fi
       # Pages deployed from Actions doesn't run Jekyll, so the README must be real HTML to be served at /.
       - name: Index page
         run: |

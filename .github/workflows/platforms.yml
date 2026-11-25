@@ -1,0 +1,81 @@
+name: platforms
+
+# Which systems each plugin in DeckHost's store is made for (tools/platforms.py): platforms.json, read from every
+# package's manifest, because neither the OpenAction catalogue nor the Elgato archive says. DeckHost's store shows
+# it next to each plugin and filters on it.
+#
+# Weekly, and by hand. The result goes to the platforms-data branch (main is protected), which publish.yml puts on
+# GitHub Pages as /platforms.json. Each run keeps what the previous one found for versions that didn't change, and
+# reads at most "limit" packages, so a first run is spread over a few weeks (or run it by hand a few times).
+on:
+  schedule:
+    - cron: "41 5 * * 2"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "At most this many packages to read"
+        required: false
+        default: "200"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: platforms
+  cancel-in-progress: false
+
+jobs:
+  platforms:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: The platforms-data branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin platforms-data >/dev/null; then
+            git fetch --depth 1 origin platforms-data
+            git worktree add -B platforms-data data FETCH_HEAD
+          else
+            git worktree add --orphan -b platforms-data data
+          fi
+
+      - name: Read the manifests
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LIMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.limit || '200' }}
+        run: |
+          python3 -I tools/platforms.py run --out out --previous data --limit "${LIMIT:-200}" | tee platforms.log
+          {
+            echo '### Plugin systems'
+            echo '```'
+            tail -n 40 platforms.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit to platforms-data
+        id: commit
+        run: |
+          cp out/platforms.json data/
+          cd data
+          if [[ -z "$(git status --porcelain --untracked-files=all)" ]]; then
+            echo "Nothing changed."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git add -A
+          git commit -m "Plugin systems" -m "By the platforms workflow from the packages' manifests."
+          git push origin platforms-data
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  publish:
+    needs: platforms
+    if: needs.platforms.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/publish.yml
