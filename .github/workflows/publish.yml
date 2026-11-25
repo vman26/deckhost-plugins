@@ -21,11 +21,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
       # Newer versions from the update workflow (the catalog-updates branch), applied on top.
@@ -71,8 +68,19 @@ jobs:
                   "<body>" + body)
           open("site/index.html", "w", encoding="utf-8").write(page)
           PY
-      - uses: actions/upload-pages-artifact@v3
+      # The Pages artifact is made here and deployed by the next job, as in GitHub's Pages template.
+      # Uploaded and deployed in the same job, deploy-pages's artifact list sometimes didn't show it yet
+      # ("No artifacts named github-pages", actions/deploy-pages#305).
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
