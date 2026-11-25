@@ -1,0 +1,9 @@
+{
+  "id": "com.tj.livemlbscores",
+  "version": "2.0.1.0",
+  "download_url": "https://github.com/ThatSportsGamer/live-mlb-scores-for-stream-deck/releases/download/v2.0.1.0/Live.MLB.Scores.streamDeckPlugin",
+  "sha256": "00b08ae87710c95361ebad8e6058a6808dfdd8735cd8f568c7943e10b179b652",
+  "name": "Live MLB Scores",
+  "author": "T.J. Lauerman aka ThatSportsGamer",
+  "description": "Shows live baseball scores on your Stream Deck: MLB, the minors, Rookie ball, the Arizona Fall League and winter leagues. Follow one team per key, or fill a group of keys with a whole slate of games."
+}
