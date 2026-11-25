@@ -34,8 +34,9 @@ PLUGINS = ROOT / "plugins"
 ID = re.compile(r"^[a-z0-9][a-z0-9._-]{2,63}$")
 SHA = re.compile(r"^[0-9a-fA-F]{64}$")
 REQUIRED = ["id", "name", "author", "description", "version"]
-KNOWN = set(REQUIRED) | {"category", "repository", "download_url", "sha256", "icon", "page", "permissions", "license", "purchase_url", "price", "auto_update"}
+KNOWN = set(REQUIRED) | {"category", "repository", "download_url", "sha256", "icon", "page", "permissions", "license", "purchase_url", "price", "auto_update", "platforms"}
 PERMISSIONS = {"network", "processes", "files", "input", "system", "clipboard"}
+PLATFORMS = {"windows", "macos", "linux"}
 TOPICS = ["deckhost-plugin", "streamdeck-plugin", "stream-deck-plugin", "openaction-plugin"]
 PACKAGE_SUFFIXES = (".streamdeckplugin", ".dhplugin", ".zip")
 
@@ -80,6 +81,10 @@ def problems(path: pathlib.Path) -> list[str]:
     for permission in entry.get("permissions", []):
         if permission not in PERMISSIONS:
             found.append(f"unknown permission '{permission}' (known: {', '.join(sorted(PERMISSIONS))})")
+    if "platforms" in entry:
+        platforms = entry["platforms"]
+        if not isinstance(platforms, list) or not platforms or any(platform not in PLATFORMS for platform in platforms):
+            found.append(f"'platforms' must list systems from {', '.join(sorted(PLATFORMS))} (or be left out: the manifest says)")
     return found
 
 
