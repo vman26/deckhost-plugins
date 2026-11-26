@@ -1,0 +1,9 @@
+{
+  "id": "com.lazydeck.plugin",
+  "version": "0.7.0.0",
+  "download_url": "https://github.com/web-workers-com/lazy-deck/releases/download/v0.7.0/lazy-deck-0.7.0.streamDeckPlugin",
+  "sha256": "9f20e2691a1b75c132748782bcdd3b2d7be578d79cff5c7e801e3c7698171f00",
+  "name": "Lazy Deck",
+  "author": "Lazy Deck",
+  "description": "Press less. Ship more. A sloth on your Stream Deck that takes over the whole deck when something needs you, plus everyday keys for music, Discord and Steam. Nothing to set up."
+}
