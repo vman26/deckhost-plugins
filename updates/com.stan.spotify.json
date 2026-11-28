@@ -1,0 +1,9 @@
+{
+  "id": "com.stan.spotify",
+  "version": "1.0.1.0",
+  "download_url": "https://github.com/StanvanDaalen/streamdeck-plugins/releases/download/v1.1.55/BetterSpotifyDial.streamDeckPlugin",
+  "sha256": "da3a57cc4f9910abe25c1dd836f3591be12607bfe12ea19ed891f3d7eb4e787d",
+  "name": "Better Spotify Dial",
+  "author": "Stan",
+  "description": "Spotify on a Stream Deck + dial, like the official plugin, with your own actions for click, double-click, triple-click and hold."
+}
